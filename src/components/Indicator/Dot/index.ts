@@ -1,2 +1,2 @@
 export { default as SkiaDotIndicator } from './SkiaDotIndicator';
-export type { SkiaDotIndicatorPropsType } from './SkiaDotIndicatorType';
+export type { SkiaDotIndicatorPropsType } from './SkiaDotIndicatorTypes';

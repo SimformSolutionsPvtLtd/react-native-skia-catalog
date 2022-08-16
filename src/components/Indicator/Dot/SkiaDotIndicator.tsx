@@ -1,66 +1,23 @@
-import {
-  Circle,
-  Group,
-  interpolate,
-  Transforms2d,
-  useComputedValue,
-} from "@shopify/react-native-skia";
-import React, { useMemo } from "react";
+import { Circle, Group } from "@shopify/react-native-skia";
+import React from "react";
 import { SkiaBaseIndicator } from "../Base";
-import type { CirclePropsType, RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaDotIndicatorType";
+import type { RenderComponentArgType } from "../Base";
+import { defaultProps } from "./SkiaDotIndicatorTypes";
 import type {
   RenderIndicatorPropsType,
   SkiaDotIndicatorPropsType,
-} from "./SkiaDotIndicatorType";
+  RenderIndicatorHookReturnType,
+} from "./SkiaDotIndicatorTypes";
+import { IndicatorEnum } from "../SkiaIndicatorTypes";
+import { useRenderIndicator } from "./hooks";
 
 const RenderIndicator = ({
   index,
-  count,
-  progress,
-  width,
-  height,
-  borderRadius,
-  opacity,
   color,
+  ...rest
 }: RenderIndicatorPropsType): JSX.Element => {
-  const { cx, cy, r } = useMemo<CirclePropsType>(() => {
-    const centerWidthWithGap: number = borderRadius / (count + count / 2 - 1);
-    let centerR: number = borderRadius / count;
-    const centerGap: number = centerR - centerWidthWithGap;
-    centerR = (centerR - centerGap) / 2;
-
-    const centerX: number =
-      width / 2 - (centerR * count) / 2 - (centerGap * (count / 2)) / 2;
-    const centerY: number = height / 2;
-
-    return { cx: centerX, cy: centerY, r: centerR };
-  }, [borderRadius, count, width, height]);
-
-  const transform = useComputedValue<Transforms2d>(() => {
-    return [
-      {
-        scale: interpolate(
-          progress.current,
-          [
-            0.0,
-            (index + 0.5) / (count + 1),
-            (index + 1.0) / (count + 1),
-            (index + 1.5) / (count + 1),
-            1.0,
-          ],
-          [1.0, 1.36, 1.56, 1.06, 1.0]
-        ),
-      },
-    ];
-  }, [progress]);
-
-  const opacityLocal = useComputedValue<number>(() => {
-    if ((opacity?.current ?? -1) !== -1) {
-      return opacity!.current;
-    }
-    return 1;
-  }, [opacity]);
+  const { cx, cy, r, transform, opacityLocal }: RenderIndicatorHookReturnType =
+  useRenderIndicator({ index, color, ...rest });
 
   return (
     <Group
@@ -90,7 +47,7 @@ const SkiaDotIndicator = ({
   progressDuration,
   color,
   reverse,
-  ...Other
+  ...rest
 }: SkiaDotIndicatorPropsType): JSX.Element => {
   return (
     <Group
@@ -113,10 +70,10 @@ const SkiaDotIndicator = ({
               progressDuration,
               color,
             }}
-            key={`Dot-${args.index}`}
+            key={`${IndicatorEnum.DOT}-${args.index}`}
           />
         )}
-        {...Other}
+        {...rest}
         animating={animating}
         progressDuration={progressDuration}
       />

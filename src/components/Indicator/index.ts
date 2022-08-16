@@ -1,2 +1,3 @@
 export { default as SkiaIndicator } from './SkiaIndicator';
-export type { SkiaIndicatorPropsType } from './SkiaIndicatorType';
+export { IndicatorEnum } from './SkiaIndicatorTypes';
+export type { SkiaIndicatorPropsType } from './SkiaIndicatorTypes';

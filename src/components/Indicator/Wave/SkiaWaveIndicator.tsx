@@ -1,73 +1,29 @@
-import {
-  Circle,
-  Extrapolate,
-  Group,
-  interpolate,
-  Paint,
-  Transforms2d,
-  useComputedValue,
-} from "@shopify/react-native-skia";
-import React, { useMemo } from "react";
+import { Circle, Group, Paint } from "@shopify/react-native-skia";
+import React from "react";
 import { SkiaBaseIndicator } from "../Base";
 import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaWaveIndicatorType";
+import { defaultProps } from "./SkiaWaveIndicatorTypes";
 import type {
-  CirclePropsType,
   RenderIndicatorPropsType,
   SkiaWaveIndicatorPropsType,
-} from "./SkiaWaveIndicatorType";
-
-const floatEpsilon = Math.pow(2, -23);
+  RenderIndicatorHookReturnType,
+} from "./SkiaWaveIndicatorTypes";
+import { IndicatorEnum } from "../SkiaIndicatorTypes";
+import { useRenderIndicator } from "./hooks";
 
 const RenderIndicator = ({
-  index,
-  progress,
-  width,
-  height,
-  borderRadius,
-  opacity,
   color,
-  waveFactor,
-  waveMode,
+  ...rest
 }: RenderIndicatorPropsType): JSX.Element => {
-  const fill: boolean = waveMode === "fill";
-  const factor: number = useMemo<number>(
-    () => Math.max(1 - Math.pow(waveFactor ?? 0.54, index), floatEpsilon),
-    [index, waveFactor]
-  );
-
-  const { cx, cy, r, borderWidth } = useMemo<CirclePropsType>(() => {
-    const aBorderWidth: number = fill ? 0 : Math.floor(borderRadius / 5);
-
-    const centerX: number = width / 2;
-    const centerY: number = height / 2;
-    return {
-      cx: centerX,
-      cy: centerY,
-      r: borderRadius - 2,
-      borderWidth: aBorderWidth,
-    };
-  }, [borderRadius, fill, height, width]);
-
-  const transform = useComputedValue<Transforms2d>(() => {
-    return [
-      {
-        scale: interpolate(
-          progress.current,
-          [factor, 1],
-          [0, 1],
-          Extrapolate.CLAMP
-        ),
-      },
-    ];
-  }, [progress]);
-
-  const opacityLocal = useComputedValue<number>(() => {
-    if ((opacity?.current ?? -1) !== -1) {
-      return opacity!.current;
-    }
-    return interpolate(progress.current, [0, factor, 1], [0, 1, 0]);
-  }, [progress, opacity]);
+  const {
+    cx,
+    cy,
+    r,
+    fill,
+    trackW,
+    transform,
+    opacityLocal,
+  }: RenderIndicatorHookReturnType = useRenderIndicator({ color, ...rest });
 
   return (
     <Group
@@ -79,7 +35,7 @@ const RenderIndicator = ({
         <Paint
           color={color}
           style={fill ? "fill" : "stroke"}
-          strokeWidth={borderWidth}
+          strokeWidth={trackW}
           opacity={opacityLocal}
         />
       </Circle>
@@ -97,7 +53,7 @@ const SkiaWaveIndicator = ({
   color,
   waveFactor,
   waveMode,
-  ...Other
+  ...rest
 }: SkiaWaveIndicatorPropsType): JSX.Element => {
   return (
     <SkiaBaseIndicator
@@ -115,10 +71,10 @@ const SkiaWaveIndicator = ({
             waveFactor,
             waveMode,
           }}
-          key={`Wave-${args.index}`}
+          key={`${IndicatorEnum.WAVE}-${args.index}`}
         />
       )}
-      {...Other}
+      {...rest}
       animating={animating}
       progressDuration={progressDuration}
     />

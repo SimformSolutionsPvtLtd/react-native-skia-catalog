@@ -215,32 +215,32 @@ PODS:
     - RCTTypeSafety
     - React
     - ReactCommon/turbomodule/core
-  - react-native-skia (0.1.137):
+  - react-native-skia (0.1.141):
     - React
     - React-callinvoker
     - React-Core
-    - react-native-skia/Api (= 0.1.137)
-    - react-native-skia/Jsi (= 0.1.137)
-    - react-native-skia/RNSkia (= 0.1.137)
-    - react-native-skia/SkiaHeaders (= 0.1.137)
-    - react-native-skia/Utils (= 0.1.137)
-  - react-native-skia/Api (0.1.137):
+    - react-native-skia/Api (= 0.1.141)
+    - react-native-skia/Jsi (= 0.1.141)
+    - react-native-skia/RNSkia (= 0.1.141)
+    - react-native-skia/SkiaHeaders (= 0.1.141)
+    - react-native-skia/Utils (= 0.1.141)
+  - react-native-skia/Api (0.1.141):
     - React
     - React-callinvoker
     - React-Core
-  - react-native-skia/Jsi (0.1.137):
+  - react-native-skia/Jsi (0.1.141):
     - React
     - React-callinvoker
     - React-Core
-  - react-native-skia/RNSkia (0.1.137):
+  - react-native-skia/RNSkia (0.1.141):
     - React
     - React-callinvoker
     - React-Core
-  - react-native-skia/SkiaHeaders (0.1.137):
+  - react-native-skia/SkiaHeaders (0.1.141):
     - React
     - React-callinvoker
     - React-Core
-  - react-native-skia/Utils (0.1.137):
+  - react-native-skia/Utils (0.1.141):
     - React
     - React-callinvoker
     - React-Core
@@ -309,8 +309,6 @@ PODS:
     - React-jsi (= 0.66.4)
     - React-logger (= 0.66.4)
     - React-perflogger (= 0.66.4)
-  - RNGestureHandler (2.5.0):
-    - React-Core
   - RNScreens (3.15.0):
     - React-Core
     - React-RCTImage
@@ -350,7 +348,6 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - RNGestureHandler (from `../node_modules/react-native-gesture-handler`)
   - RNScreens (from `../node_modules/react-native-screens`)
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
@@ -421,8 +418,6 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
-  RNGestureHandler:
-    :path: "../node_modules/react-native-gesture-handler"
   RNScreens:
     :path: "../node_modules/react-native-screens"
   Yoga:
@@ -448,7 +443,7 @@ SPEC CHECKSUMS:
   React-jsinspector: d0374f7509d407d2264168b6d0fad0b54e300b85
   React-logger: 933f80c97c633ee8965d609876848148e3fef438
   react-native-safe-area-context: 6c12e3859b6f27b25de4fee8201cfb858432d8de
-  react-native-skia: 860cc2544d03ef15884ed40480a7d7b4cae57b0d
+  react-native-skia: 0bd524b32fb96b4f7b7ceeddd90b7be14e64701d
   React-perflogger: 93075d8931c32cd1fce8a98c15d2d5ccc4d891bd
   React-RCTActionSheet: 7d3041e6761b4f3044a37079ddcb156575fb6d89
   React-RCTAnimation: 743e88b55ac62511ae5c2e22803d4f503f2a3a13
@@ -461,7 +456,6 @@ SPEC CHECKSUMS:
   React-RCTVibration: e3ffca672dd3772536cb844274094b0e2c31b187
   React-runtimeexecutor: dec32ee6f2e2a26e13e58152271535fadff5455a
   ReactCommon: 57b69f6383eafcbd7da625bfa6003810332313c4
-  RNGestureHandler: bad495418bcbd3ab47017a38d93d290ebd406f50
   RNScreens: 4a1af06327774490d97342c00aee0c2bafb497b7
   Yoga: e7dc4e71caba6472ff48ad7d234389b91dadc280
 

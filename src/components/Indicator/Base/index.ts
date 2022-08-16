@@ -4,4 +4,4 @@ export type {
   OmitChildComponentProps,
   RenderComponentArgType,
   CirclePropsType,
-} from "./SkiaBaseIndicatorType";
+} from "./SkiaBaseIndicatorTypes";

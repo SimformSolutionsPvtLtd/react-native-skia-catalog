@@ -3,7 +3,7 @@ import React from 'react';
 import {FlatList, Text, View} from 'react-native';
 import {CustomCard, CustomHeader} from '../../components';
 import {Strings} from '../../constants';
-import {AnimationComponentData} from '../../constants/DummyData';
+import {SkiaComponentData} from '../../constants';
 import {NavProps} from '../../navigation/types';
 import styles from './styles/styles';
 
@@ -28,7 +28,7 @@ const HomeScreen = () => {
       <FlatList
         style={styles.animatedListStyle}
         ItemSeparatorComponent={renderSeparator}
-        data={AnimationComponentData(navigation)}
+        data={SkiaComponentData(navigation)}
         contentContainerStyle={styles.contentContainerStyle}
         renderItem={({item}) => <RenderItems item={item} />}
       />

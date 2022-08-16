@@ -1,58 +1,22 @@
-import {
-  Circle,
-  Group,
-  interpolate,
-  Transforms2d,
-  useComputedValue,
-} from "@shopify/react-native-skia";
-import React, { useMemo } from "react";
+import { Circle, Group } from "@shopify/react-native-skia";
+import React from "react";
 import { SkiaBaseIndicator } from "../Base";
-import type { CirclePropsType, RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaPulseIndicatorType";
+import type { RenderComponentArgType } from "../Base";
+import { defaultProps } from "./SkiaPulseIndicatorTypes";
 import type {
   RenderIndicatorPropsType,
   SkiaPulseIndicatorPropsType,
-} from "./SkiaPulseIndicatorType";
+  RenderIndicatorHookReturnType,
+} from "./SkiaPulseIndicatorTypes";
+import { IndicatorEnum } from "../SkiaIndicatorTypes";
+import { useRenderIndicator } from "./hooks";
 
 const RenderIndicator = ({
-  index,
-  progress,
-  width,
-  height,
-  borderRadius,
-  opacity,
   color,
+  ...rest
 }: RenderIndicatorPropsType): JSX.Element => {
-  const { cx, cy, r } = useMemo<CirclePropsType>(() => {
-    const aBorderRadius: number = borderRadius - 5;
-
-    const centerX: number = width / 2;
-    const centerY: number = height / 2;
-    return { cx: centerX, cy: centerY, r: aBorderRadius };
-  }, [borderRadius, height, width]);
-
-  const transform = useComputedValue<Transforms2d>(() => {
-    return [
-      {
-        scale: interpolate(
-          progress.current,
-          [0, 0.67, 1],
-          index ? [0.4, 0.6, 0.4] : [0.4, 0.6, 1.0]
-        ),
-      },
-    ];
-  }, [progress]);
-
-  const opacityLocal = useComputedValue<number>(() => {
-    if ((opacity?.current ?? -1) !== -1) {
-      return opacity!.current;
-    }
-    return interpolate(
-      progress.current,
-      [0, 0.67, 1],
-      index ? [1.0, 1.0, 1.0] : [0.5, 0.5, 0.0]
-    );
-  }, [progress, opacity]);
+  const { cx, cy, r, transform, opacityLocal }: RenderIndicatorHookReturnType =
+    useRenderIndicator({ color, ...rest });
 
   return (
     <Group transform={transform} origin={{ x: cx, y: cy }}>
@@ -69,7 +33,7 @@ const SkiaPulseIndicator = ({
   animating,
   progressDuration,
   color,
-  ...Other
+  ...rest
 }: SkiaPulseIndicatorPropsType): JSX.Element => {
   return (
     <SkiaBaseIndicator
@@ -85,10 +49,10 @@ const SkiaPulseIndicator = ({
             progressDuration,
             color,
           }}
-          key={`Pulse-${args.index}`}
+          key={`${IndicatorEnum.PULSE}-${args.index}`}
         />
       )}
-      {...Other}
+      {...rest}
       count={2}
       animating={animating}
       progressDuration={progressDuration}

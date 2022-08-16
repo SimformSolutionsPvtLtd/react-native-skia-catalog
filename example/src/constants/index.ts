@@ -1,5 +1,5 @@
 import NavigationStrings from './NavigationStrings';
 import Strings from './Strings';
-import {AnimationComponentData} from './DummyData';
+import {SkiaComponentData} from './SkiaComponentData';
 
-export {NavigationStrings, Strings, AnimationComponentData};
+export {NavigationStrings, Strings, SkiaComponentData};
