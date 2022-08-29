@@ -61,6 +61,11 @@ cd ios && pod install
 [More about Notification component](./src/components/Notification/README.md)
 
 ---
+### ⅠV. [SkiaLike](./src/components/SkiaLike/)
+
+[More about SkiaLike component](./src/components/SkiaLike/README.md)
+
+---
 
 ### Example
 
