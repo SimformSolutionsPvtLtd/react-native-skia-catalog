@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {Colors} from './index';
+import Colors from './Colors';
 
 const applicationStyle = StyleSheet.create({
   screen: {
