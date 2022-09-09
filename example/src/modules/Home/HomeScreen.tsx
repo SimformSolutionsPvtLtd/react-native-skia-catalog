@@ -2,8 +2,7 @@ import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {FlatList, Text, View} from 'react-native';
 import {CustomCard, CustomHeader} from '../../components';
-import {Strings} from '../../constants';
-import {SkiaComponentData} from '../../constants';
+import {SkiaComponentData, Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
 import styles from './styles/styles';
 

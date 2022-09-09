@@ -16,7 +16,6 @@ This custom animated component library provides multiple custom animated compone
 
 ---
 
-
 ## Installation
 
 ##### 1. Install skia catalog
@@ -51,6 +50,12 @@ cd ios && pod install
 
 ---
 
+### ⅠI. [StrikeImage](./src/components/StrikeImage/)
+
+[More about StrikeImage component](./src/components/StrikeImage/README.md)
+
+---
+
 ### Example
 
 A full working example project is here [Example](./example/)
@@ -75,6 +80,7 @@ Check out our [Contributing Guide](CONTRIBUTING.md) for ideas on contributing.
 For bugs, feature requests, and discussion please use [GitHub Issues](https://github.com/SimformSolutionsPvtLtd/react-native-skia-catalog/issues)
 
 ## Awesome Mobile Libraries
+
 - Check out our other available [awesome mobile libraries](https://github.com/SimformSolutionsPvtLtd/Awesome-Mobile-Libraries)
 
 ### License

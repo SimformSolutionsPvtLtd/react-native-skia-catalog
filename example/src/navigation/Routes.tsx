@@ -2,7 +2,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {NavigationStrings} from '../constants';
-import {HomeScreen, IndicatorScreen} from '../modules';
+import {HomeScreen, IndicatorScreen, StrikeImageScreen} from '../modules';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +18,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.INDICATOR}
           component={IndicatorScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.STRIKEIMAGE}
+          component={StrikeImageScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

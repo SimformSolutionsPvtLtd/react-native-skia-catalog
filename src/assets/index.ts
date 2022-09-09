@@ -1,1 +1,3 @@
-export default {};
+export default {
+  camera: require("./camera.png"),
+};
