@@ -8,7 +8,7 @@ import {
 } from "@shopify/react-native-skia";
 import React from "react";
 import { Colors } from "../../../src/theme";
-import Images from "../../assets";
+import { Images } from "../../assets";
 import { Strike } from "./Strike";
 import type { StrikeImagePropsType } from "./StrikeImageTypes";
 import useStrikeImage from "./useStrikeImage";
