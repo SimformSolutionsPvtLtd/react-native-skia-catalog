@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A Collection of animated React Native components",
   "homepage": "https://github.com/SimformSolutionsPvtLtd/react-native-skia-catalog#readme",
-  "main": "lib/index.js",
+  "main": "src/index.ts",
   "types": "lib/index.d.ts",
   "author": "Simform Solutions",
   "license": "MIT",
@@ -38,6 +38,7 @@
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
     "@react-native-community/eslint-config": "^3.0.1",
+    "@shopify/react-native-skia": "^0.1.136",
     "@testing-library/react-native": "^9.0.0",
     "@types/jest": "^27.4.0",
     "@types/react-native": "^0.66.15",
@@ -52,14 +53,13 @@
     "prettier": "^2.6.2",
     "react": "^17.0.2",
     "react-native": "^0.67.1",
-    "@shopify/react-native-skia": "^0.1.136",
     "react-test-renderer": "^17.0.2",
     "typescript": "^4.5.5"
   },
   "peerDependencies": {
+    "@shopify/react-native-skia": "*",
     "react": "*",
-    "react-native": "*",
-    "@shopify/react-native-skia": "*"
+    "react-native": "*"
   },
   "jest": {
     "preset": "react-native",
@@ -91,5 +91,8 @@
     "extends": [
       "@commitlint/config-conventional"
     ]
+  },
+  "dependencies": {
+    "react-native-reanimated": "^2.10.0"
   }
 }

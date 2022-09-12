@@ -5,6 +5,7 @@ const applicationStyle = StyleSheet.create({
   screen: {
     flex: 1,
     backgroundColor: Colors.blue700,
+    marginTop: 100
   },
 });
 

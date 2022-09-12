@@ -5,12 +5,17 @@ import {CustomHeader} from '../../components';
 import {Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
 import styles from './styles/styles';
-import {SkiaIndicator, IndicatorEnum} from 'react-native-skia-catalog';
+import {
+  SkiaIndicator,
+  IndicatorEnum,
+  FlickerLoading,
+} from 'react-native-skia-catalog';
 import {Colors} from '../../theme';
 
 const IndicatorScreen = () => {
   const navigation = useNavigation<NavProps>();
 
+  return <FlickerLoading />
   return (
     <View style={styles.screen}>
       <CustomHeader
