@@ -1,8 +1,36 @@
-import { Canvas, Circle, Fill, Group } from "@shopify/react-native-skia";
-import React, { useEffect, useRef } from "react";
-import { Colors } from "../../theme";
+import { Canvas, Circle, Group } from "@shopify/react-native-skia";
+import React, { useRef } from "react";
 import useFlikerLoading from "./hooks/useFlikerLoading";
 
+const renderExtraCircles = (
+  animatedXForMaskedView,
+  r,
+  strokeWidth,
+  animatedZIndex = 1
+) => {
+  return (
+    <>
+      <Circle cx={animatedXForMaskedView} cy={r} r={r - 10} color="white" 
+        opacity={animatedZIndex}
+        />
+      <Group color="black" style="stroke" strokeWidth={10}>
+        <Circle cx={animatedXForMaskedView} cy={r} style="stroke" r={r - 10} 
+        
+          opacity={animatedZIndex}
+          />
+        <Circle
+          color={'black'}
+          style="stroke"
+          opacity={animatedZIndex}
+          cx={animatedXForMaskedView}
+          cy={r}
+          r={r - 10}
+          strokeWidth={strokeWidth}
+        />
+      </Group>
+    </>
+  );
+};
 const FlickerLoading = () => {
   const size = 256;
   const ref = useRef(null)
@@ -12,35 +40,15 @@ const FlickerLoading = () => {
     useFlikerLoading(r);
 
   return (
-    <Canvas style={{ flex: 1 }} ref={ref}>
-      {/* <Circle cx={r} cy={r} r={r} color="#51AFED" /> */}
-
-      {/* The paint is inherited by the following sibling and descendants. */}
-
-      {/* <Group color="lightblue" style="stroke" strokeWidth={10}>
-  <Circle cx={r} cy={r} r={r } />
-</Group> */}
-      <Circle cx={animatedXForMaskedView} cy={r} r={r - 10} color="white" />
-      <Group color="lightblue" style="stroke" strokeWidth={10}>
-        <Circle cx={animatedXForMaskedView} cy={r} style="stroke" r={r - 10} />
-        <Circle
-          color={'black'}
-          style="stroke"
-          cx={animatedXForMaskedView}
-          cy={r}
-          r={r - 10}
-          strokeWidth={strokeWidth}
-        />
-      </Group>
+    <Canvas style={{ flex: 1 }} ref={ref}>      
+      {renderExtraCircles(animatedXForMaskedView, r, strokeWidth)}
       <Circle cx={animatedX} cy={r} r={r - 5} color="red" />
-      <Circle
-        color={'white'}
-        opacity={animatedZIndex}
-        cx={animatedXForMaskedView}
-        cy={r}
-        r={r - 15}
-        strokeWidth={strokeWidth}
-      />
+      {renderExtraCircles(
+        animatedXForMaskedView,
+        r,
+        strokeWidth,
+        animatedZIndex
+      )}
     </Canvas>
   );
 };
