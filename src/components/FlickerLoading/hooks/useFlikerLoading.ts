@@ -1,32 +1,44 @@
-import { mix, useClockValue, useSharedValueEffect, useValue } from '@shopify/react-native-skia';
-import { useEffect, useRef } from 'react';
-import { useSharedValue, withRepeat, withTiming } from "react-native-reanimated";
+import { Easing, mix, useComputedValue, useLoop, useValue } from '@shopify/react-native-skia';
 
-const useFlikerLoading = (r) => {
-  const animatedX = useValue(r);
-  const test= useRef(1)
-  const animatedXForMaskedView = useValue(3*r);
-  const animatedZIndex = useValue(-1);
-  const progress = useSharedValue(0);
-  const skiaProgress = useValue(0)
-  const clock = useClockValue();
-  useEffect(() => {
-    progress.value = withRepeat(withTiming(1, { duration: 3000 }), -1, true);
-  }, [progress]);
+const useFlikerLoading = (r: number) => {
+  const animatedZIndex = useValue(1);
+  const progress = useLoop({
+    duration: 3000,
+    easing: Easing.inOut(Easing.ease),
+  });
+
+  const transform = useComputedValue(
+    () => [{
+      translateX: mix(progress.current, r, 3 * r + 5),
+    }],
+    [progress]
+  );
+
+  const opacityForReplicatedCircle = useComputedValue(
+    () => {
+      // console.log(Number(progress.current).toFixed(1).localeCompare(1.0) === 1, ' num')
+      // if (Number(progress.current).toFixed(1).localeCompare(1.0) === 1) {
+      //   animatedZIndex.current = 1
+      // }else{
+      //   animatedZIndex.current = 0
+      // }
+      return mix(progress.current, 1, 0)
+    },
+    [progress]
+  );
+  
+  const mainCircleValues = useComputedValue(
+    () => [{
+      translateX: mix(progress.current, 3 * r + 5, r),
+    }],
+    [progress]
+  );  
  
-  useSharedValueEffect(() => {
-    animatedX.current = mix(progress.value, r, 3 * r + 5);
-    animatedXForMaskedView.current = mix(progress.value, 3 * r + 5, r);
-    if (Number(progress.value) === 1.0 || (Number(progress.value) === 0.0)) {
-      console.log(progress.value,progress.value , 1.0,' progress.value?.toFixed(1)')
-      test.current = test.current === 0 ? 1 : 0;
-      animatedZIndex.current =  mix(test.current, 1, -1)
-    }   
-  }, progress); // you can pass other shared values as extra parameters
- 
+  console.log(animatedZIndex,' animatedZIndex')
   return {
-    animatedX,
-    animatedXForMaskedView,
+    transform,
+    mainCircleValues,
+    opacityForReplicatedCircle,
     animatedZIndex
   }
 }

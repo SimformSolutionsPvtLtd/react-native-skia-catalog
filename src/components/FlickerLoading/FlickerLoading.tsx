@@ -1,34 +1,33 @@
-import { Canvas, Circle, Group } from "@shopify/react-native-skia";
+import { Canvas, Circle, Group, SkiaValue, Transforms2d } from "@shopify/react-native-skia";
 import React, { useRef } from "react";
 import useFlikerLoading from "./hooks/useFlikerLoading";
 
 const renderExtraCircles = (
-  animatedXForMaskedView,
-  r,
-  strokeWidth,
-  animatedZIndex = 1
+  transform: Transforms2d | SkiaValue<Transforms2d | undefined> | undefined,
+  r: number | SkiaValue<number>,
+  strokeWidth: number | SkiaValue<number | undefined> | undefined,
+  animatedZIndex: number | SkiaValue<number | undefined> | undefined = 1
 ) => {
   return (
-    <>
-      <Circle cx={animatedXForMaskedView} cy={r} r={r - 10} color="white" 
-        opacity={animatedZIndex}
-        />
+    <Group transform={transform} opacity={animatedZIndex}>
+      <Circle cy={r} r={r - 10} color="white" />
       <Group color="black" style="stroke" strokeWidth={10}>
-        <Circle cx={animatedXForMaskedView} cy={r} style="stroke" r={r - 10} 
-        
-          opacity={animatedZIndex}
-          />
+        <Circle
+          cy={r}
+          style="stroke"
+          r={r - 10}
+          // opacity={animatedZIndex}
+        />
         <Circle
           color={'black'}
           style="stroke"
-          opacity={animatedZIndex}
-          cx={animatedXForMaskedView}
+          // opacity={animatedZIndex}
           cy={r}
           r={r - 10}
           strokeWidth={strokeWidth}
         />
       </Group>
-    </>
+    </Group>
   );
 };
 const FlickerLoading = () => {
@@ -36,18 +35,27 @@ const FlickerLoading = () => {
   const ref = useRef(null)
   const r = size * 0.33;
   const strokeWidth = 10;
-  const { animatedX, animatedXForMaskedView, animatedZIndex } =
-    useFlikerLoading(r);
+  const {
+    animatedZIndex,
+    mainCircleValues,
+    transform,
+    opacityForReplicatedCircle,
+  } = useFlikerLoading(r);
 
   return (
-    <Canvas style={{ flex: 1 }} ref={ref}>      
-      {renderExtraCircles(animatedXForMaskedView, r, strokeWidth)}
-      <Circle cx={animatedX} cy={r} r={r - 5} color="red" />
+    <Canvas
+      style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
+      ref={ref}
+    >
+      {renderExtraCircles(transform, r, strokeWidth)}
+      <Group transform={mainCircleValues}>
+        <Circle cy={r} r={r - 5} color="red" />
+      </Group>
       {renderExtraCircles(
-        animatedXForMaskedView,
+        transform,
         r,
         strokeWidth,
-        animatedZIndex
+        opacityForReplicatedCircle
       )}
     </Canvas>
   );
