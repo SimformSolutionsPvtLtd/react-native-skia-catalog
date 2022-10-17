@@ -10,18 +10,18 @@ const renderExtraCircles = (
 ) => {
   return (
     <Group transform={transform} opacity={animatedZIndex}>
-      <Circle cy={r} r={r - 10} color="white" />
-      <Group color="black" style="stroke" strokeWidth={10}>
+      <Circle cy={r} r={r - 10} color="white" opacity={animatedZIndex}/>
+      <Group color="black" style="stroke" strokeWidth={10} opacity={animatedZIndex}>
         <Circle
           cy={r}
           style="stroke"
           r={r - 10}
-          // opacity={animatedZIndex}
+          opacity={animatedZIndex}
         />
         <Circle
           color={'black'}
           style="stroke"
-          // opacity={animatedZIndex}
+          opacity={animatedZIndex}
           cy={r}
           r={r - 10}
           strokeWidth={strokeWidth}
@@ -39,13 +39,12 @@ const FlickerLoading = () => {
     animatedZIndex,
     mainCircleValues,
     transform,
-    opacityForReplicatedCircle,
   } = useFlikerLoading(r);
 
   return (
     <Canvas
-      style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
       ref={ref}
+      style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
     >
       {renderExtraCircles(transform, r, strokeWidth)}
       <Group transform={mainCircleValues}>
@@ -55,7 +54,7 @@ const FlickerLoading = () => {
         transform,
         r,
         strokeWidth,
-        opacityForReplicatedCircle
+        animatedZIndex
       )}
     </Canvas>
   );
