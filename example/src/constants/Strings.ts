@@ -5,4 +5,5 @@ export default {
   NOTIFICATION: 'Notification',
   THEME_SWITCH: 'Theme Switch',
   SKIA_LIKE: 'Skia Like',
+  WALLET: 'Wallet',
 };

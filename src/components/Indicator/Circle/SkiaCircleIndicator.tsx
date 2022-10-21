@@ -30,7 +30,6 @@ const RenderIndicator = ({
     trackWidth,
     ...rest,
   });
-
   return (
     <Group transform={transform} origin={{ x: width / 2, y: height / 2 }}>
       <Path path={path} color={"transparent"} start={0} end={0.8}>

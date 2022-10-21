@@ -9,9 +9,9 @@ import {
 import React from "react";
 import { Colors } from "../../../src/theme";
 import { Images } from "../../assets";
+import { useStrikeImage } from "./hooks";
 import { Strike } from "./Strike";
 import type { StrikeImagePropsType } from "./StrikeImageTypes";
-import useStrikeImage from "./useStrikeImage";
 
 const StrikeImage = ({
   size = 240,

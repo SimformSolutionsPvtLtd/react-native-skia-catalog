@@ -15,8 +15,8 @@ import {
 } from "@shopify/react-native-skia";
 import { useState } from "react";
 import type { ImageSourcePropType } from "react-native";
-import { getSizeWithinRange } from "../../utils";
-import type { StrikeImageReturnType } from "./StrikeImageTypes";
+import { getSizeWithinRange } from "../../../utils";
+import type { StrikeImageReturnType } from "../StrikeImageTypes";
 
 const useStrikeImage = (
   source: string | ImageSourcePropType,

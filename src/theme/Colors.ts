@@ -46,6 +46,8 @@ const Colors = {
   petiteOrchid: "#DF9E9E",
   sandyBrown: "#E6A766",
   brightSun: "#F2B92F",
+  darkYellow: "#fca819",
+  darkRed: "#ff2b3e",
 };
 
 export const getRandomColorsArray = () => [
