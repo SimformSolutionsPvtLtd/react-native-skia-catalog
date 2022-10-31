@@ -23,7 +23,7 @@ buildscript {
 
 allprojects {
     repositories {
-         exclusiveContent {
+        exclusiveContent {
            filter {
                includeGroup "com.facebook.react"
            }

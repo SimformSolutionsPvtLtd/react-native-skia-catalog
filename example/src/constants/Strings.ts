@@ -3,4 +3,5 @@ export default {
   INDICATOR: 'Indicator',
   STRIKE_IMAGE: 'Strike Image',
   NOTIFICATION: 'Notification',
+  THEME_SWITCH: 'Theme Switch',
 };

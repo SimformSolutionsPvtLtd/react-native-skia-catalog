@@ -17,4 +17,9 @@ export const SkiaComponentData = (navigation: NavProps) => [
     name: 'Notification',
     screen: () => navigation.navigate(NavigationStrings.NOTIFICATION),
   },
+  {  
+    id:4,
+    name: 'Theme Switch',
+    screen: () => navigation.navigate(NavigationStrings.THEME_SWITCH),
+  },
 ];
