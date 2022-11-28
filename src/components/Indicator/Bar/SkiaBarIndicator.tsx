@@ -1,15 +1,15 @@
 import { Group, Paint, RoundedRect } from "@shopify/react-native-skia";
 import React from "react";
-import { SkiaBaseIndicator } from "../Base";
 import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaBarIndicatorTypes";
-import type {
-  RenderIndicatorPropsType,
-  SkiaBarIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaBarIndicatorTypes";
+import { SkiaBaseIndicator } from "../Base";
 import { IndicatorEnum } from "../SkiaIndicatorTypes";
 import { useRenderIndicator } from "./hooks";
+import type {
+  RenderIndicatorHookReturnType,
+  RenderIndicatorPropsType,
+  SkiaBarIndicatorPropsType,
+} from "./SkiaBarIndicatorTypes";
+import { defaultProps } from "./SkiaBarIndicatorTypes";
 
 const RenderIndicator = ({
   index,
@@ -35,7 +35,7 @@ const RenderIndicator = ({
 
   return (
     <Group>
-      <Paint ref={paint} opacity={opacityLocal} color={color} />
+      <Paint paint={paint} opacity={opacityLocal} color={color} />
       <Group transform={transformTop}>
         <RoundedRect
           x={x + index * w + (index !== 0 ? index * gap : 0)}

@@ -1,8 +1,9 @@
 import {
   interpolate,
+  Skia,
+  SkPaint,
   Transforms2d,
   useComputedValue,
-  usePaintRef,
 } from "@shopify/react-native-skia";
 import { useMemo } from "react";
 import type {
@@ -22,7 +23,7 @@ const useRenderIndicator = ({
   opacity,
   progressDuration,
 }: RenderIndicatorPropsType): RenderIndicatorHookReturnType => {
-  const paint = usePaintRef();
+  const paint: SkPaint = Skia.Paint();
   const samples = useMemo<number>(() => {
     const frames = (60 * (progressDuration ?? 1200)) / 1000;
     let c = 0;
