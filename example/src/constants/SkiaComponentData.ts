@@ -7,4 +7,9 @@ export const SkiaComponentData = (navigation: NavProps) => [
     name: 'Indicator',
     screen: () => navigation.navigate(NavigationStrings.INDICATOR),
   },
+  {
+    id: 2,
+    name: 'Strike Image',
+    screen: () => navigation.navigate(NavigationStrings.STRIKEIMAGE),
+  },
 ];
