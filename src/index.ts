@@ -1,6 +1,7 @@
 export * from "./components/AnimatedScanner";
 export * from "./components/AnimatedWallet";
 export * from "./components/Indicator";
+export * from "./components/MediaButton";
 export * from "./components/Notification";
 export * from "./components/SkiaLike";
 export * from "./components/StrikeImage";

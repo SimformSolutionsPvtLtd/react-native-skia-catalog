@@ -10,7 +10,7 @@ export const SkiaComponentData = (navigation: NavProps) => [
   {
     id: 2,
     name: 'Strike Image',
-    screen: () => navigation.navigate(NavigationStrings.STRIKEIMAGE),
+    screen: () => navigation.navigate(NavigationStrings.STRIKE_IMAGE),
   },
   {
     id: 3,
@@ -36,5 +36,10 @@ export const SkiaComponentData = (navigation: NavProps) => [
     id: 7,
     name: 'Animated Scanner',
     screen: () => navigation.navigate(NavigationStrings.ANIMATED_SCANNER),
+  },
+  {
+    id: 8,
+    name: 'Media Button',
+    screen: () => navigation.navigate(NavigationStrings.MEDIA_BUTTON),
   },
 ];

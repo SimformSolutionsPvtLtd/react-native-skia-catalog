@@ -1,6 +1,7 @@
 import AnimatedScannerScreen from './AnimatedScanner/AnimatedScannerScreen';
 import HomeScreen from './Home/HomeScreen';
 import IndicatorScreen from './Indicator/IndicatorScreen';
+import MediaButtonScreen from './MediaButton/MediaButtonScreen';
 import NotificationScreen from './Notification/NotificationScreen';
 import SkiaLikeScreen from './SkiaLike/SkiaLikeScreen';
 import StrikeImageScreen from './StrikeImage/StrikeImageScreen';
@@ -16,4 +17,5 @@ export {
   StrikeImageScreen,
   SkiaLikeScreen,
   WalletScreen,
+  MediaButtonScreen,
 };
