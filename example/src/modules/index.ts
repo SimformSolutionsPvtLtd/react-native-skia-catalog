@@ -1,5 +1,6 @@
-import IndicatorScreen from './Indicator/IndicatorScreen';
 import HomeScreen from './Home/HomeScreen';
+import IndicatorScreen from './Indicator/IndicatorScreen';
+import NotificationScreen from './Notification/NotificationScreen';
 import StrikeImageScreen from './StrikeImage/StrikeImageScreen';
 
-export {HomeScreen, IndicatorScreen, StrikeImageScreen};
+export {HomeScreen, IndicatorScreen, NotificationScreen, StrikeImageScreen};

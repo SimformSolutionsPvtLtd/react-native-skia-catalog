@@ -50,9 +50,15 @@ cd ios && pod install
 
 ---
 
-### ⅠI. [StrikeImage](./src/components/StrikeImage/)
+### ⅠI. [StrikeImage](./src/components/StrikeImage)
 
 [More about StrikeImage component](./src/components/StrikeImage/README.md)
+
+---
+
+### ⅠII. [Notification](./src/components/Notification)
+
+[More about Notification component](./src/components/Notification/README.md)
 
 ---
 

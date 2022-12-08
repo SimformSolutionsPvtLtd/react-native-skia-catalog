@@ -12,4 +12,9 @@ export const SkiaComponentData = (navigation: NavProps) => [
     name: 'Strike Image',
     screen: () => navigation.navigate(NavigationStrings.STRIKEIMAGE),
   },
+  {
+    id: 3,
+    name: 'Notification',
+    screen: () => navigation.navigate(NavigationStrings.NOTIFICATION),
+  },
 ];
