@@ -1,3 +1,4 @@
+export * from "./components/AnimatedScanner";
 export * from "./components/AnimatedWallet";
 export * from "./components/Indicator";
 export * from "./components/Notification";

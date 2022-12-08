@@ -3,12 +3,13 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
 import {NavigationStrings} from '../constants';
 import {
+  AnimatedScannerScreen,
   HomeScreen,
   IndicatorScreen,
   NotificationScreen,
+  SkiaLikeScreen,
   StrikeImageScreen,
   ThemeSwitchScreen,
-  SkiaLikeScreen,
   WalletScreen,
 } from '../modules';
 
@@ -51,6 +52,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.WALLET}
           component={WalletScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.ANIMATED_SCANNER}
+          component={AnimatedScannerScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

@@ -6,4 +6,5 @@ export default {
   THEME_SWITCH: 'Theme Switch',
   SKIA_LIKE: 'Skia Like',
   WALLET: 'Wallet',
+  ANIMATED_SCANNER: 'Animated Scanner',
 };
