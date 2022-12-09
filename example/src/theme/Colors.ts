@@ -6,4 +6,6 @@ export default {
   cyan: '#00838F',
   redVelvet: '#FF5252',
   orange: '#E65100',
+  midnightExpress: '#0f1341',
+  havelockBlue: '#59abdd'
 };

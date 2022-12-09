@@ -4,6 +4,11 @@ const Colors = {
   white: "#ffffff",
   cyan: "#00838F",
   lightGreen: "#23C552",
+  lightblue: "#ADD8E6",
+  darkblue: "#00008B",
+  pink: "#FFC0CB",
+  kournikova: "#ffe767",
+  darkModerateViolet: "#513788",
 };
 
 export default Colors;

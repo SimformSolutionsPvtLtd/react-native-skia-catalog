@@ -3,4 +3,5 @@ export default {
   INDICATOR: 'Indicator Component',
   STRIKEIMAGE: 'Strike Image Component',
   NOTIFICATION: 'Notification',
+  THEME_SWITCH: 'Skia Theme Switch',
 };
