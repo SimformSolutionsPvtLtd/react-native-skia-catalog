@@ -1,13 +1,14 @@
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import React from 'react';
-import { NavigationStrings } from '../constants';
+import {NavigationStrings} from '../constants';
 import {
   HomeScreen,
   IndicatorScreen,
   NotificationScreen,
   StrikeImageScreen,
-  ThemeSwitchScreen
+  ThemeSwitchScreen,
+  SkiaLikeScreen,
 } from '../modules';
 
 const Stack = createNativeStackNavigator();
@@ -29,6 +30,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.STRIKEIMAGE}
           component={StrikeImageScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.SKIA_LIKE}
+          component={SkiaLikeScreen}
           options={{headerShown: false}}
         />
         <Stack.Screen

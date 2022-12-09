@@ -1,4 +1,7 @@
-import { interpolate, SkPoint, vec } from "@shopify/react-native-skia";
+import { interpolate, SkPoint, vec ,interpolateColors} from "@shopify/react-native-skia";
+
+const setColors = (value: number, colors: string[], input?: number[]) =>
+ interpolateColors(value, input ?? [0, 1], colors);
 
 const getSizeWithinRange = (
   lowerRange: number,
@@ -80,13 +83,16 @@ const getCircleCoordinate = ({
     outputRange,
     size: yCoordinate,
   });
-
+  
   return vec(xCoordinate, yCoordinate - transformationValue);
 };
+
+
 
 export {
   getSizeWithinRange,
   getLineCoordinate,
   getCircleCoordinate,
   getInterPolateValue,
+  setColors
 };
