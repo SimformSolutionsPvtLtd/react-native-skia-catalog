@@ -6,13 +6,21 @@
 
 <br>
 
-This custom animated component library provides multiple custom animated components like `Indicator`.
+This custom animated component library provides multiple custom animated components like `Indicator`,`StrickeImage`,`Notification`,`Theme Switch`,`SkiaLike`,`AnimatedWallet`.
 
 - It also provides an example app and a detailed usage overview of every available component
 - All the available components are fully Android and iOS compatible.
 - See our available <a href="#Components">Components</a>
 
 ## 🎬 Preview
+
+|   <div style="width:270px"></div>Indicator  | <div style="width:270px"></div>StrickeImage | <div style="width:270px"></div>Notification |  
+| :------------------------------------------------: | :--------------------------------------------------------: | :-----------------------------------------: |
+| ![alt tag](./assets/Indicator.gif) |        ![alt tag](./assets/StrikeImageDefault.gif)         | ![alt_tag](./assets/DefaultNotification.gif) |
+
+| <div style = "width:270px">Theme Switch</div>| <div style = "width: 270px">SkiaLike</div>|<div style = "width: 270px">AnimatedWallet</div>|
+| :-----------------------------------------: |:------------------------------------------------: |:------------------------------------------------: | 
+| ![alt tag](./assets/SkiaThemeSwitch.gif) |        ![alt tag](./assets/DefaultSkiaLike.gif)         |   ![alt tag](./assets/DefaultAnimatedWallet.gif)         |
 
 ---
 
@@ -61,9 +69,22 @@ cd ios && pod install
 [More about Notification component](./src/components/Notification/README.md)
 
 ---
-### ⅠV. [SkiaLike](./src/components/SkiaLike/)
+
+### ⅠV. [ThemeSwitch](./src/components/ThemeSwitch)
+
+[More about Notification component](./src/components/ThemeSwitch/README.md)
+
+---
+
+### V. [SkiaLike](./src/components/SkiaLike/)
 
 [More about SkiaLike component](./src/components/SkiaLike/README.md)
+
+---
+
+### VI. [AnimatedWallet](./src/components/SkiaLike/)
+
+[More about SkiaLike component](./src/components/AnimatedWallet/README.md)
 
 ---
 
