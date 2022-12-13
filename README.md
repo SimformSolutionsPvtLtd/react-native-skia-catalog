@@ -14,13 +14,13 @@ This custom animated component library provides multiple custom animated compone
 
 ## 🎬 Preview
 
-|   <div style="width:270px"></div>Indicator  | <div style="width:270px"></div>StrickeImage | <div style="width:270px"></div>Notification |  
-| :------------------------------------------------: | :--------------------------------------------------------: | :-----------------------------------------: |
-| ![alt tag](./assets/Indicator.gif) |        ![alt tag](./assets/StrikeImageDefault.gif)         | ![alt_tag](./assets/DefaultNotification.gif) |
+| <div style="width:270px"></div>Indicator | <div style="width:270px"></div>StrickeImage | <div style="width:270px"></div>Notification  |
+| :--------------------------------------: | :-----------------------------------------: | :------------------------------------------: |
+|    ![alt tag](./assets/Indicator.gif)    | ![alt tag](./assets/StrikeImageDefault.gif) | ![alt_tag](./assets/DefaultNotification.gif) |
 
-| <div style = "width:270px">Theme Switch</div>| <div style = "width: 270px">SkiaLike</div>|<div style = "width: 270px">AnimatedWallet</div>|
-| :-----------------------------------------: |:------------------------------------------------: |:------------------------------------------------: | 
-| ![alt tag](./assets/SkiaThemeSwitch.gif) |        ![alt tag](./assets/DefaultSkiaLike.gif)         |   ![alt tag](./assets/DefaultAnimatedWallet.gif)         |
+| <div style = "width:270px">Theme Switch</div> | <div style = "width: 270px">SkiaLike</div> | <div style = "width: 270px">AnimatedWallet</div> |
+| :-------------------------------------------: | :----------------------------------------: | :----------------------------------------------: |
+|   ![alt tag](./assets/SkiaThemeSwitch.gif)    |  ![alt tag](./assets/DefaultSkiaLike.gif)  |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |
 
 ---
 
@@ -70,21 +70,27 @@ cd ios && pod install
 
 ---
 
-### ⅠV. [ThemeSwitch](./src/components/ThemeSwitch)
+### IV. [ThemeSwitch](./src/components/ThemeSwitch)
 
-[More about Notification component](./src/components/ThemeSwitch/README.md)
+[More about ThemeSwitch component](./src/components/ThemeSwitch/README.md)
 
 ---
 
-### V. [SkiaLike](./src/components/SkiaLike/)
+### V. [SkiaLike](./src/components/SkiaLike)
 
 [More about SkiaLike component](./src/components/SkiaLike/README.md)
 
 ---
 
-### VI. [AnimatedWallet](./src/components/SkiaLike/)
+### VI. [AnimatedWallet](./src/components/AnimatedWallet)
 
-[More about SkiaLike component](./src/components/AnimatedWallet/README.md)
+[More about AnimatedWallet component](./src/components/AnimatedWallet/README.md)
+
+---
+
+### VII. [MediaButton](./src/components/MediaButton)
+
+[More about MediaButton component](./src/components/MediaButton//README.md)
 
 ---
 

@@ -6,6 +6,7 @@ import {
   AnimatedScannerScreen,
   HomeScreen,
   IndicatorScreen,
+  MediaButtonScreen,
   NotificationScreen,
   SkiaLikeScreen,
   StrikeImageScreen,
@@ -30,7 +31,7 @@ const Routes = () => {
           options={{headerShown: false}}
         />
         <Stack.Screen
-          name={NavigationStrings.STRIKEIMAGE}
+          name={NavigationStrings.STRIKE_IMAGE}
           component={StrikeImageScreen}
           options={{headerShown: false}}
         />
@@ -57,6 +58,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.ANIMATED_SCANNER}
           component={AnimatedScannerScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.MEDIA_BUTTON}
+          component={MediaButtonScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

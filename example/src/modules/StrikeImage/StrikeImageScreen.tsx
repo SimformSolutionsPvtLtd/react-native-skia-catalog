@@ -7,7 +7,7 @@ import {Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
 import styles from './styles/styles';
 import {Colors} from '../../theme';
-import assets from '../../assets';
+import Images from '../../assets';
 
 const StrikeImageScreen = (): React.ReactElement => {
   const navigation = useNavigation<NavProps>();
@@ -24,7 +24,7 @@ const StrikeImageScreen = (): React.ReactElement => {
           size={300}
           strikeWidth={55}
           color={Colors.orange}
-          source={assets.camera}
+          source={Images.camera}
         />
       </View>
     </View>

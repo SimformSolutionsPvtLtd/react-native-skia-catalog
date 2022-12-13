@@ -11,4 +11,7 @@ export default {
   darkRed: '#ff2b3e',
   deepViolet: '#3F0071',
   electricPink: '#FB2576',
+  havelockBlue: '#59abdd',
+  forestGreen: '#367E18',
+  violetsAreBlue: '#8758FF',
 };
