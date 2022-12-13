@@ -32,4 +32,9 @@ export const SkiaComponentData = (navigation: NavProps) => [
     name: 'Wallet',
     screen: () => navigation.navigate(NavigationStrings.WALLET),
   },
+  {
+    id: 7,
+    name: 'Animated Scanner',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATED_SCANNER),
+  },
 ];
