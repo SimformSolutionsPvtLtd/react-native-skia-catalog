@@ -27,4 +27,9 @@ export const SkiaComponentData = (navigation: NavProps) => [
     name: 'SkiaLike',
     screen: () => navigation.navigate(NavigationStrings.SKIA_LIKE),
   },
+  {
+    id: 6,
+    name: 'Wallet',
+    screen: () => navigation.navigate(NavigationStrings.WALLET),
+  },
 ];

@@ -7,5 +7,8 @@ export default {
   redVelvet: '#FF5252',
   orange: '#E65100',
   midnightExpress: '#0f1341',
-  havelockBlue: '#59abdd'
+  darkYellow: '#fca819',
+  darkRed: '#ff2b3e',
+  deepViolet: '#3F0071',
+  electricPink: '#FB2576',
 };

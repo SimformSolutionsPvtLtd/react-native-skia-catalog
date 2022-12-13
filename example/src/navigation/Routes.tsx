@@ -9,6 +9,7 @@ import {
   StrikeImageScreen,
   ThemeSwitchScreen,
   SkiaLikeScreen,
+  WalletScreen,
 } from '../modules';
 
 const Stack = createNativeStackNavigator();
@@ -45,6 +46,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.THEME_SWITCH}
           component={ThemeSwitchScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.WALLET}
+          component={WalletScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
