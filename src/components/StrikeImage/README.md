@@ -10,11 +10,7 @@ The `StrikeImage` component animates a strike over any image to indicate on/off 
 | :----------------------------------------: |
 | ![alt tag](/assets/StrikeImageDefault.gif) |
 
-#### 1. Default
-
-#### Usage
-
-- The `<StrikeImage />` has On and Off Strike effect with Animation.
+#### Default Usage
 
 ---
 
@@ -86,3 +82,9 @@ export default StrikeImageScreen;
 | strikeWidth    | `40`       | number                              | custom width of strike.                                                  |
 | source         | `string`   | ImageSourcePropType / string        | source of Image.                                                         |
 | onChangeStrike | `() => {}` | (strikeVisibility: boolean) => void | callback function that gives true or false value of strike in parameter. |
+
+#### 🎬 Preview Example
+
+---
+
+[ThemeSwitch](/example/src/modules/StrikeImage/StrikeImageScreen.tsx)
