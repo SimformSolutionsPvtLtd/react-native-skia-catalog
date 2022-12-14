@@ -42,4 +42,9 @@ export const SkiaComponentData = (navigation: NavProps) => [
     name: 'Media Button',
     screen: () => navigation.navigate(NavigationStrings.MEDIA_BUTTON),
   },
+  {
+    id: 9,
+    name: 'Heart Rate',
+    screen: () => navigation.navigate(NavigationStrings.HEART_RATE),
+  },
 ];

@@ -14,13 +14,13 @@ This custom animated component library provides multiple custom animated compone
 
 ## 🎬 Preview
 
-| <div style="width:270px"></div>Indicator | <div style="width:270px"></div>StrikeImage | <div style="width:270px"></div>Notification  |<div style="width:270px"></div>Theme Switch |
-| :--------------------------------------: | :-----------------------------------------: | :------------------------------------------: |:------------------------------------------: |
-|    ![alt tag](./assets/Indicator.gif)    | ![alt tag](./assets/StrikeImageDefault.gif) | ![alt_tag](./assets/DefaultNotification.gif) |![alt tag](./assets/SkiaThemeSwitch.gif) |
+| <div style="width:270px"></div>Indicator | <div style="width:270px"></div>StrikeImage  | <div style="width:270px"></div>Notification  | <div style="width:270px"></div>Theme Switch |
+| :--------------------------------------: | :-----------------------------------------: | :------------------------------------------: | :-----------------------------------------: |
+|    ![alt tag](./assets/Indicator.gif)    | ![alt tag](./assets/StrikeImageDefault.gif) | ![alt_tag](./assets/DefaultNotification.gif) |  ![alt tag](./assets/SkiaThemeSwitch.gif)   |
 
-| <div style = "width: 270px">SkiaLike</div> | <div style = "width: 270px">AnimatedWallet</div> |<div style = "width: 270px">Animated Scanner</div> | <div style = "width: 270px">Media Button</div> |
-| :-------------------------------------------: | :----------------------------------------: | :----------------------------------------: | :----------------------------------------: | 
-|  ![alt tag](./assets/SkiaLike.gif)  |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |![alt tag](./assets/Scanner.gif)  |![alt tag](./assets/MediaButton.gif)  |
+| <div style = "width: 270px">SkiaLike</div> | <div style = "width: 270px">AnimatedWallet</div> | <div style = "width: 270px">Animated Scanner</div> | <div style = "width: 270px">Media Button</div> |
+| :----------------------------------------: | :----------------------------------------------: | :------------------------------------------------: | :--------------------------------------------: |
+|     ![alt tag](./assets/SkiaLike.gif)      |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |          ![alt tag](./assets/Scanner.gif)          |      ![alt tag](./assets/MediaButton.gif)      |
 
 ---
 
@@ -97,6 +97,12 @@ cd ios && pod install
 ### VIII. [MediaButton](./src/components/MediaButton)
 
 [More about MediaButton component](./src/components/MediaButton//README.md)
+
+---
+
+### IX. [HeartRate](./src/components/HeartRate)
+
+[More about HeartRate component](./src/components/HeartRate/README.md)
 
 ---
 
