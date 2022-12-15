@@ -64,7 +64,7 @@ const styles = StyleSheet.create({
 });
 
 export default NotificationScreen;
-```
+```        
 
 #### 🎬 Custom Usage Preview
 

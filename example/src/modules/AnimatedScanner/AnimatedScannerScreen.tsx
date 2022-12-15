@@ -18,7 +18,10 @@ const AnimatedScannerScreen = (): React.ReactElement => {
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>
-        <AnimatedScanner />
+        <AnimatedScanner 
+          stopZooming = {true}
+          height = {300}
+        />
       </View>
     </View>
   );

@@ -10,13 +10,7 @@
 | :-------------------------------------: |
 | ![alt tag](/assets/SkiaThemeSwitch.gif) |
 
-#### 1. Default
-
-#### Usage
-
-- The `<SkiaThemeSwitch />` has On and Off Toggle effect with Animation.
-
----
+#### Default Usage
 
 ```jsx
 import React from "react";
@@ -75,9 +69,19 @@ export default AnimatedSwitchScreen;
 | :----------------------------------------------: |
 | ![alt tag](/assets/CustomUsageOfThemeSwitch.gif) |
 
+---
+#### Properties
+
+
 | Props           | Default   | Type   | Description                                              |
 | :-------------- | :-------- | :----- | :------------------------------------------------------- |
 | size            | 300       | number | size of switch.                                          |
 | lightThemeColor | `#59abdd` | string | switch color when it's OFF.                              |
 | darkThemeColor  | `#0f1341` | string | switch color when it's ON.                               |
 | onToggle        | light     | string | onToggle to get the value of switch either light or dark |
+
+#### 🎬 Preview Example
+
+---
+
+[ThemeSwitch](/example/src/modules/ThemeSwitch/ThemeSwitchScreen.tsx)

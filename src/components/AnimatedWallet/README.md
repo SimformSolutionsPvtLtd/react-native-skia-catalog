@@ -10,9 +10,7 @@
 | :-------------------------------------------: |
 | ![alt tag](/assets/DefaultAnimatedWallet.gif) |
 
-#### Usage
-
-- The `<SkiaWallet />` has opening and closing pin effect with animated cards.
+#### Default Usage
 
 ---
 

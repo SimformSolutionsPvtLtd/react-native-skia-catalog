@@ -6,7 +6,7 @@
 
 <br>
 
-This custom animated component library provides multiple custom animated components like `Indicator`,`StrickeImage`,`Notification`,`Theme Switch`,`SkiaLike`,`AnimatedWallet`.
+This custom animated component library provides multiple custom animated components like `Indicator`,`StrickeImage`,`Notification`,`ThemeSwitch`,`SkiaLike`,`AnimatedWallet`,`AnimatedScanner`,`MediaButton`.
 
 - It also provides an example app and a detailed usage overview of every available component
 - All the available components are fully Android and iOS compatible.
@@ -14,13 +14,13 @@ This custom animated component library provides multiple custom animated compone
 
 ## 🎬 Preview
 
-| <div style="width:270px"></div>Indicator | <div style="width:270px"></div>StrickeImage | <div style="width:270px"></div>Notification  |
-| :--------------------------------------: | :-----------------------------------------: | :------------------------------------------: |
-|    ![alt tag](./assets/Indicator.gif)    | ![alt tag](./assets/StrikeImageDefault.gif) | ![alt_tag](./assets/DefaultNotification.gif) |
+| <div style="width:270px"></div>Indicator | <div style="width:270px"></div>StrikeImage | <div style="width:270px"></div>Notification  |<div style="width:270px"></div>Theme Switch |
+| :--------------------------------------: | :-----------------------------------------: | :------------------------------------------: |:------------------------------------------: |
+|    ![alt tag](./assets/Indicator.gif)    | ![alt tag](./assets/StrikeImageDefault.gif) | ![alt_tag](./assets/DefaultNotification.gif) |![alt tag](./assets/SkiaThemeSwitch.gif) |
 
-| <div style = "width:270px">Theme Switch</div> | <div style = "width: 270px">SkiaLike</div> | <div style = "width: 270px">AnimatedWallet</div> |
-| :-------------------------------------------: | :----------------------------------------: | :----------------------------------------------: |
-|   ![alt tag](./assets/SkiaThemeSwitch.gif)    |  ![alt tag](./assets/DefaultSkiaLike.gif)  |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |
+| <div style = "width: 270px">SkiaLike</div> | <div style = "width: 270px">AnimatedWallet</div> |<div style = "width: 270px">Animated Scanner</div> | <div style = "width: 270px">Media Button</div> |
+| :-------------------------------------------: | :----------------------------------------: | :----------------------------------------: | :----------------------------------------: | 
+|  ![alt tag](./assets/SkiaLike.gif)  |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |![alt tag](./assets/Scanner.gif)  |![alt tag](./assets/MediaButton.gif)  |
 
 ---
 
@@ -88,7 +88,13 @@ cd ios && pod install
 
 ---
 
-### VII. [MediaButton](./src/components/MediaButton)
+### VII. [Animated Scanner](./src/components/AnimatedScanner)
+
+[More about Animated Scanner component](./src/components/MediaButton/README.md)
+
+---
+
+### VIII. [MediaButton](./src/components/MediaButton)
 
 [More about MediaButton component](./src/components/MediaButton//README.md)
 

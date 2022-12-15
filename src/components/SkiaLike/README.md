@@ -10,17 +10,13 @@
 | :-------------------------------------: |
 | ![alt tag](/assets/DefaultSkiaLike.gif) |
 
-#### 1. Default
-
-#### Usage
-
-- The `<SkiaLike />` is used while user tap the like event.
+#### Default Usage
 
 ---
 
 ```jsx
-import React from 'react';
-import { SkiaLike } from 'react-native-skia-catalog';
+import React from "react";
+import { SkiaLike } from "react-native-skia-catalog";
 
 const SkiaLike = () => <SkiaLike />;
 
@@ -30,9 +26,9 @@ export default SkiaLike;
 #### Custom Usage
 
 ```jsx
-import React from 'react';
-import { StyleSheet, View } from 'react-native';
-import { SkiaLike } from 'react-native-animation-catalog';
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import { SkiaLike } from "react-native-animation-catalog";
 
 const SkiaLike = () => {
   return (
@@ -44,8 +40,8 @@ const SkiaLike = () => {
 
 const styles = StyleSheet.create({
   container: {
-    justifyContent: 'center',
-    alignItems: 'center',
+    justifyContent: "center",
+    alignItems: "center",
     flex: 1,
   },
 });
@@ -65,6 +61,10 @@ export default SkiaLike;
 | :------------ | :------- | :---------------- | :------------------------------------------------------------------------------------------- |
 | size          | 100      | number            | `size` of SkiaLike.                                                                          |
 | onChangeValue | () => {} | callback function | It returns the boolean value when the event is liked it will return `true` otherwise `false` |
+
+---
+
+#### 🎬 Preview Example
 
 ---
 
