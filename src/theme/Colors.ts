@@ -56,6 +56,9 @@ const Colors = {
   lightSky: "#ccedff",
   tangerineYellow: "#FFCE00",
   silver: "#BCBCBC",
+  green: '#5fc662',
+  purple: '#4f13c6',
+  shadowGreen: '#5fc662e6'
 };
 
 export const getRandomColorsArray = () => [

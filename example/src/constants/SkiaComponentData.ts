@@ -52,4 +52,9 @@ export const SkiaComponentData = (navigation: NavProps) => [
     name: 'Wireless Charger',
     screen: () => navigation.navigate(NavigationStrings.WIRELESS_CHARGER),
   },
+  {
+    id: 11,
+    name: 'Skia Charging',
+    screen: () => navigation.navigate(NavigationStrings.SKIA_CHARGING),
+  },
 ];
