@@ -13,6 +13,7 @@ import {
   StrikeImageScreen,
   ThemeSwitchScreen,
   WalletScreen,
+  WirelessChargerScreen,
 } from '../modules';
 
 const Stack = createNativeStackNavigator();
@@ -69,6 +70,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.HEART_RATE}
           component={HeartRateScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.WIRELESS_CHARGER}
+          component={WirelessChargerScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

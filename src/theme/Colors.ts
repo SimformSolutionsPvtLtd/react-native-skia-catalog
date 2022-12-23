@@ -51,6 +51,11 @@ const Colors = {
   navyBlue: "#01579B",
   lightPurple60: "#E6E6FA99",
   pastelRed: "#ff6961",
+  alto: "#dddddd",
+  dodgerBlue: "#a9e7ff",
+  lightSky: "#ccedff",
+  tangerineYellow: "#FFCE00",
+  silver: "#BCBCBC",
 };
 
 export const getRandomColorsArray = () => [

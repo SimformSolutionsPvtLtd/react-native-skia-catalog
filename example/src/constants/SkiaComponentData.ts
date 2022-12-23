@@ -47,4 +47,9 @@ export const SkiaComponentData = (navigation: NavProps) => [
     name: 'Heart Rate',
     screen: () => navigation.navigate(NavigationStrings.HEART_RATE),
   },
+  {
+    id: 10,
+    name: 'Wireless Charger',
+    screen: () => navigation.navigate(NavigationStrings.WIRELESS_CHARGER),
+  },
 ];

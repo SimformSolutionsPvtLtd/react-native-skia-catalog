@@ -8,6 +8,7 @@ import SkiaLikeScreen from './SkiaLike/SkiaLikeScreen';
 import StrikeImageScreen from './StrikeImage/StrikeImageScreen';
 import ThemeSwitchScreen from './ThemeSwitch/ThemeSwitchScreen';
 import WalletScreen from './Wallet/WalletScreen';
+import WirelessChargerScreen from './WirelessCharger/WirelessChargerScreen';
 
 export {
   AnimatedScannerScreen,
@@ -20,4 +21,5 @@ export {
   SkiaLikeScreen,
   WalletScreen,
   MediaButtonScreen,
+  WirelessChargerScreen,
 };
