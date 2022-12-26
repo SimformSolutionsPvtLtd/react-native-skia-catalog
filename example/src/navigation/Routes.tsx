@@ -4,6 +4,7 @@ import React from 'react';
 import {NavigationStrings} from '../constants';
 import {
   AnimatedScannerScreen,
+  HeartRateScreen,
   HomeScreen,
   IndicatorScreen,
   MediaButtonScreen,
@@ -63,6 +64,11 @@ const Routes = () => {
         <Stack.Screen
           name={NavigationStrings.MEDIA_BUTTON}
           component={MediaButtonScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.HEART_RATE}
+          component={HeartRateScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

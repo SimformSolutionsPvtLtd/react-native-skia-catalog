@@ -1,4 +1,5 @@
 import AnimatedScannerScreen from './AnimatedScanner/AnimatedScannerScreen';
+import HeartRateScreen from './HeartRate/HeartRateScreen';
 import HomeScreen from './Home/HomeScreen';
 import IndicatorScreen from './Indicator/IndicatorScreen';
 import MediaButtonScreen from './MediaButton/MediaButtonScreen';
@@ -10,6 +11,7 @@ import WalletScreen from './Wallet/WalletScreen';
 
 export {
   AnimatedScannerScreen,
+  HeartRateScreen,
   HomeScreen,
   IndicatorScreen,
   NotificationScreen,

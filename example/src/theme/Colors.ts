@@ -14,4 +14,6 @@ export default {
   havelockBlue: '#59abdd',
   forestGreen: '#367E18',
   violetsAreBlue: '#8758FF',
+  spanishViolet: '#472183',
+  pearlAqua: '#86C8BC',
 };
