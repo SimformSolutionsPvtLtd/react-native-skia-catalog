@@ -19,13 +19,11 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import { Notification } from "react-native-skia-catalog";
 
-const NotificationScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Notification />
-    </View>
-  );
-};
+const NotificationScreen = () => (
+  <View style={styles.container}>
+    <Notification />
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {
@@ -47,13 +45,11 @@ import React from "react";
 import { View, StyleSheet } from "react-native";
 import { Notification } from "react-native-skia-catalog";
 
-const NotificationScreen = () => {
-  return (
-    <View style={styles.container}>
-      <Notification notificationCount={15} color="#F84F31" size={220} />
-    </View>
-  );
-};
+const NotificationScreen = () => (
+  <View style={styles.container}>
+    <Notification notificationCount={15} color="#F84F31" size={220} />
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {
@@ -64,7 +60,7 @@ const styles = StyleSheet.create({
 });
 
 export default NotificationScreen;
-```        
+```
 
 #### 🎬 Custom Usage Preview
 
@@ -76,11 +72,11 @@ export default NotificationScreen;
 
 #### Properties
 
-| Props             | Default   | Type   | Description                                                                                                               |
-| :---------------- | :-------- | :----- | :------------------------------------------------------------------------------------------------------------------------ |
-| size              | `150`     | number | `size` of image. The size `ranges` from `50` to `250`                                                                     |
-| color             | `#23C552` | string | `color` of the notification `counterball` and the `animated lines`                                                        |
-| notificationCount | `1`       | number | `number` of `notification`. If notification number in double digit, the notification number no would be displayed as `9+` |
+| Props             | Default | Type   | Description                                                                                                                |
+| :---------------- | :------ | :----- | :------------------------------------------------------------------------------------------------------------------------- |
+| size              | 150     | number | `Size` of image. The size `ranges` from `50` to `250`.                                                                     |
+| color             | #23C552 | string | `Color` of the notification `counterball` and the `animated lines`.                                                        |
+| notificationCount | 1       | number | `Number` of `notification`. If notification number in double digit, the notification number no would be displayed as `9+`. |
 
 #### 🎬 Preview Example
 

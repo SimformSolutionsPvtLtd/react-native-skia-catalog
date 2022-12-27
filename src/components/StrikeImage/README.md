@@ -6,9 +6,9 @@ The `StrikeImage` component animates a strike over any image to indicate on/off 
 
 ---
 
-|                Strike Image                |
+|                StrikeImage                 |
 | :----------------------------------------: |
-| ![alt tag](/assets/StrikeImageDefault.gif) |
+| ![alt tag](/assets/DefaultStrikeImage.gif) |
 
 #### Default Usage
 
@@ -71,20 +71,20 @@ export default StrikeImageScreen;
 
 ---
 
-![alt tag](/assets/CustomUsageOfStrikeImage.gif)
+![alt tag](/assets/CustomStrikeImage.gif)
 
 #### Properties
 
-| Props          | Default    | Type                                | Description                                                              |
-| :------------- | :--------- | :---------------------------------- | :----------------------------------------------------------------------- |
-| size           | `240`      | number                              | custom size of `image`.                                                  |
-| color          | `#59abdd`  | string                              | custom color of image and strike.                                        |
-| strikeWidth    | `40`       | number                              | custom width of strike.                                                  |
-| source         | `string`   | ImageSourcePropType / string        | source of Image.                                                         |
-| onChangeStrike | `() => {}` | (strikeVisibility: boolean) => void | callback function that gives true or false value of strike in parameter. |
+| Props          | Default  | Type                                | Description                                                                        |
+| :------------- | :------- | :---------------------------------- | :--------------------------------------------------------------------------------- |
+| size           | 240      | number                              | `Size` of `image`.                                                                 |
+| color          | #59abdd  | string                              | `Color` of `Image` and `Strike`.                                                   |
+| strikeWidth    | 40       | number                              | `Width` of `Strike`.                                                               |
+| source         | string   | ImageSourcePropType / string        | `Source` of `Image`.                                                               |
+| onChangeStrike | () => {} | (strikeVisibility: boolean) => void | callback function that gives `visibility` (true / false) of `Strike` in parameter. |
 
 #### 🎬 Preview Example
 
 ---
 
-[ThemeSwitch](/example/src/modules/StrikeImage/StrikeImageScreen.tsx)
+[Strike Image](/example/src/modules/StrikeImage/StrikeImageScreen.tsx)

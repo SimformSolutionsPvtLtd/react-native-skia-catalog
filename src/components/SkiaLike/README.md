@@ -16,51 +16,34 @@
 
 ```jsx
 import React from "react";
+import { StyleSheet, View } from "react-native";
 import { SkiaLike } from "react-native-skia-catalog";
 
-const SkiaLike = () => <SkiaLike />;
-
-export default SkiaLike;
-```
-
-#### Custom Usage
-
-```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { SkiaLike } from "react-native-animation-catalog";
-
-const SkiaLike = () => {
+const SkiaLikeScreen = () => {
   return (
     <View style={styles.container}>
-      <SkiaLike size={100} />
+      <SkiaLike />
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    flex: 1,
   },
 });
 
-export default SkiaLike;
+export default SkiaLikeScreen;
 ```
-
-##### Custom Usage Preview
-
-![alt tag](/assets/DefaultSkiaLike.gif)
-
----
 
 #### Properties
 
-| Props         | Default  | Type              | Description                                                                                  |
-| :------------ | :------- | :---------------- | :------------------------------------------------------------------------------------------- |
-| size          | 100      | number            | `size` of SkiaLike.                                                                          |
-| onChangeValue | () => {} | callback function | It returns the boolean value when the event is liked it will return `true` otherwise `false` |
+| Props         | Default  | Type                       | Description                                                                                      |
+| :------------ | :------- | :------------------------- | :----------------------------------------------------------------------------------------------- |
+| size          | 100      | number                     | `Size` of `SkiaLike`.                                                                            |
+| onChangeValue | () => {} | (isLiked: boolean) => void | It returns the `boolean` value, when the event is liked it will return `true` otherwise `false`. |
 
 ---
 
