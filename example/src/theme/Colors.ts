@@ -16,4 +16,10 @@ export default {
   violetsAreBlue: '#8758FF',
   spanishViolet: '#472183',
   pearlAqua: '#86C8BC',
+  dodgerBlue: '#a9e7ff',
+  silver: '#BCBCBC',
+  tangerineYellow: '#FFCE00',
+  darkModerateViolet: '#513788',
+  orchid: '#D979CA',
+  kournikova: '#ffe767',
 };

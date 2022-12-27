@@ -7,4 +7,5 @@ export * from "./components/SkiaLike";
 export * from "./components/StrikeImage";
 export * from "./components/ThemeSwitch";
 export * from "./components/HeartRate";
+export * from "./components/WirelessCharger";
 export * from "./theme";

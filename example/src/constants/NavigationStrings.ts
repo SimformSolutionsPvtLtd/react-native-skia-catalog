@@ -9,4 +9,5 @@ export default {
   ANIMATED_SCANNER: 'Animated Scanner',
   MEDIA_BUTTON: 'Media Button',
   HEART_RATE: 'Heart Rate',
+  WIRELESS_CHARGER: 'Wireless Charger',
 };
