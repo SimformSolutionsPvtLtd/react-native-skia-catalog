@@ -1,11 +1,10 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {View} from 'react-native';
+import {Text, View} from 'react-native';
 import {HeartRate, HeartRateEnum} from 'react-native-skia-catalog';
 import {CustomHeader} from '../../components';
 import {Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
-import {Colors} from '../../theme';
 import styles from './styles/styles';
 
 const HeartRateScreen = () => {
@@ -19,14 +18,14 @@ const HeartRateScreen = () => {
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>
-        <HeartRate
-          heartRateType={HeartRateEnum.FOLLOWUP}
-          color={[Colors.spanishViolet, Colors.pearlAqua]}
-          isGridVisible={false}
-          pulseWidth={12}
-          speed={2500}
-          size={260}
-        />
+        <View style={styles.heartRateContainer}>
+          <Text style={styles.textStyle}>{Strings.DEFAULT_HEARTRATE}</Text>
+          <HeartRate />
+        </View>
+        <View style={styles.heartRateContainer}>
+          <Text style={styles.textStyle}>{Strings.FOLLOWUP_HEARTRATE}</Text>
+          <HeartRate heartRateType={HeartRateEnum.FOLLOWUP} size={235} />
+        </View>
       </View>
     </View>
   );

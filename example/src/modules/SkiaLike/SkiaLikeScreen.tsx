@@ -18,7 +18,7 @@ const SkiaLikeScreen = () => {
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>
-        <SkiaLike size={100} />
+        <SkiaLike size={180} />
       </View>
     </View>
   );

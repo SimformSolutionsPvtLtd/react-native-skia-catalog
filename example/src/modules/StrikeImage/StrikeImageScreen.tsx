@@ -2,12 +2,12 @@ import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {View} from 'react-native';
 import {StrikeImage} from 'react-native-skia-catalog';
+import Images from '../../assets';
 import {CustomHeader} from '../../components';
 import {Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
-import styles from './styles/styles';
 import {Colors} from '../../theme';
-import Images from '../../assets';
+import styles from './styles/styles';
 
 const StrikeImageScreen = (): React.ReactElement => {
   const navigation = useNavigation<NavProps>();
