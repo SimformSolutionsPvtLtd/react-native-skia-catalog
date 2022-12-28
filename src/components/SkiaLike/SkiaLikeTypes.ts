@@ -1,19 +1,8 @@
 import type {
   SkiaMutableValue,
   Transforms2d,
-} from '@shopify/react-native-skia';
-
-type Enumerate<
-  N extends number,
-  Acc extends number[] = []
-> = Acc["length"] extends N
-  ? Acc[number]
-  : Enumerate<N, [...Acc, Acc["length"]]>;
-
-export type Range<F extends number, T extends number> = Exclude<
-  Enumerate<T>,
-  Enumerate<F>
->;
+} from "@shopify/react-native-skia";
+import type { Range } from "../../types";
 
 export interface SkisLikeProps {
   size?: Range<40, 301>;

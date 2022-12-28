@@ -1,11 +1,12 @@
 import type { SkPath } from "@shopify/react-native-skia";
+import type { Range } from "../../types";
 
 export enum HeartRateEnum {
   DEFAULT = "Default",
   FOLLOWUP = "FollowUp",
 }
 interface HeartRatePropsType {
-  size: number;
+  size: Range<50, 241>;
   speed: number;
   color: string | string[];
   gridColor: string;
@@ -26,7 +27,7 @@ type OmitParentComponentProps =
   | "heartRateType";
 
 interface PulsePointsParams {
-  size: number;
+  size: Range<50, 241>;
   canvasVerticalMidPoint: number;
 }
 
