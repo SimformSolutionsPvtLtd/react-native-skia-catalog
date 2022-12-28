@@ -1,8 +1,8 @@
-# react-native-Skia-catalog
+# react-native-skia-catalog
 
 ---
 
-## [![npm version](https://img.shields.io/badge/npm%20package-0.0.2-orange)](https://www.npmjs.org/package/react-native-skia-catalog) [![Android](https://img.shields.io/badge/Platform-Android-green?logo=android)](https://www.android.com) [![iOS](https://img.shields.io/badge/Platform-iOS-green?logo=apple)](https://developer.apple.com/ios) [![MIT](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
+## [![Android](https://img.shields.io/badge/Platform-Android-green?logo=android)](https://www.android.com) [![iOS](https://img.shields.io/badge/Platform-iOS-green?logo=apple)](https://developer.apple.com/ios) [![MIT](https://img.shields.io/badge/License-MIT-green)](https://opensource.org/licenses/MIT)
 
 <br>
 
@@ -22,9 +22,9 @@ This custom animated component library provides multiple custom animated compone
 | :----------------------------------------: | :----------------------------------------------: | :-----------------------------------------------: | :-------------------------------------------: |
 |  ![alt tag](./assets/DefaultSkiaLike.gif)  |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |  ![alt tag](./assets/DefaultAnimatedScanner.gif)  |     ![alt tag](./assets/MediaButton.gif)      |
 
-| <div style = "width: 270px">HeartRate</div> | <div style = "width: 270px">WirelessCharger</div> | <div style = "width: 270px">SkiaCharging</div> | <div style = "width: 270px">AnimatedCheckMark</div> |
-| :-----------------------------------------: | :-----------------------------------------------: | :--------------------------------------------: | :-------------------------------------------------: |
-|     ![alt tag](./assets/HeartRate.gif)      |  ![alt tag](./assets/DefaultWirelessCharger.gif)  |             ![alt tag](./assets/)              |                ![alt tag](./assets/)                |
+| <div style = "width: 270px">HeartRate</div> | <div style = "width: 270px">WirelessCharger</div> |
+| :-----------------------------------------: | :-----------------------------------------------: |
+|     ![alt tag](./assets/HeartRate.gif)      |  ![alt tag](./assets/DefaultWirelessCharger.gif)  |
 
 ---
 
@@ -92,9 +92,9 @@ cd ios && pod install
 
 ---
 
-### VII. [Animated Scanner](./src/components/AnimatedScanner)
+### VII. [AnimatedScanner](./src/components/AnimatedScanner)
 
-[More about Animated Scanner component](./src/components/MediaButton/README.md)
+[More about AnimatedScanner component](./src/components/AnimatedScanner/README.md)
 
 ---
 
@@ -113,18 +113,6 @@ cd ios && pod install
 ### X. [WirelessCharger](./src/components/WirelessCharger)
 
 [More about WirelessCharger component](./src/components/WirelessCharger/README.md)
-
----
-
-### XI. [SkiaCharging](./src/components/)
-
-[More about SkiaCharging component](./src/components/)
-
----
-
-### XII. [AnimatedCheckMark](./src/components/)
-
-[More about AnimatedCheckMark component](./src/components/)
 
 ---
 
