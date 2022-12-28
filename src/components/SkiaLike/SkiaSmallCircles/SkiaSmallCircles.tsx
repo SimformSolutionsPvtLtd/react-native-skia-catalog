@@ -1,6 +1,6 @@
 import { Circle, Group, Paint, Selector } from '@shopify/react-native-skia';
 import React from 'react';
-import type { SkiaSmallCirclesProps } from './SkiaLikeTypes';
+import type { SkiaSmallCirclesProps } from './SkiaSmallCirclesTypes';
 
 const SkiaSmallCircles = ({
   circleIndex,

@@ -1,6 +1,6 @@
 import { BlendColor, Group, ImageSVG, Paint } from '@shopify/react-native-skia';
 import React from 'react';
-import type { SkiaHeartProps } from './SkiaLikeTypes';
+import type { SkiaHeartProps } from './SkiaHeartTypes';
 
 const SkiaHeart = ({
   opacityHeart,
