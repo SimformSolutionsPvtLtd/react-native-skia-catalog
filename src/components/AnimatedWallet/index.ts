@@ -1,1 +1,1 @@
-export { default as SkiaWallet } from './Wallet/SkiaWallet';
+export { default as AnimatedWallet } from './AnimatedWallet';

@@ -6,8 +6,8 @@ import {
   Skia,
 } from "@shopify/react-native-skia";
 import React from "react";
-import { SVG } from "../../assets";
-import type { WifiSignalsProps } from "./WirelessChargerTypes";
+import { SVG } from "../../../assets";
+import type { WifiSignalsProps } from "./InnerWifiSignalTypes";
 
 const firstCurveSvg = Skia.SVG.MakeFromString(SVG.smallCurve);
 
@@ -23,8 +23,7 @@ const InnerWifiSignal = ({
         <Paint opacity={opacityOfWifiWave}>
           <BlendColor color={wifiWaveColor} mode="srcIn" />
         </Paint>
-      }
-    >
+      }>
       {firstCurveSvg && (
         <ImageSVG
           svg={firstCurveSvg}

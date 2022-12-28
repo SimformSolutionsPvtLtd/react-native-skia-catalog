@@ -1,7 +1,7 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {View} from 'react-native';
-import {SkiaWallet} from 'react-native-skia-catalog';
+import {AnimatedWallet} from 'react-native-skia-catalog';
 import {CustomHeader} from '../../components';
 import {Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
@@ -19,7 +19,7 @@ const WalletScreen = () => {
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>
-        <SkiaWallet
+        <AnimatedWallet
           size={260}
           primaryColor={Colors.deepViolet}
           secondaryColor={Colors.electricPink}

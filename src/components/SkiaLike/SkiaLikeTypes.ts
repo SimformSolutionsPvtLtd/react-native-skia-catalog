@@ -1,8 +1,6 @@
 import type {
-  AnimatedProp,
   SkiaMutableValue,
-  SkSVG,
-  Transforms2d
+  Transforms2d,
 } from '@shopify/react-native-skia';
 
 type Enumerate<
@@ -44,30 +42,6 @@ export interface useSkiaLikeProps {
   isLike: boolean;
 }
 
-export interface SkiaSmallCirclesProps {
-  circleIndex: number;
-  exploreCircleEvenScale: SkiaMutableValue<Transforms2d[]>;
-  exploreCircleOddScale: SkiaMutableValue<Transforms2d[]>;
-  item: itemObject;
-  opacityParticlesCircle: SkiaMutableValue<number>;
-  exploreCircleColor: SkiaMutableValue<Float32Array[]>;
-}
-
-export interface itemObject {
-  cx: number;
-  cy: number;
-  key: string;
-  r: number;
-}
-
-export interface SkiaHeartProps {
-  opacityHeart: SkiaMutableValue<number>;
-  heartColor: SkiaMutableValue<Float32Array>;
-  scaleHeart: SkiaMutableValue<Transforms2d>;
-  halfSize: number;
-  svgHeart: AnimatedProp<SkSVG, any>;
-}
-
 export interface GetLikeVariantOneConfigProps {
   part: number;
   opacityHeart: SkiaMutableValue<number>;
@@ -101,7 +75,7 @@ export interface GetLikeVariantThreeConfigProps {
   opacityParticlesCircle: SkiaMutableValue<number>;
 }
 
-export interface GetLikeVariantFourConfigProps{
+export interface GetLikeVariantFourConfigProps {
   part: number;
   exploreCircleColor: SkiaMutableValue<Float32Array[]>;
   value: SkiaMutableValue<number>;
@@ -109,6 +83,6 @@ export interface GetLikeVariantFourConfigProps{
   opacityInnerCircle: SkiaMutableValue<number>;
   radiusOfOuterCircle: SkiaMutableValue<number>;
   exploreCircleEvenScale: SkiaMutableValue<Transforms2d[]>;
-  size:Range<40, 101>,
+  size: Range<40, 101>;
   exploreCircleOddScale: SkiaMutableValue<Transforms2d[]>;
 }

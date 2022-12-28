@@ -1,3 +1,5 @@
+import type { SkiaValue, SkSVG } from "@shopify/react-native-skia";
+
 type Enumerate<
   N extends number,
   Acc extends number[] = []
@@ -10,17 +12,9 @@ export type Range<F extends number, T extends number> = Exclude<
   Enumerate<F>
 >;
 
-export interface WireLessChargerProps {
+export interface WifiSignalsProps {
   size: Range<150, 351>;
-  outerCircleColor: string;
+  opacityOfWifiWave: SkiaValue<number>;
   wifiWaveColor: string;
-  thunderColor: string;
-}
-
-export interface GetExploreCircleProps {
-  isOuter: boolean;
-}
-
-export interface UseWirelessChargerProps {
-  size: Range<150, 351>;
+  curveSvg: SkSVG | null;
 }

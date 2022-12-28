@@ -1,6 +1,6 @@
 import { Circle, Group, vec } from "@shopify/react-native-skia";
 import React from "react";
-import type { OuterCirclesProps } from "./WirelessChargerTypes";
+import type { OuterCirclesProps } from "./OuterCirclesTypes";
 
 const OuterCircles = ({
   halfSize,

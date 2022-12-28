@@ -2,8 +2,8 @@ import { Canvas } from "@shopify/react-native-skia";
 import React from "react";
 import { Colors } from "../../theme";
 import { useWirelessCharger } from "./hooks";
-import MainCircle from "./MainCircle";
-import OuterCircles from "./OuterCircles";
+import { MainCircle } from "./MainCircle";
+import { OuterCircles } from "./OuterCircles";
 import type {
   GetExploreCircleProps,
   WireLessChargerProps,
@@ -48,8 +48,7 @@ const WirelessCharger = ({
       style={{
         height: size,
         width: size,
-      }}
-    >
+      }}>
       <MainCircle
         {...{
           size,

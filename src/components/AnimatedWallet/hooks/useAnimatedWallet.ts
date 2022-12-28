@@ -7,7 +7,7 @@ import {
   useTiming,
 } from "@shopify/react-native-skia";
 import chroma from "chroma-js";
-import { Colors } from "../../../../theme";
+import { Colors } from "../../../theme";
 
 interface animatedCardProps {
   size?: number;
@@ -43,7 +43,7 @@ const getWalletCard = ({
   ];
 };
 
-const useAnimCard = ({
+const useAnimatedWallet = ({
   size = 256,
   cardNumber = 0,
   primaryColor = Colors.darkYellow,
@@ -113,4 +113,4 @@ const useAnimCard = ({
   };
 };
 
-export default useAnimCard;
+export default useAnimatedWallet;

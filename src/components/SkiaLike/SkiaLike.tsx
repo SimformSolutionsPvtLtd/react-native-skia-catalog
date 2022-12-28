@@ -9,9 +9,9 @@ import {
 import React, { useState } from 'react';
 import { Colors } from '../../theme';
 import { useSkiaLike } from './hooks';
-import SkiaHeart from './SkiaHeart';
+import { SkiaHeart } from './SkiaHeart';
 import type { SkisLikeProps } from './SkiaLikeTypes';
-import SkiaSmallCircles from './SkiaSmallCircles';
+import { SkiaSmallCircles } from './SkiaSmallCircles';
 
 const svgHeart = Skia.SVG.MakeFromString(
   `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
