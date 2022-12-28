@@ -1,1 +1,1 @@
-export { default as SkiaThemeSwitch } from "./SkiathemeSwitch";
+export { default as SkiaThemeSwitch } from "./SkiaThemeSwitch";

@@ -4,6 +4,7 @@ import type {
   Transforms2d,
 } from "@shopify/react-native-skia";
 import type { ImageSourcePropType } from "react-native";
+import type { Range } from "../../types";
 
 interface UseAnimatedScannerReturnType {
   verticalTransform: SkiaValue<Transforms2d>;
@@ -18,7 +19,7 @@ interface UseAnimatedScannerReturnType {
 interface AnimatedScannerPropTypes {
   stopZooming: boolean;
   initialZoomScale: number;
-  height: number;
+  height: Range<100, 341>;
   zoomingDelay: number;
   borderColor: string;
   strokeColor: string;

@@ -5,18 +5,7 @@ import type {
   TouchHandler,
 } from "@shopify/react-native-skia";
 import type { ImageSourcePropType } from "react-native";
-
-type Enumerate<
-  N extends number,
-  Acc extends number[] = []
-> = Acc["length"] extends N
-  ? Acc[number]
-  : Enumerate<N, [...Acc, Acc["length"]]>;
-
-export type Range<F extends number, T extends number> = Exclude<
-  Enumerate<T>,
-  Enumerate<F>
->;
+import type { Range } from "../../types";
 
 interface StrikeImagePropsType {
   size?: Range<50, 351>;

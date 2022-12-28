@@ -4,6 +4,7 @@ import type {
   TouchHandler,
 } from "@shopify/react-native-skia";
 import type { ImageSourcePropType, StyleProp, ViewStyle } from "react-native";
+import type { Range } from "../../types";
 
 export enum ButtonEnum {
   CIRCLE = "CIRCLE",
@@ -19,7 +20,7 @@ interface ScaleType {
 }
 
 interface MediaButtonPropsType {
-  size: number;
+  size: Range<30, 201>;
   color: string;
   speed: number;
   pulseDisable: boolean;
