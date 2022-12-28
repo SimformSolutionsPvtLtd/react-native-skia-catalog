@@ -1,11 +1,11 @@
-import { useNavigation } from '@react-navigation/native';
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import { View } from 'react-native';
-import { SkiaThemeSwitch } from 'react-native-skia-catalog';
-import { CustomHeader } from '../../components';
-import { Strings } from '../../constants';
-import { NavProps } from '../../navigation/types';
-import { Colors } from '../../theme';
+import {View} from 'react-native';
+import {SkiaThemeSwitch} from 'react-native-skia-catalog';
+import {CustomHeader} from '../../components';
+import {Strings} from '../../constants';
+import {NavProps} from '../../navigation/types';
+import {Colors} from '../../theme';
 import styles from './styles/styles';
 
 const ThemeSwitchScreen = () => {
@@ -20,7 +20,7 @@ const ThemeSwitchScreen = () => {
       />
       <View style={styles.container}>
         <SkiaThemeSwitch
-          size={300}
+          size={340}
           lightThemeColor={Colors.havelockBlue}
           darkThemeColor={Colors.midnightExpress}
         />

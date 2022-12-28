@@ -1,6 +1,4 @@
-import { StyleSheet } from 'react-native';
-import { Metrics } from '../../../theme';
-const {moderateScale} = Metrics;
+import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
   screen: {
@@ -8,7 +6,6 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    padding: moderateScale(20),
   },
 });
 export default styles;

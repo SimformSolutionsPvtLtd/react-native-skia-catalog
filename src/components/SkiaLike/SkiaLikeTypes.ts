@@ -6,9 +6,9 @@ import type {
 type Enumerate<
   N extends number,
   Acc extends number[] = []
-> = Acc['length'] extends N
+> = Acc["length"] extends N
   ? Acc[number]
-  : Enumerate<N, [...Acc, Acc['length']]>;
+  : Enumerate<N, [...Acc, Acc["length"]]>;
 
 export type Range<F extends number, T extends number> = Exclude<
   Enumerate<T>,
@@ -16,18 +16,18 @@ export type Range<F extends number, T extends number> = Exclude<
 >;
 
 export interface SkisLikeProps {
-  size?: Range<40, 101>;
+  size?: Range<40, 301>;
   onChangeValue?: (value: boolean) => void;
 }
 
 export interface getExploreCircleTranslateTypes {
   index: number;
-  size: Range<40, 101>;
+  size: Range<40, 301>;
 }
 
 export interface getExploreCircleScaleProps {
   value: number;
-  size?: Range<40, 101>;
+  size?: Range<40, 301>;
   input?: number[];
 }
 
@@ -37,7 +37,7 @@ export interface getExploreCircleColorProps {
 }
 
 export interface useSkiaLikeProps {
-  size: Range<40, 101>;
+  size: Range<40, 301>;
   value: SkiaMutableValue<number>;
   isLike: boolean;
 }
@@ -83,6 +83,6 @@ export interface GetLikeVariantFourConfigProps {
   opacityInnerCircle: SkiaMutableValue<number>;
   radiusOfOuterCircle: SkiaMutableValue<number>;
   exploreCircleEvenScale: SkiaMutableValue<Transforms2d[]>;
-  size: Range<40, 101>;
+  size: Range<40, 301>;
   exploreCircleOddScale: SkiaMutableValue<Transforms2d[]>;
 }

@@ -13,4 +13,6 @@ export default {
   SIMPLE_MEDIA_BUTTON_WITH_PULSE: 'Simple Media Button without Pulse',
   HEART_RATE: 'Heart Rate',
   WIRELESS_CHARGER: 'Wireless Charger',
+  DEFAULT_HEARTRATE: 'Default HeartRate',
+  FOLLOWUP_HEARTRATE: 'FollowUp HeartRate',
 };
