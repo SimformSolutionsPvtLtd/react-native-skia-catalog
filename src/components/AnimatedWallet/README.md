@@ -1,12 +1,12 @@
-# Skia Wallet
+# Animated Wallet
 
-`SkiaWallet` component can be used to provide a fascinating experience of wallet with animated cards.
+`AnimatedWallet` component can be used to provide a fascinating experience of wallet with animated cards.
 
 #### 🎬 Preview
 
 ---
 
-|                  Skia Wallet                  |
+|                AnimatedWallet                 |
 | :-------------------------------------------: |
 | ![alt tag](/assets/DefaultAnimatedWallet.gif) |
 
@@ -17,11 +17,11 @@
 ```jsx
 import { StyleSheet, View } from "react-native";
 import React from "react";
-import { SkiaWallet } from "react-native-skia-catalog";
+import { AnimatedWallet } from "react-native-skia-catalog";
 
 const WalletScreen = () => (
   <View style={style.container}>
-    <SkiaWallet />
+    <AnimatedWallet />
   </View>
 );
 
@@ -41,14 +41,14 @@ export default WalletScreen;
 ```jsx
 import { StyleSheet, View } from "react-native";
 import React from "react";
-import { SkiaWallet } from "react-native-skia-catalog";
+import { AnimatedWallet } from "react-native-skia-catalog";
 
 const WalletScreen = () => (
   <View style={style.container}>
-    <SkiaWallet
+    <AnimatedWallet
       size={260}
-      primaryColor="#3F0071"
-      secondaryColor="#FB2576"
+      primaryColor={"#3F0071"}
+      secondaryColor={"#FB2576"}
       numberOfCards={3}
     />
   </View>
@@ -61,6 +61,7 @@ const style = StyleSheet.create({
     justifyContent: "center",
   },
 });
+
 export default WalletScreen;
 ```
 
@@ -72,12 +73,12 @@ export default WalletScreen;
 
 #### Properties
 
-| Props          | Default   | Type   | Description                                 |
-| :------------- | :-------- | :----- | :------------------------------------------ |
-| size           | `240`     | number | `size` of wallet.                           |
-| numberOfCards  | `2`       | number | `number of cards` in Wallet `Note` : Max 3. |
-| primaryColor   | `#fca819` | string | `primary color` of Wallet.                  |
-| secondaryColor | `#ff2b3e` | string | `secondary color` of Wallet.                |
+| Props          | Default | Type   | Description                                  |
+| :------------- | :------ | :----- | :------------------------------------------- |
+| size           | 240     | number | `Size` of `Wallet`.                          |
+| numberOfCards  | 2       | number | `Number of cards` in Wallet. `Note` : Max 3. |
+| primaryColor   | #fca819 | string | `Primary color` of `Wallet`.                 |
+| secondaryColor | #ff2b3e | string | `Secondary color` of `Wallet`.               |
 
 #### 🎬 Preview Example
 
