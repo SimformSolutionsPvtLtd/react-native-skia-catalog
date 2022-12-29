@@ -1,1 +1,1 @@
-export { default as useAnimatedSwitch } from "./useThemeSwitch";
+export { default as useThemeSwitch } from "./useThemeSwitch";

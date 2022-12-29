@@ -7,15 +7,15 @@ import {
 } from "@shopify/react-native-skia";
 import React from "react";
 import { Colors } from "../../theme";
-import { useAnimatedSwitch } from "./hooks";
-import type { AnimatedSwitchProps } from "./ThemeSwitchTypes";
+import { useThemeSwitch } from "./hooks";
+import type { ThemeSwitchProps } from "./ThemeSwitchTypes";
 
-const SkiaThemeSwitch = ({
+const ThemeSwitch = ({
   lightThemeColor = Colors.kournikova,
   darkThemeColor = Colors.darkModerateViolet,
   size = 300,
   onToggle,
-}: AnimatedSwitchProps) => {
+}: ThemeSwitchProps) => {
   //initial value for circle(moon)
   const rotate = useValue(0);
   //initial value for shadow circle
@@ -29,7 +29,7 @@ const SkiaThemeSwitch = ({
     interpolateButtonColor,
     rectanglePath,
     touchHandler,
-  } = useAnimatedSwitch({
+  } = useThemeSwitch({
     rotate,
     shadowCircleRotate,
     lightThemeColor,
@@ -66,4 +66,4 @@ const SkiaThemeSwitch = ({
   );
 };
 
-export default SkiaThemeSwitch;
+export default ThemeSwitch;
