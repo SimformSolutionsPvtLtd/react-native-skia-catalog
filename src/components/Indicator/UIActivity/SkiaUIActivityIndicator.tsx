@@ -15,7 +15,7 @@ const RenderIndicator = ({
   color,
   trackWidth,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const { x, y, x1, y1, opacityLocal }: RenderIndicatorHookReturnType =
     useRenderIndicator({ color, trackWidth, ...rest });
 
@@ -43,7 +43,7 @@ const SkiaUIActivityIndicator = ({
   color,
   trackWidth,
   ...rest
-}: SkiaUIActivityIndicatorPropsType): JSX.Element => {
+}: SkiaUIActivityIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

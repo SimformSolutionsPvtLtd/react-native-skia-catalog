@@ -19,7 +19,7 @@ const ScannerOutline = ({
   initialZoomScale = 0.9,
   zoomingDelay = 2000,
   borderColor,
-}: ScannerOutlinePropsType) => {
+}: ScannerOutlinePropsType): React.ReactElement => {
   const { transform, maskedSquareDimension, maskedLineWidth } =
     useScannerOutline({
       stopZooming,

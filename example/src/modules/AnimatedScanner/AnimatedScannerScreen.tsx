@@ -14,11 +14,11 @@ const AnimatedScannerScreen = (): React.ReactElement => {
     <View style={styles.screen}>
       <CustomHeader
         title={Strings.ANIMATED_SCANNER}
-        isBackEnabled={true}
+        isBackEnabled
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>
-        <AnimatedScanner height={250} />
+        <AnimatedScanner />
       </View>
     </View>
   );

@@ -15,20 +15,22 @@ const AnimatedCard = ({
   size,
   color,
   id,
-}: AnimatedCardProps) => {
+}: AnimatedCardProps): React.ReactElement => {
   const { transform } = useAnimatedCard({ cardNumber });
 
   return (
     <Group
       origin={{ x: originX + 5 * cardNumber, y: originY }}
       transform={transform}
-      key={id}>
+      key={id}
+    >
       <RoundedRect
         x={originX}
         y={originY}
         r={size * 0.08}
         height={size * 0.4}
-        width={size * 0.8 - cardNumber * size * 0.08}>
+        width={size * 0.8 - cardNumber * size * 0.08}
+      >
         <LinearGradient
           start={vec(0, size * 0.2)}
           end={vec(size * 0.8 - cardNumber * size * 0.08, size * 0.2)}

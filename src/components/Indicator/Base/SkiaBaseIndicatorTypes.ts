@@ -1,7 +1,12 @@
-import { Color, Easing, SkiaMutableValue } from '@shopify/react-native-skia';
+import { Color, Easing, SkiaMutableValue } from "@shopify/react-native-skia";
 
-type OmitParentComponentProps = 'width' | 'height' | 'borderRadius' | 'opacity' | 'color';
-export type OmitChildComponentProps = 'animationEasing';
+type OmitParentComponentProps =
+  | "width"
+  | "height"
+  | "borderRadius"
+  | "opacity"
+  | "color";
+export type OmitChildComponentProps = "animationEasing";
 
 export type CirclePropsType = {
   cx: number;
@@ -35,7 +40,7 @@ export type SkiaBaseIndicatorPropsType = Omit<
     index,
     count,
     progress,
-  }: RenderComponentArgType) => JSX.Element;
+  }: RenderComponentArgType) => React.ReactElement;
   count: number;
 };
 
@@ -47,5 +52,5 @@ export const defaultProps = {
 };
 
 export type SkiaBaseIndicatorHookReturnType = {
-  renderChildComponent: (item: any, index: number) => JSX.Element
-}
+  renderChildComponent: (item: any, index: number) => React.ReactElement;
+};

@@ -15,7 +15,7 @@ const RenderIndicator = ({
   color,
   circleColor,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const {
     cx,
     cy,
@@ -54,7 +54,7 @@ const SkiaRotationCircleIndicator = ({
   circleColor,
   direction,
   ...rest
-}: SkiaRotationCircleIndicatorPropsType): JSX.Element => {
+}: SkiaRotationCircleIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

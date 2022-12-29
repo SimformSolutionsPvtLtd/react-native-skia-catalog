@@ -16,14 +16,15 @@ const InnerWifiSignal = ({
   opacityOfWifiWave,
   wifiWaveColor,
   curveSvg,
-}: WifiSignalsProps) => {
+}: WifiSignalsProps): React.ReactElement => {
   return (
     <Group
       layer={
         <Paint opacity={opacityOfWifiWave}>
           <BlendColor color={wifiWaveColor} mode="srcIn" />
         </Paint>
-      }>
+      }
+    >
       {firstCurveSvg && (
         <ImageSVG
           svg={firstCurveSvg}

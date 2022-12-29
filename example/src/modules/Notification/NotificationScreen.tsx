@@ -8,14 +8,14 @@ import {Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
 import styles from './styles/styles';
 
-const NotificationScreen = () => {
+const NotificationScreen = (): React.ReactElement => {
   const navigation = useNavigation<NavProps>();
 
   return (
     <View style={styles.screen}>
       <CustomHeader
         title={Strings.NOTIFICATION}
-        isBackEnabled={true}
+        isBackEnabled
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>

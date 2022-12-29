@@ -10,7 +10,7 @@
 | :-------------------------------------: |
 | ![alt tag](/assets/DefaultSkiaLike.gif) |
 
-#### Default Usage
+#### Usage
 
 ---
 
@@ -19,13 +19,11 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import { SkiaLike } from "react-native-skia-catalog";
 
-const SkiaLikeScreen = () => {
-  return (
-    <View style={styles.container}>
-      <SkiaLike />
-    </View>
-  );
-};
+const SkiaLikeScreen = () => (
+  <View style={styles.container}>
+    <SkiaLike />
+  </View>
+);
 
 const styles = StyleSheet.create({
   container: {
@@ -40,15 +38,13 @@ export default SkiaLikeScreen;
 
 #### Properties
 
-| Props         | Default  | Type                       | Description                                                                                      |
-| :------------ | :------- | :------------------------- | :----------------------------------------------------------------------------------------------- |
-| size          | 100      | number                     | `Size` of `SkiaLike`.                                                                            |
-| onChangeValue | () => {} | (isLiked: boolean) => void | It returns the `boolean` value, when the event is liked it will return `true` otherwise `false`. |
-
----
+| Props         | Default  | Type                       | Description                                                                                          |
+| :------------ | :------- | :------------------------- | :--------------------------------------------------------------------------------------------------- |
+| size          | 180      | number                     | `Size` of `SkiaLike`.                                                                                |
+| onChangeValue | () => {} | (isLiked: boolean) => void | It returns the `boolean` value, when the `event` is `liked` it will return `true` otherwise `false`. |
 
 #### 🎬 Preview Example
 
 ---
 
-[SkiaLike](/example/src/modules/SkiaLike/SkiaLikeScreen.tsx)
+[Skia Like](/example/src/modules/SkiaLike/SkiaLikeScreen.tsx)

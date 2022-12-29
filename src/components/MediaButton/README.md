@@ -1,8 +1,6 @@
 # Media Button
 
----
-
-`MediaButton` component comes with custom animation and a customized pulse effect around the buttons
+`MediaButton` component comes with custom animation and a customized pulse effect around the button.
 
 #### 🎬 Preview
 
@@ -56,7 +54,7 @@ const MediaButtonScreen = () => (
       speed={1000}
       pulseStart={0.2}
       pulseEnd={0.7}
-      color="#FF5252"
+      color={"#FF5252"}
     />
   </View>
 );
@@ -82,21 +80,21 @@ export default MediaButtonScreen;
 
 ---
 
-| Props            | Default  | Type                              | Description                                                                            |
-| :--------------- | :------- | :-------------------------------- | :------------------------------------------------------------------------------------- |
-| size             | 110      | number                            | `Size` of `Button`.                                                                    |
-| color            | #E65100  | string                            | `Color` of `Button`.                                                                   |
-| speed            | 800      | number                            | `Speed` of icon `rotation`.                                                            |
-| buttonType       | "CIRCLE" | "CIRCLE" / "RECTANGLE" / "SQUARE" | `Type` of `Button`. ButtonEnum can be used to specify the type. Ex. ButtonEnum.SQUARE. |
-| style            | {}       | ViewStyle                         | Container style.                                                                       |
-| playImageSource  | -        | ImageSourcePropType               | `Play` image `source` path.                                                            |
-| pauseImageSource | -        | ImageSourcePropType               | `Pause` image `source` path.                                                           |
-| onPlayPress      | () => {} | function                          | `Play callback` function that invoke on pressing play button.                          |
-| onPausePress     | () => {} | function                          | `Pause callback` function that invoke on pressing pause button.                        |
-| pulseStart       | 0        | number                            | Pulse `starting scale` value.                                                          |
-| pulseEnd         | 1        | number                            | Pulse `ending scale` value.                                                            |
-| pulseSpeed       | 1800     | number                            | `Pulse` effect `speed`.                                                                |
-| pulseDisable     | false    | number                            | `Disable` pulse effect`. Note: In Rectangular Media Button Pulse is disabled.          |
+| Props            | Default  | Type                              | Description                                                                                                 |
+| :--------------- | :------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------- |
+| size             | 110      | number                            | `Size` of `Button`.                                                                                         |
+| color            | #E65100  | string                            | `Color` of `Button`.                                                                                        |
+| speed            | 800      | number                            | `Speed` of icon `rotation`.                                                                                 |
+| buttonType       | "CIRCLE" | "CIRCLE" / "RECTANGLE" / "SQUARE" | `Type` of `Button`. Note: ButtonEnum can be used to specify the type. Ex. ButtonEnum.SQUARE.                |
+| style            | {}       | ViewStyle                         | Container style.                                                                                            |
+| playImageSource  | -        | ImageSourcePropType               | `Play` image `source` path.                                                                                 |
+| pauseImageSource | -        | ImageSourcePropType               | `Pause` image `source` path.                                                                                |
+| onPlayPress      | () => {} | function                          | `Play callback` function that invoke on pressing play button.                                               |
+| onPausePress     | () => {} | function                          | `Pause callback` function that invoke on pressing pause button.                                             |
+| pulseStart       | 0        | number                            | Pulse `starting scale` value.                                                                               |
+| pulseEnd         | 1        | number                            | Pulse `ending scale` value.                                                                                 |
+| pulseSpeed       | 1800     | number                            | `Pulse` effect `speed`.                                                                                     |
+| pulseDisable     | false    | number                            | It `disable` pulse effect, if `true` value was passed. Note: In Rectangular Media Button Pulse is disabled. |
 
 > NOTE: pulseStart & pulseEnd are scale values. Minimum scale value is zero. Maximum scale value is one. When value is 0, the pulse begins from the button. If pulseStart exceeds pulseEnd, the direction of the pulse will change.
 

@@ -87,7 +87,7 @@ const useSkiaBaseIndicator = ({
   }, [progress]);
 
   const renderChildComponent = useCallback(
-    (_item: any, index: number): JSX.Element => {
+    (_item: any, index: number): React.ReactElement => {
       return renderComponent({
         index,
         count,

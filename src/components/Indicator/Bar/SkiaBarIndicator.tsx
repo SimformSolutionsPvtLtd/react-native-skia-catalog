@@ -15,7 +15,7 @@ const RenderIndicator = ({
   index,
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const {
     x,
     y,
@@ -69,7 +69,7 @@ const SkiaBarIndicator = ({
   progressDuration,
   color,
   ...rest
-}: SkiaBarIndicatorPropsType): JSX.Element => {
+}: SkiaBarIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

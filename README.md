@@ -6,11 +6,11 @@
 
 <br>
 
-This custom animated component library provides multiple custom animated components like `Indicator`, `StrickeImage`, `Notification`, `ThemeSwitch`, `SkiaLike`, `AnimatedWallet`, `AnimatedScanner`, `MediaButton`, `HeartRate`, `WirelessCharger`, `SkiaCharging`, `AnimatedCheckMark`.
+This custom animated skia component library provides multiple custom animated skia components like `Indicator`, `StrikeImage`, `Notification`, `ThemeSwitch`, `SkiaLike`, `AnimatedWallet` and many more!
 
-- It also provides an example app and a detailed usage overview of every available component
+- It also provides an example app and a detailed usage overview of every available component.
 - All the available components are fully Android and iOS compatible.
-- See our available <a href="#Components">Components</a>
+- See our available <a href="#Components">Components</a>.
 
 ## 🎬 Preview
 
@@ -118,7 +118,7 @@ cd ios && pod install
 
 ### Example
 
-A full working example project is here [Example](./example/)
+A full working example project is here [Example](./example/).
 
 ```sh
 $ yarn
@@ -137,11 +137,11 @@ Check out our [Contributing Guide](CONTRIBUTING.md) for ideas on contributing.
 
 ## Bugs / Feature requests / Feedbacks
 
-For bugs, feature requests, and discussion please use [GitHub Issues](https://github.com/SimformSolutionsPvtLtd/react-native-skia-catalog/issues)
+For bugs, feature requests, and discussion please use [GitHub Issues](https://github.com/SimformSolutionsPvtLtd/react-native-skia-catalog/issues).
 
 ## Awesome Mobile Libraries
 
-- Check out our other available [awesome mobile libraries](https://github.com/SimformSolutionsPvtLtd/Awesome-Mobile-Libraries)
+- Check out our other available [awesome mobile libraries](https://github.com/SimformSolutionsPvtLtd/Awesome-Mobile-Libraries).
 
 ### License
 

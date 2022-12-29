@@ -14,7 +14,7 @@ const HeartRate = ({
   isGridVisible = true,
   speed,
   pulseWidth,
-}: Partial<HeartRatePropsType>): JSX.Element => {
+}: Partial<HeartRatePropsType>): React.ReactElement => {
   const canvasWidth: number =
     heartRateType === HeartRateEnum.DEFAULT ? size * 1.75667 : size * 1.5;
   const pulseColor: string[] = typeof color === "string" ? [color] : color;

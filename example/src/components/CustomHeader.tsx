@@ -8,7 +8,7 @@ const CustomHeader = ({
   title = '',
   isBackEnabled = false,
   onBackPress,
-}: CustomHeaderProps) => {
+}: CustomHeaderProps): React.ReactElement => {
   return (
     <View style={styles.container}>
       {isBackEnabled ? (

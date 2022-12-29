@@ -1,21 +1,21 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {View} from 'react-native';
+import {IndicatorEnum, SkiaIndicator} from 'react-native-skia-catalog';
 import {CustomHeader} from '../../components';
 import {Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
-import styles from './styles/styles';
-import {SkiaIndicator, IndicatorEnum} from 'react-native-skia-catalog';
 import {Colors} from '../../theme';
+import styles from './styles/styles';
 
-const IndicatorScreen = () => {
+const IndicatorScreen = (): React.ReactElement => {
   const navigation = useNavigation<NavProps>();
 
   return (
     <View style={styles.screen}>
       <CustomHeader
         title={Strings.INDICATOR}
-        isBackEnabled={true}
+        isBackEnabled
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>
@@ -31,7 +31,6 @@ const IndicatorScreen = () => {
               progressDuration={800}
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.SKYPE}
@@ -42,7 +41,6 @@ const IndicatorScreen = () => {
               animating={true}
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.PULSE}
@@ -53,7 +51,6 @@ const IndicatorScreen = () => {
               animating={true}
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.BREATHING}
@@ -65,7 +62,6 @@ const IndicatorScreen = () => {
             />
           </View>
         </View>
-
         <View style={styles.row}>
           <View style={styles.flex}>
             <SkiaIndicator
@@ -77,7 +73,6 @@ const IndicatorScreen = () => {
               animating={true}
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.WAVE}
@@ -89,7 +84,6 @@ const IndicatorScreen = () => {
               waveMode="outline"
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.WAVE}
@@ -102,7 +96,6 @@ const IndicatorScreen = () => {
               waveFactor={0.4}
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.WAVE}
@@ -116,7 +109,6 @@ const IndicatorScreen = () => {
             />
           </View>
         </View>
-
         <View style={styles.row}>
           <View style={styles.flex}>
             <SkiaIndicator
@@ -128,7 +120,6 @@ const IndicatorScreen = () => {
               animating={true}
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.MATERIAL}
@@ -139,7 +130,6 @@ const IndicatorScreen = () => {
               animating={true}
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.PAC_MAN}
@@ -150,7 +140,6 @@ const IndicatorScreen = () => {
               animating={true}
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.BAR}
@@ -163,7 +152,6 @@ const IndicatorScreen = () => {
             />
           </View>
         </View>
-
         <View style={styles.row}>
           <View style={styles.flex}>
             <SkiaIndicator
@@ -177,7 +165,6 @@ const IndicatorScreen = () => {
               progressDuration={800}
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.CIRCLE}
@@ -188,7 +175,6 @@ const IndicatorScreen = () => {
               animating={true}
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.ROTATION_HOLE}
@@ -200,7 +186,6 @@ const IndicatorScreen = () => {
               circleColor={Colors.blue700}
             />
           </View>
-
           <View style={styles.flex}>
             <SkiaIndicator
               type={IndicatorEnum.DOT}
@@ -215,7 +200,6 @@ const IndicatorScreen = () => {
             />
           </View>
         </View>
-
         <View style={styles.row}>
           <View style={styles.flex}>
             <SkiaIndicator

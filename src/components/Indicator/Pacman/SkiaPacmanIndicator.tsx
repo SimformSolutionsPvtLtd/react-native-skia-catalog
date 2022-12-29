@@ -16,7 +16,7 @@ const RenderBlock = ({
   index,
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const { cx, cy, r, transform, opacityLocal }: RenderBlockHookReturnType =
     useRenderBlock({ index, color, ...rest });
 
@@ -43,7 +43,7 @@ const RenderIndicator = ({
   progressDuration,
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const { r, path, opacityLocal }: RenderIndicatorHookReturnType =
     useRenderIndicator({
       index,
@@ -94,7 +94,7 @@ const SkiaPacmanIndicator = ({
   progressDuration,
   color,
   ...rest
-}: SkiaPacmanIndicatorPropsType): JSX.Element => {
+}: SkiaPacmanIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

@@ -14,7 +14,7 @@ import { useRenderIndicator } from "./hooks";
 const RenderIndicator = ({
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const {
     cx,
     cy,
@@ -54,7 +54,7 @@ const SkiaWaveIndicator = ({
   waveFactor,
   waveMode,
   ...rest
-}: SkiaWaveIndicatorPropsType): JSX.Element => {
+}: SkiaWaveIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

@@ -12,7 +12,7 @@ const SimpleHeartRate = ({
   pulseWidth,
   canvasWidth,
   canvasVerticalMidPoint,
-}: SimpleHeartRatePropsType): JSX.Element => {
+}: SimpleHeartRatePropsType): React.ReactElement => {
   const { pulsePath, pulseRate }: HeartRateReturnType = useHeartRate({
     size,
     speed,

@@ -14,9 +14,9 @@ import { useRenderIndicator } from "./hooks";
 const RenderIndicator = ({
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const { cx, cy, r, transform, opacityLocal }: RenderIndicatorHookReturnType =
-  useRenderIndicator({ color, ...rest });
+    useRenderIndicator({ color, ...rest });
 
   return (
     <Group transform={transform} origin={{ x: cx, y: cy }}>
@@ -34,7 +34,7 @@ const SkiaBallIndicator = ({
   progressDuration,
   color,
   ...rest
-}: SkiaBallIndicatorPropsType): JSX.Element => {
+}: SkiaBallIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

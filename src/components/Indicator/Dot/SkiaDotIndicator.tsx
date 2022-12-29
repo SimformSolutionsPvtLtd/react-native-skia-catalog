@@ -15,9 +15,9 @@ const RenderIndicator = ({
   index,
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const { cx, cy, r, transform, opacityLocal }: RenderIndicatorHookReturnType =
-  useRenderIndicator({ index, color, ...rest });
+    useRenderIndicator({ index, color, ...rest });
 
   return (
     <Group
@@ -48,7 +48,7 @@ const SkiaDotIndicator = ({
   color,
   reverse,
   ...rest
-}: SkiaDotIndicatorPropsType): JSX.Element => {
+}: SkiaDotIndicatorPropsType): React.ReactElement => {
   return (
     <Group
       transform={[{ rotate: reverse ? Math.PI : 0 }, { translateX: -2.5 }]}

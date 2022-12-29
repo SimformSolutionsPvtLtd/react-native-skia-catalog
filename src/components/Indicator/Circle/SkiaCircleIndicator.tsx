@@ -17,7 +17,7 @@ const RenderIndicator = ({
   color,
   trackWidth,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const {
     path,
     circleHeight,
@@ -55,7 +55,7 @@ const SkiaCircleIndicator = ({
   color,
   trackWidth,
   ...rest
-}: SkiaCircleIndicatorPropsType): JSX.Element => {
+}: SkiaCircleIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

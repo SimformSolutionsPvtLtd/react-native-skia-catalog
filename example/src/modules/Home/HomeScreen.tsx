@@ -6,7 +6,7 @@ import {SkiaComponentData, Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
 import styles from './styles/styles';
 
-const RenderItems = ({item}: any) => {
+const RenderItems = ({item}: any): React.ReactElement => {
   return (
     <CustomCard style={styles.cardStyle} onPress={item.screen}>
       <Text style={styles.componentNameTextStyle}>{item.name}</Text>
@@ -14,11 +14,11 @@ const RenderItems = ({item}: any) => {
   );
 };
 
-const renderSeparator = () => {
+const renderSeparator = (): React.ReactElement => {
   return <View style={styles.itemSeparatorStyle} />;
 };
 
-const HomeScreen = () => {
+const HomeScreen = (): React.ReactElement => {
   const navigation = useNavigation<NavProps>();
 
   return (

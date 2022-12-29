@@ -7,7 +7,7 @@ import {Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
 import styles from './styles/styles';
 
-const HeartRateScreen = () => {
+const HeartRateScreen = (): React.ReactElement => {
   const navigation = useNavigation<NavProps>();
 
   return (

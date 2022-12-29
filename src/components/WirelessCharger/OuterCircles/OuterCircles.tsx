@@ -8,7 +8,7 @@ const OuterCircles = ({
   circleItem,
   outerCircleColor,
   circleOpacity,
-}: OuterCirclesProps) => {
+}: OuterCirclesProps): React.ReactElement => {
   return (
     <Group transform={transformationValue} origin={vec(halfSize, halfSize)}>
       <Circle

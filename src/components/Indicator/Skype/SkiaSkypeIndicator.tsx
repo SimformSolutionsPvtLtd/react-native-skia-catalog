@@ -14,7 +14,7 @@ import { useRenderIndicator } from "./hooks";
 const RenderIndicator = ({
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const {
     newCX,
     newCY,
@@ -48,7 +48,7 @@ const SkiaSkypeIndicator = ({
   minScale,
   maxScale,
   ...rest
-}: SkiaSkypeIndicatorPropsType): JSX.Element => {
+}: SkiaSkypeIndicatorPropsType): React.ReactElement => {
   return (
     <Group
       transform={[{ rotate: -1 }]}

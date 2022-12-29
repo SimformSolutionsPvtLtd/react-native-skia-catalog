@@ -24,7 +24,7 @@ const MainCircle = ({
   circleAnimation,
   signalOpacity,
   outerSignalOpacity,
-}: MainCircleProps) => {
+}: MainCircleProps): React.ReactElement => {
   return (
     <>
       <Circle
@@ -41,7 +41,8 @@ const MainCircle = ({
               <Paint>
                 <BlendColor color={thunderColor} mode="srcIn" />
               </Paint>
-            }>
+            }
+          >
             <ImageSVG
               svg={thunderSvg}
               x={size * 0.3143}

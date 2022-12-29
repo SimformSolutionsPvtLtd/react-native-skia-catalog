@@ -14,7 +14,7 @@ import { useRenderIndicator } from "./hooks";
 const RenderIndicator = ({
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const {
     cx,
     cy,
@@ -49,7 +49,7 @@ const SkiaBreathingIndicator = ({
   color,
   trackWidth,
   ...rest
-}: SkiaBreathingIndicatorPropsType): JSX.Element => {
+}: SkiaBreathingIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (
