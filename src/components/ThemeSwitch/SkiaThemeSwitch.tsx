@@ -41,27 +41,26 @@ const SkiaThemeSwitch = ({
   return (
     <Canvas
       style={{
-        height: size / 1.8,
+        height: size / 2.3,
+        width: size,
       }}
       onTouch={touchHandler}>
       <Group clip={rectanglePath}>
         <Fill color={interpolateButtonColor} />
-        <Group transform={circleTransform}>
-          <Circle
-            r={size / 5.45}
-            cx={size / 3.55}
-            cy={size / 3.65}
-            color={Colors.white}
-          />
-        </Group>
-        <Group transform={shadowCircleTransform}>
-          <Circle
-            r={size / 6.2}
-            cx={size / -6.2}
-            cy={size / 2.48}
-            color={interpolateButtonColor}
-          />
-        </Group>
+        <Circle
+          r={size / 5.45}
+          cx={size / 4.6046}
+          cy={size / 4.6046}
+          color={Colors.white}
+          transform={circleTransform}
+        />
+        <Circle
+          r={size / 6.2}
+          cx={size / -4.5795}
+          cy={size / 3.0092}
+          color={interpolateButtonColor}
+          transform={shadowCircleTransform}
+        />
       </Group>
     </Canvas>
   );
