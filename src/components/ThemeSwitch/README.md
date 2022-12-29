@@ -26,7 +26,8 @@ const AnimatedSwitchScreen = () => (
 const styles = StyleSheet.create({
   skiaThemeSwitchView: {
     flex: 1,
-    padding: 20,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
 
@@ -53,6 +54,8 @@ const AnimatedSwitchScreen = () => (
 const styles = StyleSheet.create({
   skiaThemeSwitchView: {
     flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
   },
 });
 

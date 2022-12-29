@@ -7,7 +7,7 @@ import {
   runTiming,
   Transforms2d,
   useComputedValue,
-  useTouchHandler
+  useTouchHandler,
 } from "@shopify/react-native-skia";
 import { useState } from "react";
 import type { AimatedProps } from "../ThemeSwitchTypes";
@@ -24,15 +24,11 @@ const useAnimatedSwitch = ({
   const [shadowCircle, setShadowCircle] = useState(true);
 
   //rectanglePath of switch
-  const rectanglePath = rrect(
-    rect(size / 15.5, size / 15.5, size / 0.99, size / 2.38),
-    size / 3.75,
-    size / 3.75
-  );
+  const rectanglePath = rrect(rect(0, 0, size, size/2.3), size / 3.75, size / 3.75);
 
   const initialValue = 0;
-  const darktheme = size / 1.72;
-  const shadowValue = size / 1.06; //for shadow translateX value
+  const darktheme = size / 1.77;
+  const shadowValue = size / 1.07; //for shadow translateX value
   const shadowCircleValue = size / -6.2; //for shadow translateY value
   const shadowCircleUpdatedValue = size / -15.5; //for shadow translateY updated value
   const moonColor = !lightTheme

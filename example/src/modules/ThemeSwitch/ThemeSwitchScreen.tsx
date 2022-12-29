@@ -19,11 +19,7 @@ const ThemeSwitchScreen = () => {
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>
-        <SkiaThemeSwitch
-          size={340}
-          lightThemeColor={Colors.havelockBlue}
-          darkThemeColor={Colors.midnightExpress}
-        />
+        <SkiaThemeSwitch />
       </View>
     </View>
   );
