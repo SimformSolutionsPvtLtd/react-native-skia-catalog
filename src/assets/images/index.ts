@@ -5,4 +5,5 @@ export default {
   play: require("./play.png"),
   pause: require("./pause.png"),
   flashImage: require("./flashImage.png"),
+  check: require("./check.png"),
 };

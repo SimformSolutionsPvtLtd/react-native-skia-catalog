@@ -22,4 +22,6 @@ export default {
   darkModerateViolet: '#513788',
   orchid: '#D979CA',
   kournikova: '#ffe767',
+  brightBlue: '#0096FF',
+  purple: '#9575CD',
 };

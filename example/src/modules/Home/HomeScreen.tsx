@@ -30,6 +30,7 @@ const HomeScreen = (): React.ReactElement => {
         data={SkiaComponentData(navigation)}
         contentContainerStyle={styles.contentContainerStyle}
         renderItem={({item}) => <RenderItems item={item} />}
+        showsVerticalScrollIndicator={false}
       />
     </View>
   );

@@ -22,9 +22,9 @@ This custom animated skia component library provides multiple custom animated sk
 | :----------------------------------------: | :----------------------------------------------: | :-----------------------------------------------: | :-------------------------------------------: |
 |  ![alt tag](./assets/DefaultSkiaLike.gif)  |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |  ![alt tag](./assets/DefaultAnimatedScanner.gif)  |     ![alt tag](./assets/MediaButton.gif)      |
 
-| <div style = "width: 270px">HeartRate</div> | <div style = "width: 270px">WirelessCharger</div> | <div style = "width: 270px">SkiaCharging</div> |
-| :-----------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
-|     ![alt tag](./assets/HeartRate.gif)      |  ![alt tag](./assets/DefaultWirelessCharger.gif)  | ![alt tag](./assets/SkiaCharging.gif)  |
+| <div style = "width: 270px">HeartRate</div> | <div style = "width: 270px">WirelessCharger</div> | <div style = "width: 270px">SkiaCharging</div> | <div style = "width: 270px">AnimatedCheckmark</div> |
+| :-----------------------------------------: | :-----------------------------------------------: | :--------------------------------------------: | :-------------------------------------------------: |
+|     ![alt tag](./assets/HeartRate.gif)      |  ![alt tag](./assets/DefaultWirelessCharger.gif)  |     ![alt tag](./assets/SkiaCharging.gif)      |     ![alt tag](./assets/AnimatedCheckmark.gif)      |
 
 ---
 
@@ -113,6 +113,12 @@ cd ios && pod install
 ### X. [WirelessCharger](./src/components/WirelessCharger)
 
 [More about WirelessCharger component](./src/components/WirelessCharger/README.md)
+
+---
+
+### XI. [AnimatedCheckMark](./src/components/AnimatedCheckMark)
+
+[More about AnimatedCheckMark component](./src/components/AnimatedCheckMark/README.md)
 
 ---
 

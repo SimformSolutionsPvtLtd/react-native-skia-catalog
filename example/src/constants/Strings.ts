@@ -16,4 +16,10 @@ export default {
   DEFAULT_HEARTRATE: 'Default HeartRate',
   FOLLOWUP_HEARTRATE: 'FollowUp HeartRate',
   SKIA_CHARGING: 'Skia Charging',
+  DEFAULT_ANIMATED_CHECK_MARK:
+    'Animated Checkmark with fade effect and particles(default)',
+  CIRCULAR_ANIMATED_CHECK_MARK:
+    'Animated Checkmark with simple circular effect',
+  SIMPLE_ANIMATED_CHECKMARK: 'Animated Checkmark with simple effect',
+  ANIMATED_CHECKMARK: 'Animated Checkmark',
 };
