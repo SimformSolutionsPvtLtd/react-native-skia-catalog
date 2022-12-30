@@ -1,6 +1,6 @@
 import type { Range } from "../../types";
 
-export interface AimatedProps {
+export interface UseThemeSwitchProps {
   rotate: any;
   shadowCircleRotate: any;
   lightThemeColor: string;
@@ -9,7 +9,7 @@ export interface AimatedProps {
   onToggle?: (status: string) => void;
 }
 
-export interface AnimatedSwitchProps {
+export interface ThemeSwitchProps {
   lightThemeColor?: string;
   darkThemeColor?: string;
   size?: Range<40, 351>;

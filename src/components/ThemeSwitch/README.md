@@ -1,12 +1,12 @@
-# Animated Switch
+# Theme Switch
 
-`SkiaThemeSwitch` component can be used to provide a amazing animation when user changing the state of system functionalities and preferences using Toggle Switch.
+`ThemeSwitch` component can be used to provide a amazing animation when user changing the state of system functionalities and preferences using Toggle Switch.
 
 #### 🎬 Preview
 
 ---
 
-|               AnimatedSwitch               |
+|                ThemeSwitch                 |
 | :----------------------------------------: |
 | ![alt tag](/assets/DefaultThemeSwitch.gif) |
 
@@ -15,23 +15,23 @@
 ```jsx
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { SkiaThemeSwitch } from "react-native-skia-catalog";
+import { ThemeSwitch } from "react-native-skia-catalog";
 
-const AnimatedSwitchScreen = () => (
-  <View style={styles.skiaThemeSwitchView}>
-    <SkiaThemeSwitch />
+const ThemeSwitchScreen = () => (
+  <View style={styles.themeSwitchView}>
+    <ThemeSwitch />
   </View>
 );
 
 const styles = StyleSheet.create({
-  skiaThemeSwitchView: {
+  themeSwitchView: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
   },
 });
 
-export default AnimatedSwitchScreen;
+export default ThemeSwitchScreen;
 ```
 
 #### Custom Usage
@@ -39,11 +39,11 @@ export default AnimatedSwitchScreen;
 ```jsx
 import React from "react";
 import { StyleSheet, View } from "react-native";
-import { SkiaThemeSwitch } from "react-native-skia-catalog";
+import { ThemeSwitch } from "react-native-skia-catalog";
 
-const AnimatedSwitchScreen = () => (
-  <View style={styles.skiaThemeSwitchView}>
-    <SkiaThemeSwitch
+const ThemeSwitchScreen = () => (
+  <View style={styles.themeSwitchView}>
+    <ThemeSwitch
       size={340}
       lightThemeColor={`#59abdd`}
       darkThemeColor={`#0f1341`}
@@ -52,22 +52,20 @@ const AnimatedSwitchScreen = () => (
 );
 
 const styles = StyleSheet.create({
-  skiaThemeSwitchView: {
+  themeSwitchView: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
   },
 });
 
-export default AnimatedSwitchScreen;
+export default ThemeSwitchScreen;
 ```
 
 #### 🎬 Custom Usage Preview
 
 ---
 
-|              Animated Switch              |
-| :---------------------------------------: |
 | ![alt tag](/assets/CustomThemeSwitch.gif) |
 
 ---

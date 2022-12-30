@@ -10,21 +10,25 @@ import {
   useTouchHandler,
 } from "@shopify/react-native-skia";
 import { useState } from "react";
-import type { AimatedProps } from "../ThemeSwitchTypes";
+import type { UseThemeSwitchProps } from "../ThemeSwitchTypes";
 
-const useAnimatedSwitch = ({
+const useThemeSwitch = ({
   rotate,
   onToggle,
   shadowCircleRotate,
   lightThemeColor,
   darkThemeColor,
   size,
-}: AimatedProps) => {
+}: UseThemeSwitchProps) => {
   const [lightTheme, setLightTheme] = useState(true);
   const [shadowCircle, setShadowCircle] = useState(true);
 
   //rectanglePath of switch
-  const rectanglePath = rrect(rect(0, 0, size, size/2.3), size / 3.75, size / 3.75);
+  const rectanglePath = rrect(
+    rect(0, 0, size, size / 2.3),
+    size / 3.75,
+    size / 3.75
+  );
 
   const initialValue = 0;
   const darktheme = size / 1.77;
@@ -157,4 +161,4 @@ const useAnimatedSwitch = ({
   };
 };
 
-export default useAnimatedSwitch;
+export default useThemeSwitch;
