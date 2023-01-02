@@ -3,7 +3,11 @@ import React from "react";
 import { Colors } from "../../../theme";
 import type { GridPropsType } from "./GridTypes";
 
-const Grid = ({ size, canvasWidth, gridColor }: GridPropsType): JSX.Element => {
+const Grid = ({
+  size,
+  canvasWidth,
+  gridColor,
+}: GridPropsType): React.ReactElement => {
   const squareVerticalCount = 8; // Number vertical square
   const squareContainerSize = size / squareVerticalCount; // Per square size
   const gridSize = 2;

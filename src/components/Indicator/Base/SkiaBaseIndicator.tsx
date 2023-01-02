@@ -10,7 +10,7 @@ import { useSkiaBaseIndicator } from "./hooks";
 const SkiaBaseIndicator = ({
   count,
   ...rest
-}: SkiaBaseIndicatorPropsType): JSX.Element => {
+}: SkiaBaseIndicatorPropsType): React.ReactElement => {
   const { renderChildComponent }: SkiaBaseIndicatorHookReturnType =
     useSkiaBaseIndicator({ count, ...rest });
 

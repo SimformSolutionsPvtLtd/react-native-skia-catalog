@@ -1,6 +1,6 @@
-import { BlendColor, Group, ImageSVG, Paint } from '@shopify/react-native-skia';
-import React from 'react';
-import type { SkiaHeartProps } from './SkiaHeartTypes';
+import { BlendColor, Group, ImageSVG, Paint } from "@shopify/react-native-skia";
+import React from "react";
+import type { SkiaHeartProps } from "./SkiaHeartTypes";
 
 const SkiaHeart = ({
   opacityHeart,
@@ -8,15 +8,16 @@ const SkiaHeart = ({
   scaleHeart,
   halfSize,
   svgHeart,
-}: SkiaHeartProps) => (
+}: SkiaHeartProps): React.ReactElement => (
   <Group
     layer={
       <Paint opacity={opacityHeart}>
-        <BlendColor color={heartColor} mode='srcIn' />
+        <BlendColor color={heartColor} mode="srcIn" />
       </Paint>
     }
     transform={scaleHeart}
-    origin={{ x: halfSize, y: halfSize }}>
+    origin={{ x: halfSize, y: halfSize }}
+  >
     <ImageSVG
       svg={svgHeart}
       x={halfSize - halfSize / 2}

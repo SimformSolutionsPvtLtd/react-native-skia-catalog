@@ -38,6 +38,8 @@ export default WirelessChargerScreen;
 
 #### Custom Usage
 
+---
+
 ```jsx
 import React from "react";
 import { StyleSheet, View } from "react-native";
@@ -65,22 +67,20 @@ const styles = StyleSheet.create({
 export default WirelessCharger;
 ```
 
-##### Custom Usage Preview
-
-![alt tag](/assets/CustomWirelessCharger.gif)
+#### 🎬 Custom Usage Preview
 
 ---
+
+![alt tag](/assets/CustomWirelessCharger.gif)
 
 #### Properties
 
 | Props            | Default | Type   | Description                      |
 | :--------------- | :------ | :----- | :------------------------------- |
-| size             | 350     | number | `size` of `WirelessCharger`      |
-| outerCircleColor | #513788 | string | `Color` of Outer `small circles` |
-| wifiWaveColor    | #D979CA | string | `Color` of the `WifiWaves`       |
-| thunderColor     | #ffe767 | string | `Color` the `thunder Sign`       |
-
----
+| size             | 350     | number | `Size` of `WirelessCharger`      |
+| outerCircleColor | #513788 | string | `Color` of Outer `small-circles` |
+| wifiWaveColor    | #D979CA | string | `Color` of the `wifi-waves`      |
+| thunderColor     | #ffe767 | string | `Color` of the `thunder-sign`    |
 
 #### 🎬 Preview Example
 

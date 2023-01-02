@@ -12,7 +12,7 @@ const FollowUpHeartRate = ({
   canvasWidth,
   pulseWidth,
   canvasVerticalMidPoint,
-}: FollowUpHeartRatePropsType): JSX.Element => {
+}: FollowUpHeartRatePropsType): React.ReactElement => {
   const {
     secondaryPulseStartingRate,
     primaryPulseStartingRate,

@@ -14,7 +14,7 @@ import { useRenderIndicator } from "./hooks";
 const RenderIndicator = ({
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const {
     cx,
     cy,
@@ -53,7 +53,7 @@ const SkiaMaterialIndicator = ({
   trackWidth,
   direction,
   ...rest
-}: SkiaMaterialIndicatorPropsType): JSX.Element => {
+}: SkiaMaterialIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

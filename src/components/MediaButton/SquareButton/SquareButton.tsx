@@ -11,7 +11,7 @@ const SquareButton = ({
   pulseOpacity,
   canvasCentre,
   buttonStartingPoint,
-}: SquareButtonPropsType) => {
+}: SquareButtonPropsType): React.ReactElement => {
   return (
     <>
       {!pulseDisable && (

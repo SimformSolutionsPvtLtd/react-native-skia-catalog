@@ -14,7 +14,7 @@ import { useRenderIndicator } from "./hooks";
 const RenderIndicator = ({
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const { cx, cy, r, transform, opacityLocal }: RenderIndicatorHookReturnType =
     useRenderIndicator({ color, ...rest });
 
@@ -34,7 +34,7 @@ const SkiaPulseIndicator = ({
   progressDuration,
   color,
   ...rest
-}: SkiaPulseIndicatorPropsType): JSX.Element => {
+}: SkiaPulseIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

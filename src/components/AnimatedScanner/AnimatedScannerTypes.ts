@@ -19,7 +19,7 @@ interface UseAnimatedScannerReturnType {
 interface AnimatedScannerPropTypes {
   stopZooming: boolean;
   initialZoomScale: number;
-  height: Range<100, 341>;
+  height: Range<100, 351>;
   zoomingDelay: number;
   borderColor: string;
   strokeColor: string;

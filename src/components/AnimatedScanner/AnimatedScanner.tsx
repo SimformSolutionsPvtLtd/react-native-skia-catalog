@@ -17,7 +17,7 @@ const AnimatedScanner = ({
   borderRadius = 5,
   borderWidth = 5,
   imageSource,
-}: Partial<AnimatedScannerPropTypes>) => {
+}: Partial<AnimatedScannerPropTypes>): React.ReactElement => {
   const {
     verticalTransform,
     strokeStartPoint,

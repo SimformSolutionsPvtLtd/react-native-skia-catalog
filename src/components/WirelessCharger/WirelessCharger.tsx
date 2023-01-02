@@ -16,7 +16,7 @@ const WirelessCharger = ({
   outerCircleColor = Colors.dodgerBlue,
   wifiWaveColor = Colors.silver,
   thunderColor = Colors.tangerineYellow,
-}: Partial<WireLessChargerProps>) => {
+}: Partial<WireLessChargerProps>): React.ReactElement => {
   const halfSize = size / 2;
 
   const {
@@ -48,7 +48,8 @@ const WirelessCharger = ({
       style={{
         height: size,
         width: size,
-      }}>
+      }}
+    >
       <MainCircle
         {...{
           size,

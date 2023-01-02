@@ -1,5 +1,5 @@
 import {StyleSheet} from 'react-native';
-import {Metrics} from '../../../theme';
+import {Colors, Metrics} from '../../../theme';
 
 const {moderateScale, verticalScale, horizontalScale} = Metrics;
 
@@ -23,6 +23,7 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     letterSpacing: 1,
     alignSelf: 'flex-start',
+    color: Colors.black,
   },
   customMediaButtonContainer: {
     marginTop: verticalScale(5),

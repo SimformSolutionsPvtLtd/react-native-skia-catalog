@@ -19,7 +19,7 @@ const Notification = ({
   size = 150,
   notificationCount = 1,
   color = Colors.lightGreen,
-}: NotificationPropsType) => {
+}: NotificationPropsType): React.ReactElement => {
   const {
     circleRadius,
     circleStrokeWidth,

@@ -22,7 +22,7 @@ const SkiaIndicator = ({
   style,
   onTouch,
   ...rest
-}: SkiaIndicatorPropsType): JSX.Element => {
+}: SkiaIndicatorPropsType): React.ReactElement => {
   return (
     <Canvas
       style={StyleSheet.flatten([

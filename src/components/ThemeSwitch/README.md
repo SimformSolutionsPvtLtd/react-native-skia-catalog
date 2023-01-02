@@ -12,19 +12,21 @@
 
 #### Default Usage
 
+---
+
 ```jsx
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { ThemeSwitch } from "react-native-skia-catalog";
 
 const ThemeSwitchScreen = () => (
-  <View style={styles.themeSwitchView}>
+  <View style={styles.container}>
     <ThemeSwitch />
   </View>
 );
 
 const styles = StyleSheet.create({
-  themeSwitchView: {
+  container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
@@ -36,23 +38,25 @@ export default ThemeSwitchScreen;
 
 #### Custom Usage
 
+---
+
 ```jsx
 import React from "react";
 import { StyleSheet, View } from "react-native";
 import { ThemeSwitch } from "react-native-skia-catalog";
 
 const ThemeSwitchScreen = () => (
-  <View style={styles.themeSwitchView}>
+  <View style={styles.container}>
     <ThemeSwitch
       size={340}
-      lightThemeColor={`#59abdd`}
-      darkThemeColor={`#0f1341`}
+      lightThemeColor={"#59abdd"}
+      darkThemeColor={"#0f1341"}
     />
   </View>
 );
 
 const styles = StyleSheet.create({
-  themeSwitchView: {
+  container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
@@ -66,18 +70,16 @@ export default ThemeSwitchScreen;
 
 ---
 
-| ![alt tag](/assets/CustomThemeSwitch.gif) |
-
----
+![alt tag](/assets/CustomThemeSwitch.gif)
 
 #### Properties
 
-| Props           | Default   | Type                     | Description                                                    |
-| :-------------- | :-------- | :----------------------- | :------------------------------------------------------------- |
-| size            | 300       | number                   | `Size` of `Switch`.                                            |
-| lightThemeColor | #59abdd   | string                   | `Switch color` when it's `OFF`.                                |
-| darkThemeColor  | #0f1341   | string                   | `Switch color` when it's `ON`.                                 |
-| onToggle        | undefined | (status: string) => void | onToggle to get the `value of Switch` either `light` or `dark` |
+| Props           | Default  | Type                     | Description                                                                                               |
+| :-------------- | :------- | :----------------------- | :-------------------------------------------------------------------------------------------------------- |
+| size            | 300      | number                   | `Size` of `Switch`.                                                                                       |
+| lightThemeColor | #59abdd  | string                   | `Switch color` while the mode is `OFF`.                                                                   |
+| darkThemeColor  | #0f1341  | string                   | `Switch color` while the mode is `ON`.                                                                    |
+| onToggle        | () => {} | (status: string) => void | `Callback` function that gives the `value of Switch` either `light` or `dark` in parameter based on mode. |
 
 #### 🎬 Preview Example
 

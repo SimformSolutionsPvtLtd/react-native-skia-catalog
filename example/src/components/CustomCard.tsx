@@ -3,7 +3,11 @@ import {TouchableOpacity} from 'react-native';
 import {CustomCardProps} from './types';
 import styles from './styles/CustomCardStyles';
 
-const CustomCard = ({children, style, onPress}: CustomCardProps) => {
+const CustomCard = ({
+  children,
+  style,
+  onPress,
+}: CustomCardProps): React.ReactElement => {
   return (
     <TouchableOpacity
       style={[styles.card, style]}

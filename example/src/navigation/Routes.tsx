@@ -18,7 +18,7 @@ import {
 
 const Stack = createNativeStackNavigator();
 
-const Routes = () => {
+const Routes = (): React.ReactElement => {
   return (
     <NavigationContainer>
       <Stack.Navigator initialRouteName={NavigationStrings.HOME}>

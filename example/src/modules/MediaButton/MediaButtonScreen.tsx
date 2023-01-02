@@ -8,14 +8,14 @@ import {NavProps} from '../../navigation/types';
 import {Colors} from '../../theme';
 import styles from './styles/styles';
 
-const MediaButtonScreen = () => {
+const MediaButtonScreen = (): React.ReactElement => {
   const navigation = useNavigation<NavProps>();
 
   return (
     <View style={styles.screen}>
       <CustomHeader
         title={Strings.MEDIA_BUTTON}
-        isBackEnabled={true}
+        isBackEnabled
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.simpleMediaButtonPulseStyle}>

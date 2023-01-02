@@ -6,16 +6,16 @@ import {CustomHeader} from '../../components';
 import {Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
 import {Colors} from '../../theme';
-import styles from './styles';
+import styles from './styles/styles';
 
-const WalletScreen = () => {
+const WalletScreen = (): React.ReactElement => {
   const navigation = useNavigation<NavProps>();
 
   return (
     <View style={styles.screen}>
       <CustomHeader
         title={Strings.WALLET}
-        isBackEnabled={true}
+        isBackEnabled
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>

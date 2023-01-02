@@ -9,7 +9,7 @@ const Strike = ({
   getEndingCoordinate,
   primaryLineColor,
   singleLineStrokeWidth,
-}: StrikePropsType) => {
+}: StrikePropsType): React.ReactElement => {
   return (
     <>
       <Line

@@ -36,7 +36,9 @@ const style = StyleSheet.create({
 export default WalletScreen;
 ```
 
-#### 🎬 Custom Usage
+#### Custom Usage
+
+---
 
 ```jsx
 import { StyleSheet, View } from "react-native";

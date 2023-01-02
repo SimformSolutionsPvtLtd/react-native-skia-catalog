@@ -9,7 +9,7 @@ const CircularButton = ({
   color,
   pulseOpacity,
   canvasCentre,
-}: CircularButtonPropsType) => {
+}: CircularButtonPropsType): React.ReactElement => {
   const circleRadius: number = size / 2;
 
   return (

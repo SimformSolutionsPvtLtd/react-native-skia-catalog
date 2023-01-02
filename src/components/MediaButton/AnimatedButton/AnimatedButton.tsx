@@ -19,7 +19,7 @@ const AnimatedButton = ({
   raiseOpacity,
   pauseButton,
   canvasCentre,
-}: AnimatedButtonPropsType) => {
+}: AnimatedButtonPropsType): React.ReactElement => {
   return (
     <Group
       transform={rotateButton}

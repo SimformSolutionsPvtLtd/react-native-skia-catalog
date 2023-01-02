@@ -26,7 +26,7 @@ const MediaButton: FC<Partial<MediaButtonPropsType>> = ({
   pulseEnd = 1,
   playImageSource = Images.play,
   pauseImageSource = Images.pause,
-}) => {
+}): React.ReactElement => {
   const {
     circularPulse,
     isPlayButton,

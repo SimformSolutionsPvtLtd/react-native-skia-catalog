@@ -19,7 +19,7 @@ const StrikeImage = ({
   source = Images.camera,
   strikeWidth,
   onChangeStrike = () => {},
-}: StrikeImagePropsType) => {
+}: StrikeImagePropsType): React.ReactElement => {
   const {
     getEndingCoordinate,
     image,

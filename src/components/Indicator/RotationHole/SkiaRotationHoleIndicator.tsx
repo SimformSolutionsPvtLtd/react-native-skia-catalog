@@ -15,7 +15,7 @@ const RenderIndicator = ({
   color,
   circleColor,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const {
     cx,
     cy,
@@ -58,7 +58,7 @@ const SkiaRotationHoleIndicator = ({
   trackWidth,
   direction,
   ...rest
-}: SkiaRotationHoleIndicatorPropsType): JSX.Element => {
+}: SkiaRotationHoleIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

@@ -14,8 +14,8 @@ const ThemeSwitch = ({
   lightThemeColor = Colors.kournikova,
   darkThemeColor = Colors.darkModerateViolet,
   size = 300,
-  onToggle,
-}: ThemeSwitchProps) => {
+  onToggle = () => {},
+}: ThemeSwitchProps): React.ReactElement => {
   //initial value for circle(moon)
   const rotate = useValue(0);
   //initial value for shadow circle
@@ -44,7 +44,8 @@ const ThemeSwitch = ({
         height: size / 2.3,
         width: size,
       }}
-      onTouch={touchHandler}>
+      onTouch={touchHandler}
+    >
       <Group clip={rectanglePath}>
         <Fill color={interpolateButtonColor} />
         <Circle

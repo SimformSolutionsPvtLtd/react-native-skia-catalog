@@ -2,7 +2,6 @@ import {useNavigation} from '@react-navigation/native';
 import React from 'react';
 import {View} from 'react-native';
 import {StrikeImage} from 'react-native-skia-catalog';
-import Images from '../../assets';
 import {CustomHeader} from '../../components';
 import {Strings} from '../../constants';
 import {NavProps} from '../../navigation/types';
@@ -20,12 +19,7 @@ const StrikeImageScreen = (): React.ReactElement => {
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>
-        <StrikeImage
-          size={300}
-          strikeWidth={55}
-          color={Colors.orange}
-          source={Images.camera}
-        />
+        <StrikeImage size={300} strikeWidth={55} color={Colors.orange} />
       </View>
     </View>
   );
