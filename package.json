@@ -48,7 +48,7 @@
     "chroma-js": "^2.4.2",
     "eslint": "^7.32.0",
     "eslint-plugin-simple-import-sort": "^7.0.0",
-    "husky": "^7.0.4",
+    "husky": "^8.0.2",
     "jest": "^27.4.7",
     "lint-staged": "^11.1.2",
     "metro-react-native-babel-preset": "^0.67.0",
