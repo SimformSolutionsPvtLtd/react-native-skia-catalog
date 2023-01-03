@@ -22,9 +22,9 @@ This custom animated skia component library provides multiple custom animated sk
 | :----------------------------------------: | :----------------------------------------------: | :-----------------------------------------------: | :-------------------------------------------: |
 |  ![alt tag](./assets/DefaultSkiaLike.gif)  |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |  ![alt tag](./assets/DefaultAnimatedScanner.gif)  |     ![alt tag](./assets/MediaButton.gif)      |
 
-| <div style = "width: 270px">HeartRate</div> | <div style = "width: 270px">WirelessCharger</div> |
-| :-----------------------------------------: | :-----------------------------------------------: |
-|     ![alt tag](./assets/HeartRate.gif)      |  ![alt tag](./assets/DefaultWirelessCharger.gif)  |
+| <div style = "width: 270px">HeartRate</div> | <div style = "width: 270px">WirelessCharger</div> | <div style = "width: 270px">SkiaCharging</div> |
+| :-----------------------------------------: | :-----------------------------------------------: | :-----------------------------------------------: |
+|     ![alt tag](./assets/HeartRate.gif)      |  ![alt tag](./assets/DefaultWirelessCharger.gif)  | ![alt tag](./assets/SkiaCharging.gif)  |
 
 ---
 
