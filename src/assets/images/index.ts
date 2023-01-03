@@ -4,4 +4,5 @@ export default {
   pdf: require("./pdf.png"),
   play: require("./play.png"),
   pause: require("./pause.png"),
+  flashImage: require("./flashImage.png"),
 };

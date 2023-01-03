@@ -10,4 +10,5 @@ export default {
   MEDIA_BUTTON: 'Media Button',
   HEART_RATE: 'Heart Rate',
   WIRELESS_CHARGER: 'Wireless Charger',
+  SKIA_CHARGING: 'Skia Charging'
 };

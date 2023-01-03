@@ -14,6 +14,7 @@ import {
   ThemeSwitchScreen,
   WalletScreen,
   WirelessChargerScreen,
+  SkiaChargingScreen,
 } from '../modules';
 
 const Stack = createNativeStackNavigator();
@@ -75,6 +76,11 @@ const Routes = (): React.ReactElement => {
         <Stack.Screen
           name={NavigationStrings.WIRELESS_CHARGER}
           component={WirelessChargerScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.SKIA_CHARGING}
+          component={SkiaChargingScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

@@ -15,4 +15,5 @@ export default {
   WIRELESS_CHARGER: 'Wireless Charger',
   DEFAULT_HEARTRATE: 'Default HeartRate',
   FOLLOWUP_HEARTRATE: 'FollowUp HeartRate',
+  SKIA_CHARGING: 'Skia Charging',
 };
