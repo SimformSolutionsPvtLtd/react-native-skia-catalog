@@ -1,13 +1,35 @@
 import {
   interpolate,
+  rect,
+  Skia,
   useComputedValue,
   useTiming,
-} from '@shopify/react-native-skia';
-import type { UseWirelessChargerProps } from '../WirelessChargerTypes';
+} from "@shopify/react-native-skia";
+import { getLineToPath, getThunderPoints } from "../../../utils";
+import type { UseWirelessChargerProps } from "../WirelessChargerTypes";
 
 const useWirelessCharger = ({ size }: UseWirelessChargerProps) => {
   const exploreRadiusOfInnerCircle = -size * 0.386;
   const exploreRadiusOfOuterCircle = -size * 0.454;
+
+  const path = Skia.Path.Make();
+  path.moveTo(size * 0.564434, size * 0.313165);
+  const thunderPoints = getThunderPoints(size);
+  const thunderPath = getLineToPath(path, thunderPoints);
+
+  const innerCurve = Skia.Path.Make();
+  innerCurve.addArc(
+    rect(size / 3.211, size / 3.2407, size / 2.6, size / 2.6),
+    0,
+    360
+  );
+
+  const outerCurve = Skia.Path.Make();
+  outerCurve.addArc(
+    rect(size / 3.93258, size / 3.93258, size / 2, size / 2),
+    0,
+    360
+  );
 
   const offset = useTiming({ from: 0, to: 1, loop: true }, { duration: 12000 });
   const outerOffset = useTiming(
@@ -68,6 +90,9 @@ const useWirelessCharger = ({ size }: UseWirelessChargerProps) => {
     outerSignalOpacity,
     exploreRadiusOfInnerCircle,
     exploreRadiusOfOuterCircle,
+    innerCurve,
+    outerCurve,
+    thunderPath,
   };
 };
 

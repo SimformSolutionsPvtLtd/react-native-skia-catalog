@@ -24,9 +24,12 @@ const WirelessCharger = ({
     outerSmallCircleAnimation,
     circleAnimation,
     signalOpacity,
+    innerCurve,
     outerSignalOpacity,
     exploreRadiusOfOuterCircle,
     exploreRadiusOfInnerCircle,
+    outerCurve,
+    thunderPath,
   } = useWirelessCharger({ size });
 
   const getExploreCircles = ({ isOuter }: Partial<GetExploreCircleProps>) => {
@@ -57,8 +60,11 @@ const WirelessCharger = ({
           wifiWaveColor,
           thunderColor,
           circleAnimation,
-          signalOpacity,
           outerSignalOpacity,
+          signalOpacity,
+          innerCurve,
+          outerCurve,
+          thunderPath,
         }}
       />
       {getExploreCircles({ isOuter: false }).map((item) => (
