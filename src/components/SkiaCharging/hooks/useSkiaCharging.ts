@@ -2,10 +2,15 @@ import {
   interpolate,
   rect,
   rrect,
+  Skia,
   Transforms2d,
   useComputedValue,
   useTiming,
 } from "@shopify/react-native-skia";
+import {
+  getSkiaChargingThunderPath,
+  getSkiaChargingThunderPoints,
+} from "../../../utils";
 
 const useSkiaCharging = ({ size = 300 }) => {
   const rectenglePath = rrect(
@@ -18,6 +23,14 @@ const useSkiaCharging = ({ size = 300 }) => {
     rect(size / 4.33, size / 3.25, size / 1.95, size / 4.88),
     size / 19.5,
     size / 9.75
+  );
+
+  const path = Skia.Path.Make();
+  path.moveTo(size * 0.52440733, size * 0.47937533);
+  const skiaChargingThunderPoints = getSkiaChargingThunderPoints(size);
+  const thunderPath = getSkiaChargingThunderPath(
+    path,
+    skiaChargingThunderPoints
   );
 
   const offset = useTiming({ from: 0, to: 1 }, { duration: 2000 });
@@ -85,7 +98,7 @@ const useSkiaCharging = ({ size = 300 }) => {
   }, [offset]);
 
   const opacityValue = useComputedValue(() => {
-    return interpolate(offset.current, [0,0.32,0.36, 1], [0,0,1,1]);
+    return interpolate(offset.current, [0, 0.32, 0.36, 1], [0, 0, 1, 1]);
   }, [offset]);
 
   const chargingIconMovement = useComputedValue(() => {
@@ -112,6 +125,7 @@ const useSkiaCharging = ({ size = 300 }) => {
     circlePath,
     shadowPath,
     offset,
+    thunderPath,
   };
 };
 

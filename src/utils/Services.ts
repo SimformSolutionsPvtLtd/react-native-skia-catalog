@@ -9,7 +9,11 @@ import type {
   PulsePathParams,
   PulsePointsParams,
 } from '../components/HeartRate/HeartRateTypes';
-import type { Coordinates } from '../types';
+import type {
+  Coordinates,
+  CoordinatesOfCubicTo,
+  CoordinatesOfThunder,
+} from '../types';
 
 const setColors = (value: number, colors: string[], input?: number[]) =>
   interpolateColors(value, input ?? [0, 1], colors);
@@ -180,6 +184,125 @@ const getLineToPath = (
   return path;
 };
 
+const getCubicToPath = (
+  path: SkPath,
+  pathPoints: Array<CoordinatesOfCubicTo>
+): SkPath => {
+  for (let i = 0; i < pathPoints.length; i++) {
+    path.cubicTo(
+      pathPoints[i].cpx1,
+      pathPoints[i].cpy1,
+      pathPoints[i].cpx2,
+      pathPoints[i].cpy2,
+      pathPoints[i].x,
+      pathPoints[i].y
+    );
+  }
+  return path;
+};
+
+const getSkiaChargingThunderPoints = (size: number) => [
+  { x: size * 0.392449333, y: size * 0.645940667 },
+  {
+    cpx1: size * 0.39061333,
+    cpy1: size * 0.65503733,
+    cpx2: size * 0.39108133,
+    cpy2: size * 0.65852933,
+    x: size * 0.39352933,
+    y: size * 0.66038333,
+  },
+  {
+    cpx1: size * 0.39448333,
+    cpy1: size * 0.661121333,
+    cpx2: size * 0.39567133,
+    cpy2: size * 0.66151733,
+    x: size * 0.396877333,
+    y: size * 0.66151733,
+  },
+  { x: size * 0.48559933, y: size * 0.66151733 },
+  { x: size * 0.46527733, y: size * 0.77525933 },
+  {
+    cpx1: size * 0.46479133,
+    cpy1: size * 0.77790533,
+    cpx2: size * 0.4698886667,
+    cpy2: size * 0.777092,
+    x: size * 0.4725346667,
+    y: size * 0.77756,
+  },
+  {
+    cpx1: size * 0.47100133,
+    cpy1: size * 0.78121733,
+    cpx2: size * 0.47281933,
+    cpy2: size * 0.78049733,
+    x: size * 0.47393533,
+    y: size * 0.77902133,
+  },
+  { x: size * 0.60621733, y: size * 0.60238733 },
+  {
+    cpx1: size * 0.6080533,
+    cpy1: size * 0.59995733,
+    cpx2: size * 0.60756733,
+    cpy2: size * 0.59646533,
+    x: size * 0.60510133,
+    y: size * 0.59462933,
+  },
+  {
+    cpx1: size * 0.60414733,
+    cpy1: size * 0.59392733,
+    cpx2: size * 0.60297733,
+    cpy2: size * 0.5935133,
+    x: size * 0.60177133,
+    y: size * 0.5935133,
+  },
+  { x: size * 0.51412933, y: size * 0.5935133 },
+  { x: size * 0.53304733, y: size * 0.48313733 },
+  {
+    cpx1: size * 0.53351533,
+    cpy1: size * 0.48049133,
+    cpx2: size * 0.5317333,
+    cpy2: size * 0.47797133,
+    x: size * 0.5324206667,
+    y: size * 0.474188,
+  },
+  {
+    cpx1: size * 0.52881733,
+    cpy1: size * 0.47748533,
+    cpx2: size * 0.52852933,
+    cpy2: size * 0.47744933,
+    x: size * 0.52825933,
+    y: size * 0.47744933,
+  },
+  {
+    cpx1: size * 0.52676533,
+    cpy1: size * 0.47744933,
+    cpx2: size * 0.5253433,
+    cpy2: size * 0.47815133,
+    x: size * 0.52440733,
+    y: size * 0.47937533,
+  },
+];
+
+const getSkiaChargingThunderPath = (
+  path: SkPath,
+  pathPoints: Array<CoordinatesOfThunder>
+) => {
+  for (let i = 0; i < pathPoints.length; i++) {
+    if ([0, 3, 4, 7, 10, 11].includes(i)) {
+      path.lineTo(pathPoints[i].x, pathPoints[i].y);
+    } else {
+      path.cubicTo(
+        pathPoints[i].cpx1 ?? 0,
+        pathPoints[i].cpy1 ?? 0,
+        pathPoints[i].cpx2 ?? 0,
+        pathPoints[i].cpy2 ?? 0,
+        pathPoints[i].x,
+        pathPoints[i].y
+      );
+    }
+  }
+  return path;
+};
+
 export {
   getSizeWithinRange,
   getLineCoordinate,
@@ -192,4 +315,7 @@ export {
   getThunderPoints,
   getStarPoints,
   getLineToPath,
+  getCubicToPath,
+  getSkiaChargingThunderPoints,
+  getSkiaChargingThunderPath,
 };
