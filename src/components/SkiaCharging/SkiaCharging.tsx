@@ -17,7 +17,6 @@ import { SquareCharging } from "./SquareCharging";
 import { Waves } from "./Waves";
 import { Wire } from "./Wire";
 
-const wavePath = Skia.SVG.MakeFromString(SVG.wavePath);
 const curvePathSvg = Skia.SVG.MakeFromString(SVG.wirePath);
 
 const SkiaCharging = ({
@@ -39,6 +38,7 @@ const SkiaCharging = ({
     wireTransform,
     opacityValue,
     thunderPath,
+    wavePath,
   } = useAnimatedSwitch({ size });
 
   return (
