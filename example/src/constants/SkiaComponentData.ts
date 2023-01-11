@@ -57,4 +57,9 @@ export const SkiaComponentData = (navigation: NavProps) => [
     name: 'Skia Charging',
     screen: () => navigation.navigate(NavigationStrings.SKIA_CHARGING),
   },
+  {
+    id: 12,
+    name: 'Animated Checkmark',
+    screen: () => navigation.navigate(NavigationStrings.ANIMATEDCHECKMARK),
+  },
 ];

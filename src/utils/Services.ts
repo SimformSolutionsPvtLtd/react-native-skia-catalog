@@ -1,15 +1,15 @@
 import {
   interpolate,
-  SkPoint,
-  vec,
   interpolateColors,
   SkPath,
-} from "@shopify/react-native-skia";
+  SkPoint,
+  vec,
+} from '@shopify/react-native-skia';
 import type {
-  Coordinates,
   PulsePathParams,
   PulsePointsParams,
-} from "../components/HeartRate/HeartRateTypes";
+} from '../components/HeartRate/HeartRateTypes';
+import type { Coordinates } from '../types';
 
 const setColors = (value: number, colors: string[], input?: number[]) =>
   interpolateColors(value, input ?? [0, 1], colors);
@@ -158,6 +158,18 @@ const getThunderPoints = (size: number) => [
   { x: size * 0.564434, y: size * 0.313165 },
 ];
 
+const getStarPoints = (size: number): Array<Coordinates> => [
+  { x: size * 0.2046, y: size * 0.1089 },
+  { x: size * 0.321915, y: size * 0.114015 },
+  { x: size * 0.2211, y: size * 0.1815 },
+  { x: size * 0.258687, y: size * 0.298485 },
+  { x: size * 0.165, y: size * 0.2343 },
+  { x: size * 0.071313, y: size * 0.298485 },
+  { x: size * 0.1056, y: size * 0.1815 },
+  { x: size * 0.008085, y: size * 0.114015 },
+  { x: size * 0.1254, y: size * 0.1122 },
+];
+
 const getLineToPath = (
   path: SkPath,
   pathPoints: Array<Coordinates>
@@ -177,6 +189,7 @@ export {
   getPulsePath,
   getDefaultPulsePoints,
   getFollowUpPulsePoints,
-  getLineToPath,
   getThunderPoints,
+  getStarPoints,
+  getLineToPath,
 };
