@@ -1,20 +1,8 @@
-import {
-  BlendColor,
-  Circle,
-  Group,
-  ImageSVG,
-  Paint,
-  Skia,
-  vec,
-} from "@shopify/react-native-skia";
+import { Circle, Group, Path, vec } from "@shopify/react-native-skia";
 import React from "react";
-import { SVG } from "../../../assets";
 import { InnerWifiSignal } from "../InnerWifiSignal";
 import { OuterWifiSignal } from "../OuterWifiSignal";
 import type { MainCircleProps } from "./MainCircleTypes";
-
-const thunderSvg = Skia.SVG.MakeFromString(SVG.thunder);
-const commonCurveSVG = Skia.SVG.MakeFromString(SVG.mediumCurve);
 
 const MainCircle = ({
   size,
@@ -24,6 +12,9 @@ const MainCircle = ({
   circleAnimation,
   signalOpacity,
   outerSignalOpacity,
+  innerCurve,
+  outerCurve,
+  thunderPath,
 }: MainCircleProps): React.ReactElement => {
   return (
     <>
@@ -35,29 +26,13 @@ const MainCircle = ({
         opacity={0.55}
       />
       <Group transform={circleAnimation} origin={vec(halfSize, halfSize)}>
-        {thunderSvg && (
-          <Group
-            layer={
-              <Paint>
-                <BlendColor color={thunderColor} mode="srcIn" />
-              </Paint>
-            }
-          >
-            <ImageSVG
-              svg={thunderSvg}
-              x={size * 0.3143}
-              y={size * 0.3143}
-              width={size * 0.4}
-              height={size * 0.4}
-            />
-          </Group>
-        )}
+        <Path path={thunderPath} color={thunderColor} />
         <InnerWifiSignal
           {...{
             size,
             wifiWaveColor,
             opacityOfWifiWave: signalOpacity,
-            curveSvg: commonCurveSVG,
+            curvePath: innerCurve,
           }}
         />
         <OuterWifiSignal
@@ -65,7 +40,7 @@ const MainCircle = ({
             size,
             wifiWaveColor,
             opacityOfWifiWave: outerSignalOpacity,
-            curveSvg: commonCurveSVG,
+            curvePath: outerCurve,
           }}
         />
       </Group>

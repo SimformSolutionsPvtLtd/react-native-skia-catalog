@@ -148,6 +148,26 @@ const getPulsePath = ({
   return path;
 };
 
+const getThunderPoints = (size: number) => [
+  { x: size * 0.460754, y: size * 0.313165 },
+  { x: size * 0.401508, y: size * 0.490902 },
+  { x: size * 0.52, y: size * 0.490902 },
+  { x: size * 0.460754, y: size * 0.698262 },
+  { x: size * 0.638491, y: size * 0.431657 },
+  { x: size * 0.52, y: size * 0.431657 },
+  { x: size * 0.564434, y: size * 0.313165 },
+];
+
+const getLineToPath = (
+  path: SkPath,
+  pathPoints: Array<Coordinates>
+): SkPath => {
+  for (let i = 0; i < pathPoints.length; i++) {
+    path.lineTo(pathPoints[i].x, pathPoints[i].y);
+  }
+  return path;
+};
+
 export {
   getSizeWithinRange,
   getLineCoordinate,
@@ -157,4 +177,6 @@ export {
   getPulsePath,
   getDefaultPulsePoints,
   getFollowUpPulsePoints,
+  getLineToPath,
+  getThunderPoints,
 };
