@@ -1,6 +1,6 @@
 # Animated CheckMark
 
-The `AnimatedCheckMark` component can be used to provide a delightful experience on success of any particular task.
+The `AnimatedCheckMark` component can be used to provide a delightful experience on `success` of any `particular task`.
 
 - `AnimatedCheckMark` component has three different variants: `Simple`, `Fade` and `Circular`.
 
@@ -80,22 +80,22 @@ export default AnimatedCheckMarkScreen;
 
 | Props               | Default  | Type                           | Description                                                                                               |
 | :------------------ | :------- | :----------------------------- | :-------------------------------------------------------------------------------------------------------- |
-| checkMarkType       | "Simple" | "Simple" / "Fade" / "Circular" | `Type` of `AnimatedCheckMark`. CheckMarkEnum can be used to specify the type. Ex. CheckMarkEnum.CIRCULAR. |
+| checkMarkType       | "Simple" | "Simple" / "Fade" / "Circular" | `Type` of `AnimatedCheckMark`. CheckMarkEnum can be used to specify the `type`. Ex. `CheckMarkEnum`.`CIRCULAR`. |
 | size                | 200      | number                         | `Size` of `AnimatedCheckMark`.                                                                            |
 | speed               | 2500     | number                         | `Speed` of component `Animation`.                                                                         |
-| circleOneColor      | #0288D1  | string                         | `Color` of outer circle.                                                                                  |
-| circleTwoColor      | #0288D1  | string                         | `Color` of inner circle.                                                                                  |
+| circleOneColor      | #0288D1  | string                         | `Color` of `outer` circle.                                                                                  |
+| circleTwoColor      | #0288D1  | string                         | `Color` of `inner` circle.                                                                                  |
 | centerImageSource   | -        | ImageSourcePropType / string   | `Source` of center `Image`.                                                                               |
-| centerImageColor    | #FFFFFF  | string                         | Center image color.                                                                                       |
-| circleParticleColor | #0288D1  | string                         | `Color` of circle particle.                                                                               |
-| starParticleColor   | #0288D1  | string                         | `Color` of star particle.                                                                                 |
+| centerImageColor    | #FFFFFF  | string                         | `Color` of center `Image`.                                                                                |
+| circleParticleColor | #0288D1  | string                         | `Color` of `circle` particle.                                                                             |
+| starParticleColor   | #0288D1  | string                         | `Color` of `star` particle.                                                                               |
 | showParticle        | false    | boolean                        | It decides whether to `Show` or `Hide` particles.                                                         |
 | multiColor          | false    | boolean                        | It decides whether to `true` or `false` of the `multiColor` border color of `Circular` type `Checkmark`.  |
-| topBorderColor      | #EC407A  | string                         | Border top color.                                                                                         |
-| rightBorderColor    | #0288D1  | string                         | Border right color.                                                                                       |
-| bottomBorderColor   | #FFAC1C  | string                         | Border bottom color.                                                                                      |
-| leftBorderColor     | #69C7FF  | string                         | Border left color.                                                                                        |
-| borderColor         | #0288D1  | string                         | Whole border color.                                                                                       |
+| topBorderColor      | #EC407A  | string                         | Border `top` color.                                                                                       |
+| rightBorderColor    | #0288D1  | string                         | Border `right` color.                                                                                     |
+| bottomBorderColor   | #FFAC1C  | string                         | Border `bottom` color.                                                                                    |
+| leftBorderColor     | #69C7FF  | string                         | Border `left` color.                                                                                      |
+| borderColor         | #0288D1  | string                         | Whole `Border` color.                                                                                     |
 
 #### 🎬 Preview Example
 

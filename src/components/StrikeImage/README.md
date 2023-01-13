@@ -1,6 +1,6 @@
 # Strike Image
 
-The `StrikeImage` component animates a strike over any image to indicate on/off states.
+The `StrikeImage` component animates a strike over any image to indicate `on/off` states.
 
 #### 🎬 Preview
 

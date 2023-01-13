@@ -1,6 +1,6 @@
 # Animated Wallet
 
-`AnimatedWallet` component can be used to provide a fascinating experience of wallet with animated cards.
+`AnimatedWallet` component can be used to provide a fascinating experience of `wallet` with `animated cards`.
 
 #### 🎬 Preview
 

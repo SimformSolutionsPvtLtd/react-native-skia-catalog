@@ -1,6 +1,6 @@
 # SkiaCharging
 
-`SkiaCharging` component can be utilised to provide a charging animation whenever a user charges a device.
+`SkiaCharging` component can be utilised to provide a charging animation whenever a user `charges` a `device`.
 
 #### 🎬 Preview
 
@@ -11,6 +11,8 @@
 | ![alt tag](/assets/SkiaCharging.gif) |
 
 #### Default Usage
+
+---
 
 ```jsx
 import React from "react";
@@ -33,15 +35,9 @@ const styles = StyleSheet.create({
 export default SkiaCharging;
 ```
 
-#### 🎬 Custom Usage Preview
+#### Custom Usage
 
 ---
-
-|                   SkiaCharging                    |
-| :-----------------------------------------------: |
-| ![alt tag](/assets/CustomUsageOfSkiaCharging.gif) |
-
-### Custom Usage
 
 ```jsx
 import React from "react";
@@ -70,15 +66,21 @@ const styles = StyleSheet.create({
 export default SkiaCharging;
 ```
 
+#### 🎬 Custom Usage Preview
+
+---
+
+![alt tag](/assets/CustomUsageOfSkiaCharging.gif)
+
 #### Properties
 
-| Props           | Default     | Type   | Description                                                                                          |
-| :-------------- | :---------- | :----- | :--------------------------------------------------------------------------------------------------- |
-| size            | 300         | number | size of whole circle charger component                                                               |
-| backgroundColor | `#4f13c6`   | string | background color of circle                                                                           |
-| thunderColor    | `#5fc662`   | string | charging icon color.                                                                                 |
-| waveColor       | `#5fc662e6` | string | wave color(for better experience in wave you can pass color in rgba format or give opacity to color) |
-| adapterColor    | `#ffffff`   | string | for charging adapter color                                                                           |
+| Props           | Default     | Type   | Description                                                                                            |
+| :-------------- | :---------- | :----- | :----------------------------------------------------------------------------------------------------- |
+| size            | 300         | number | `Size` of whole circle charger component                                                               |
+| backgroundColor | `#4f13c6`   | string | `Color` of `circle`                                                                                    |
+| thunderColor    | `#5fc662`   | string | `Color` of the `thunder-sign`                                                                          |
+| waveColor       | `#5fc662e6` | string | `Wave` color(for better experience in wave you can `pass color` in `rgba` format or give `opacity` to `color`) |
+| adapterColor    | `#ffffff`   | string | `Color` of the `adapter`                                                                               |
 
 #### 🎬 Preview Example
 

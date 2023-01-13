@@ -28,29 +28,7 @@ This custom animated skia component library provides multiple custom animated sk
 
 ---
 
-## Installation
 
-##### 1. Install skia catalog
-
-```bash
-$ npm install react-native-skia-catalog
-# --- or ---
-$ yarn add react-native-skia-catalog
-```
-
-##### 2. Install required dependencies
-
-```bash
-$ npm install @shopify/react-native-skia
-# --- or ---
-$ yarn add @shopify/react-native-skia
-```
-
-##### 3. Install cocoapods in the ios project
-
-```bash
-cd ios && pod install
-```
 
 ## Components
 
@@ -119,6 +97,12 @@ cd ios && pod install
 ### XI. [AnimatedCheckMark](./src/components/AnimatedCheckMark)
 
 [More about AnimatedCheckMark component](./src/components/AnimatedCheckMark/README.md)
+
+---
+
+### XII. [SkiaCharging](./src/components/SkiaCharging/)
+
+[More about SkiaCharging component](./src/components/SkiaCharging/README.md)
 
 ---
 
