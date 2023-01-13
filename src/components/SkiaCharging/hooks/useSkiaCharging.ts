@@ -8,8 +8,10 @@ import {
   useTiming,
 } from "@shopify/react-native-skia";
 import {
+  getCubicPath,
   getSkiaChargingThunderPath,
   getSkiaChargingThunderPoints,
+  getWavePathPoints,
 } from "../../../utils";
 
 const useSkiaCharging = ({ size = 300 }) => {
@@ -35,7 +37,6 @@ const useSkiaCharging = ({ size = 300 }) => {
 
   const offset = useTiming({ from: 0, to: 1 }, { duration: 2000 });
 
-  //square transform animation for main charging adepter
   const squareTransform = useComputedValue<Transforms2d>(() => {
     return [
       {
@@ -48,7 +49,6 @@ const useSkiaCharging = ({ size = 300 }) => {
     ];
   }, [offset]);
 
-  //shadow transform
   const shadowTransform = useComputedValue<Transforms2d>(() => {
     return [
       {
@@ -79,7 +79,7 @@ const useSkiaCharging = ({ size = 300 }) => {
         translateY: interpolate(offset.current, [0.48, 1], [0, size / -2.6]),
       },
       {
-        translateX: interpolate(offset.current, [0.7, 1], [0, size / 5.57]),
+        translateX: interpolate(offset.current, [0.7, 1], [0, size / 3.5]),
       },
       { scaleX: 1.5 },
     ];
@@ -88,10 +88,10 @@ const useSkiaCharging = ({ size = 300 }) => {
   const waveTransformForLeft = useComputedValue(() => {
     return [
       {
-        translateY: interpolate(offset.current, [0.5, 1], [0, size / -2.6]),
+        translateY: interpolate(offset.current, [0.5, 1], [0, size / -2.65]),
       },
       {
-        translateX: interpolate(offset.current, [0.7, 1], [0, size / -2.78]),
+        translateX: interpolate(offset.current, [0.7, 1], [0, size / -2.58]),
       },
       { scaleX: 1.5 },
     ];
@@ -113,6 +113,11 @@ const useSkiaCharging = ({ size = 300 }) => {
     ];
   }, [offset]);
 
+  const initialWavePath = Skia.Path.Make();
+  initialWavePath.moveTo(size / 1.07776, size / 0.71038);
+  const wavePathPoints = getWavePathPoints(size);
+  const wavePath = getCubicPath(initialWavePath, wavePathPoints);
+
   return {
     chargingIconMovement,
     opacityValue,
@@ -126,6 +131,8 @@ const useSkiaCharging = ({ size = 300 }) => {
     shadowPath,
     offset,
     thunderPath,
+    wavePathPoints,
+    wavePath,
   };
 };
 

@@ -14,7 +14,7 @@ export interface Coordinates {
   x: number;
   y: number;
 }
-export type CoordinatesOfCubicTo = {
+export type CoordinatesOfCubic = {
   cpx1: number;
   cpy1: number;
   cpx2: number;
