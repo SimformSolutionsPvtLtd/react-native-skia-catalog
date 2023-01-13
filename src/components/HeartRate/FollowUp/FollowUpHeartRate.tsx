@@ -1,10 +1,10 @@
-import { Path } from "@shopify/react-native-skia";
-import React from "react";
+import { Path } from '@shopify/react-native-skia';
+import React from 'react';
 import type {
   FollowUpHeartRatePropsType,
   HeartRateReturnType,
-} from "./FollowUpHeartRateTypes";
-import { useHeartRate } from "./hooks";
+} from './FollowUpHeartRateTypes';
+import { useHeartRate } from './hooks';
 
 const FollowUpHeartRate = ({
   speed,
@@ -29,26 +29,26 @@ const FollowUpHeartRate = ({
     <>
       <Path
         path={pulsePath}
-        style={"stroke"}
+        style={'stroke'}
         strokeWidth={pulseWidth}
-        strokeJoin={"round"}
+        strokeJoin={'round'}
         opacity={0.3}
       />
       <Path
         start={primaryPulseStartingRate}
         end={primaryPulseEndingRate}
         path={pulsePath}
-        style={"stroke"}
+        style={'stroke'}
         strokeWidth={pulseWidth}
-        strokeJoin={"round"}
+        strokeJoin={'round'}
       />
       <Path
         start={secondaryPulseStartingRate}
         end={1}
         path={pulsePath}
-        style={"stroke"}
+        style={'stroke'}
         strokeWidth={pulseWidth}
-        strokeJoin={"round"}
+        strokeJoin={'round'}
       />
     </>
   );

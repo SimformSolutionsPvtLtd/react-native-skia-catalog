@@ -1,12 +1,13 @@
-import { Line } from "@shopify/react-native-skia";
-import React from "react";
-import { Colors } from "../../../theme";
-import type { StrikePropsType } from "./StrikeTypes";
+import { Line } from '@shopify/react-native-skia';
+import React from 'react';
+import { Colors } from '../../../theme';
+import type { StrikePropsType } from './StrikeTypes';
 
 const Strike = ({
   primaryLineStartingCoordinate,
   secondaryLineStartingCoordinate,
-  getEndingCoordinate,
+  primaryLineEndingCoordinate,
+  secondaryLineEndingCoordinate,
   primaryLineColor,
   singleLineStrokeWidth,
 }: StrikePropsType): React.ReactElement => {
@@ -14,13 +15,13 @@ const Strike = ({
     <>
       <Line
         p1={primaryLineStartingCoordinate}
-        p2={getEndingCoordinate(true)}
+        p2={primaryLineEndingCoordinate}
         color={primaryLineColor}
         strokeWidth={singleLineStrokeWidth}
       />
       <Line
         p1={secondaryLineStartingCoordinate}
-        p2={getEndingCoordinate(false)}
+        p2={secondaryLineEndingCoordinate}
         color={Colors.white}
         strokeWidth={singleLineStrokeWidth}
       />

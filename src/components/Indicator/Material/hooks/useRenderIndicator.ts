@@ -1,18 +1,18 @@
 import {
   interpolate,
   runTiming,
-  SkiaAnimation,
-  Transforms2d,
   useComputedValue,
   useValue,
-} from "@shopify/react-native-skia";
-import { useCallback, useEffect, useMemo, useRef } from "react";
-import type { CirclePropsType } from "../../Base";
+  type SkiaAnimation,
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import { useCallback, useEffect, useMemo, useRef } from 'react';
+import type { CirclePropsType } from '../../Base';
 import type {
   RenderIndicatorHookReturnType,
   RenderIndicatorPropsType,
-} from "../SkiaMaterialIndicatorTypes";
-import { makeArcPath } from "../SkiaMaterialIndicatorUtils";
+} from '../SkiaMaterialIndicatorTypes';
+import { makeArcPath } from '../SkiaMaterialIndicatorUtils';
 
 const MIN_ARC_ANGLE = 0.1;
 const MAX_ARC_ANGLE = 1.5 * Math.PI;
@@ -48,7 +48,7 @@ const useRenderIndicator = ({
       startAngle.current,
       endAngle.current,
       r,
-      direction ?? "counter-clockwise"
+      direction ?? 'counter-clockwise'
     );
   }, [startAngle, endAngle]);
 
@@ -83,7 +83,7 @@ const useRenderIndicator = ({
         rotate: interpolate(
           progress.current,
           [0, 1],
-          direction === "counter-clockwise" ? [360, 0] : [0, 360]
+          direction === 'counter-clockwise' ? [360, 0] : [0, 360]
         ),
       },
     ];

@@ -1,7 +1,7 @@
-import { RoundedRect } from "@shopify/react-native-skia";
-import React from "react";
-import { Colors } from "../../../theme";
-import type { ChargingPropsTypes } from "./SquareChargingPropsTypes";
+import { RoundedRect } from '@shopify/react-native-skia';
+import React from 'react';
+import { Colors } from '../../../theme';
+import type { ChargingPropsTypes } from './SquareChargingPropsTypes';
 
 const SquareCharging = ({
   topSquareCoordinate,

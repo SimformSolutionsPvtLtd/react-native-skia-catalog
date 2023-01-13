@@ -1,1 +1,1 @@
-export { default as OuterWifiSignal } from "./OuterWifiSignal";
+export { default as OuterWifiSignal } from './OuterWifiSignal';

@@ -5,12 +5,13 @@ import {
   rect,
   rrect,
   runTiming,
-  Transforms2d,
   useComputedValue,
   useTouchHandler,
-} from "@shopify/react-native-skia";
-import { useState } from "react";
-import type { UseThemeSwitchProps } from "../ThemeSwitchTypes";
+  type TouchHandler,
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import { useState } from 'react';
+import type { UseThemeSwitchProps } from '../ThemeSwitchTypes';
 
 const useThemeSwitch = ({
   rotate,
@@ -46,7 +47,7 @@ const useThemeSwitch = ({
     : [lightThemeColor, darkThemeColor];
 
   //Touch handler
-  const touchHandler = useTouchHandler(
+  const touchHandler: TouchHandler = useTouchHandler(
     {
       onStart: () => {
         runTiming(
@@ -56,10 +57,10 @@ const useThemeSwitch = ({
             duration: 950,
           },
           () => {
-            setLightTheme((prewValue) => {
+            setLightTheme(prewValue => {
               return !prewValue;
             });
-            lightTheme ? onToggle?.("dark") : onToggle?.("light");
+            lightTheme ? onToggle?.('dark') : onToggle?.('light');
             rotate.current = 0;
           }
         );
@@ -68,7 +69,7 @@ const useThemeSwitch = ({
           { from: 0, to: 1 },
           { duration: 950 },
           () => {
-            setShadowCircle((prewValue) => {
+            setShadowCircle(prewValue => {
               return !prewValue;
             });
             shadowCircleRotate.current = 0;

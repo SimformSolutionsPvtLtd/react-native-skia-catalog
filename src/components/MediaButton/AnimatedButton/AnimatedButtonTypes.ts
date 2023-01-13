@@ -1,5 +1,5 @@
-import type { SkiaValue, SkImage } from "@shopify/react-native-skia";
-import type { RotateType, ScaleType } from "../MediaButtonTypes";
+import type { SkiaValue, SkImage } from '@shopify/react-native-skia';
+import type { RotateType, ScaleType } from '../MediaButtonTypes';
 
 export interface AnimatedButtonPropsType {
   rotateButton: SkiaValue<RotateType[]>;

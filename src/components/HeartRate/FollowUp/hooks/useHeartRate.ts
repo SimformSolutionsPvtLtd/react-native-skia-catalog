@@ -1,17 +1,17 @@
 import {
   interpolate,
   Skia,
-  SkiaValue,
-  SkPath,
   useComputedValue,
   useTiming,
-} from "@shopify/react-native-skia";
-import { useState } from "react";
-import { getFollowUpPulsePoints, getPulsePath } from "../../../../utils";
+  type SkiaValue,
+  type SkPath,
+} from '@shopify/react-native-skia';
+import { useState } from 'react';
+import { getFollowUpPulsePoints, getPulsePath } from '../../../../utils';
 import type {
   HeartRateHookParams,
   HeartRateReturnType,
-} from "../FollowUpHeartRateTypes";
+} from '../FollowUpHeartRateTypes';
 
 const useHeartRate = ({
   size,
@@ -31,7 +31,7 @@ const useHeartRate = ({
   const timeFrame: SkiaValue<number> = useTiming(
     { from: 0, to: 1, loop: cycleCount === 1 },
     { duration: speed },
-    (current) => {
+    current => {
       setCycleCount(current);
     }
   );

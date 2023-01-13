@@ -15,9 +15,9 @@
 ---
 
 ```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { WirelessCharger } from "react-native-skia-catalog";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { WirelessCharger } from 'react-native-skia-catalog';
 
 const WirelessChargerScreen = () => (
   <View style={styles.container}>
@@ -28,8 +28,8 @@ const WirelessChargerScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -41,25 +41,25 @@ export default WirelessChargerScreen;
 ---
 
 ```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { WirelessCharger } from "react-native-skia-catalog";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { WirelessCharger } from 'react-native-skia-catalog';
 
 const WirelessCharger = () => (
   <View style={styles.container}>
     <WirelessCharger
       size={350}
-      outerCircleColor={"#513788"}
-      wifiWaveColor={"#D979CA"}
-      thunderColor={"#ffe767"}
+      outerCircleColor={'#513788'}
+      wifiWaveColor={'#D979CA'}
+      thunderColor={'#ffe767'}
     />
   </View>
 );
 
 const styles = StyleSheet.create({
   container: {
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
     flex: 1,
   },
 });

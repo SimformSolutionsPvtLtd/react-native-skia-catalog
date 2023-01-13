@@ -2,12 +2,15 @@ import {
   Extrapolate,
   interpolate,
   Skia,
-  SkPath,
   useComputedValue,
-} from "@shopify/react-native-skia";
-import { useMemo } from "react";
-import type { CirclePropsType } from "../../Base";
-import type { RenderIndicatorHookReturnType, RenderIndicatorPropsType } from "../SkiaPacmanIndicatorTypes";
+  type SkPath,
+} from '@shopify/react-native-skia';
+import { useMemo } from 'react';
+import type { CirclePropsType } from '../../Base';
+import type {
+  RenderIndicatorHookReturnType,
+  RenderIndicatorPropsType,
+} from '../SkiaPacmanIndicatorTypes';
 
 const useRenderIndicator = ({
   index,

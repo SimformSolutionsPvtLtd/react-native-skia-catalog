@@ -6,14 +6,14 @@ import {
   Line,
   Text,
   vec,
-} from "@shopify/react-native-skia";
-import React from "react";
-import { Colors } from "../../theme";
+} from '@shopify/react-native-skia';
+import React from 'react';
+import { Colors } from '../../theme';
+import { useNotification } from './hooks';
 import type {
   NotificationPropsType,
   NotificationReturnType,
-} from "./NotificationTypes";
-import { useNotification } from "./hooks";
+} from './NotificationTypes';
 
 const Notification = ({
   size = 150,
@@ -50,13 +50,12 @@ const Notification = ({
       style={{
         height: size * 1.57,
         width: size * 1.3,
-      }}
-    >
+      }}>
       <Group transform={mailRotation} origin={vec(size * 0.1, size * 0.9)}>
         {image && (
           <Image
             image={image}
-            fit={"contain"}
+            fit={'contain'}
             width={size}
             height={size}
             x={size * 0.1}
@@ -74,7 +73,7 @@ const Notification = ({
         c={strokeCircleCentre}
         r={circleRadius + circleStrokeWidth / 2}
         color={Colors.black}
-        style={"stroke"}
+        style={'stroke'}
         strokeWidth={circleStrokeWidth}
         opacity={strokeCircleVisibility}
       />
@@ -89,14 +88,14 @@ const Notification = ({
         p1={firstLineStartingCoordinate}
         p2={firstLineEndingCoordinate}
         strokeWidth={lineStrokeWidth}
-        style={"stroke"}
+        style={'stroke'}
         color={color}
       />
       <Line
         p1={secondLineStartingCoordinate}
         p2={secondLineEndingCoordinate}
         strokeWidth={lineStrokeWidth}
-        style={"stroke"}
+        style={'stroke'}
         color={color}
       />
     </Canvas>

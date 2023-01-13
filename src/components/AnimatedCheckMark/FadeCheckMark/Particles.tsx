@@ -6,9 +6,9 @@ import {
   Path,
   Selector,
   vec,
-} from "@shopify/react-native-skia";
-import React from "react";
-import type { ParticlesType } from "./FadeCheckMarkType";
+} from '@shopify/react-native-skia';
+import React from 'react';
+import type { ParticlesType } from './FadeCheckMarkType';
 
 const Particles = ({
   size,
@@ -30,11 +30,10 @@ const Particles = ({
         <Group
           transform={Selector(
             exploreCircleTransform,
-            (CircleValue) => CircleValue[index]
+            CircleValue => CircleValue[index]
           )}
           key={index}
-          opacity={circleParticleOpacity}
-        >
+          opacity={circleParticleOpacity}>
           <Circle
             transform={circleParticle}
             r={size / 8}
@@ -54,9 +53,8 @@ const Particles = ({
           key={index}
           transform={Selector(
             exploreStarTransform,
-            (StarValue) => StarValue[index]
-          )}
-        >
+            StarValue => StarValue[index]
+          )}>
           <Path
             path={starPath}
             transform={starParticle}

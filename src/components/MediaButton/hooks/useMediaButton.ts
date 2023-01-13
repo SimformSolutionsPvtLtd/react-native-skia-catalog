@@ -2,24 +2,24 @@ import {
   DataSourceParam,
   interpolate,
   runTiming,
-  SkiaMutableValue,
-  SkiaValue,
-  SkImage,
   TouchHandler,
   useComputedValue,
   useImage,
   useTiming,
   useTouchHandler,
   useValue,
-} from "@shopify/react-native-skia";
-import { useState } from "react";
-import { StyleProp, StyleSheet, ViewProps } from "react-native";
+  type SkiaMutableValue,
+  type SkiaValue,
+  type SkImage,
+} from '@shopify/react-native-skia';
+import { useState } from 'react';
+import { StyleSheet, type StyleProp, type ViewProps } from 'react-native';
 import type {
   MediaButtonHookParamsType,
   MediaButtonReturnType,
   RotateType,
   ScaleType,
-} from "../MediaButtonTypes";
+} from '../MediaButtonTypes';
 
 const useMediaButton = ({
   pulseSpeed,

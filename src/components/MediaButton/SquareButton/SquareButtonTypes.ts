@@ -1,5 +1,5 @@
-import type { SkiaValue } from "@shopify/react-native-skia";
-import type { ScaleType } from "../MediaButtonTypes";
+import type { SkiaValue } from '@shopify/react-native-skia';
+import type { ScaleType } from '../MediaButtonTypes';
 
 export interface SquareButtonPropsType {
   size: number;

@@ -5,14 +5,15 @@ import {
   Skia,
   useTouchHandler,
   useValue,
-} from "@shopify/react-native-skia";
-import React, { useState } from "react";
-import { SVG } from "../../assets";
-import { Colors } from "../../theme";
-import { useSkiaLike } from "./hooks";
-import { SkiaHeart } from "./SkiaHeart";
-import type { SkisLikeProps } from "./SkiaLikeTypes";
-import { SkiaSmallCircles } from "./SkiaSmallCircles";
+  type TouchHandler,
+} from '@shopify/react-native-skia';
+import React, { useState } from 'react';
+import { SVG } from '../../assets';
+import { Colors } from '../../theme';
+import { useSkiaLike } from './hooks';
+import { SkiaHeart } from './SkiaHeart';
+import type { SkisLikeProps } from './SkiaLikeTypes';
+import { SkiaSmallCircles } from './SkiaSmallCircles';
 
 const svgHeart = Skia.SVG.MakeFromString(SVG.heart);
 
@@ -39,6 +40,7 @@ const SkiaLike = ({
     scaleHeart,
     exploreRadius,
     angle,
+    canvasStyle,
   } = useSkiaLike({ size, value, isLike });
 
   const getExploreCircle = () => {
@@ -56,18 +58,18 @@ const SkiaLike = ({
     });
   };
 
-  const touchHandler = useTouchHandler(
+  const touchHandler: TouchHandler = useTouchHandler(
     {
       onEnd: () => {
         if (!isLike) {
           runTiming(value, { from: 0, to: 1 }, { duration: 750 }, () => {
             onChangeValue?.(!isLike);
-            setIsLike((previousValue) => !previousValue);
+            setIsLike(previousValue => !previousValue);
           });
         } else {
           value.current = 0;
           onChangeValue?.(!isLike);
-          setIsLike((previousValue) => !previousValue);
+          setIsLike(previousValue => !previousValue);
         }
       },
     },
@@ -75,15 +77,7 @@ const SkiaLike = ({
   );
 
   return (
-    <Canvas
-      style={{
-        height: size,
-        width: size,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-      onTouch={touchHandler}
-    >
+    <Canvas style={canvasStyle} onTouch={touchHandler}>
       <Circle
         cx={halfSize}
         cy={halfSize}

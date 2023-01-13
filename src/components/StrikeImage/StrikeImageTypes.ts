@@ -3,9 +3,9 @@ import type {
   SkImage,
   SkPoint,
   TouchHandler,
-} from "@shopify/react-native-skia";
-import type { ImageSourcePropType } from "react-native";
-import type { Range } from "../../types";
+} from '@shopify/react-native-skia';
+import type { ImageSourcePropType } from 'react-native';
+import type { Range } from '../../types';
 
 interface StrikeImagePropsType {
   size?: Range<50, 351>;
@@ -16,7 +16,8 @@ interface StrikeImagePropsType {
 }
 
 interface StrikeImageReturnType {
-  getEndingCoordinate: (isFilledLine: boolean) => SkiaValue<SkPoint>;
+  secondaryLineEndingCoordinate: SkiaValue<SkPoint>;
+  primaryLineEndingCoordinate: SkiaValue<SkPoint>;
   image: SkImage | null;
   opacity: SkiaValue<number>;
   primaryLineStartingCoordinate: SkPoint;

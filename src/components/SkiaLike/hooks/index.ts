@@ -1,1 +1,1 @@
-export { default as useSkiaLike } from "./useSkiaLike";
+export { default as useSkiaLike } from './useSkiaLike';

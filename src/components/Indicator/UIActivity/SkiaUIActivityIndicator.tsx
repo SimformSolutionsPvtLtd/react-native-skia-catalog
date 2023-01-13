@@ -1,15 +1,14 @@
-import { Line, vec } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaUIActivityIndicatorTypes";
-import type {
-  RenderIndicatorPropsType,
-  SkiaUIActivityIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaUIActivityIndicatorTypes";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderIndicator } from "./hooks";
+import { Line, vec } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaUIActivityIndicatorPropsType,
+} from './SkiaUIActivityIndicatorTypes';
 
 const RenderIndicator = ({
   color,
@@ -24,10 +23,10 @@ const RenderIndicator = ({
       p1={vec(x, y)}
       p2={vec(x1, y1)}
       color={color}
-      style={"stroke"}
+      style={'stroke'}
       strokeWidth={trackWidth}
-      strokeJoin={"round"}
-      strokeCap={"round"}
+      strokeJoin={'round'}
+      strokeCap={'round'}
       opacity={opacityLocal}
     />
   );

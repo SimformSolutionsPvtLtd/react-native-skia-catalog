@@ -17,9 +17,9 @@ The `HeartRate` component animates pulse over a grid.
 ---
 
 ```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { HeartRate, HeartRateEnum } from "react-native-skia-catalog";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { HeartRate, HeartRateEnum } from 'react-native-skia-catalog';
 
 const HeartRateScreen = () => (
   <View style={styles.container}>
@@ -30,8 +30,8 @@ const HeartRateScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "space-evenly",
-    alignItems: "center",
+    justifyContent: 'space-evenly',
+    alignItems: 'center',
   },
 });
 
@@ -43,15 +43,15 @@ export default HeartRateScreen;
 ---
 
 ```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { HeartRate, HeartRateEnum } from "react-native-skia-catalog";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { HeartRate, HeartRateEnum } from 'react-native-skia-catalog';
 
 const HeartRateScreen = () => (
   <View style={styles.container}>
     <HeartRate
       heartRateType={HeartRateEnum.FOLLOWUP}
-      color={["#472183", "#86C8BC"]}
+      color={['#472183', '#86C8BC']}
       isGridVisible={false}
       pulseWidth={12}
       speed={2500}
@@ -63,8 +63,8 @@ const HeartRateScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

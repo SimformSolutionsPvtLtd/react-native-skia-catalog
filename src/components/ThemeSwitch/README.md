@@ -15,9 +15,9 @@
 ---
 
 ```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { ThemeSwitch } from "react-native-skia-catalog";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { ThemeSwitch } from 'react-native-skia-catalog';
 
 const ThemeSwitchScreen = () => (
   <View style={styles.container}>
@@ -28,8 +28,8 @@ const ThemeSwitchScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -41,16 +41,16 @@ export default ThemeSwitchScreen;
 ---
 
 ```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { ThemeSwitch } from "react-native-skia-catalog";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { ThemeSwitch } from 'react-native-skia-catalog';
 
 const ThemeSwitchScreen = () => (
   <View style={styles.container}>
     <ThemeSwitch
       size={340}
-      lightThemeColor={"#59abdd"}
-      darkThemeColor={"#0f1341"}
+      lightThemeColor={'#59abdd'}
+      darkThemeColor={'#0f1341'}
     />
   </View>
 );
@@ -58,8 +58,8 @@ const ThemeSwitchScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

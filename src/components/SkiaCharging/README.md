@@ -15,8 +15,8 @@
 ---
 
 ```jsx
-import React from "react";
-import { SkiaCharging } from "react-native-skia-catalog";
+import React from 'react';
+import { SkiaCharging } from 'react-native-skia-catalog';
 
 const SkiaCharging = () => {
   <View style={styles.skiaChargingView}>
@@ -27,8 +27,8 @@ const SkiaCharging = () => {
 const styles = StyleSheet.create({
   skiaChargingView: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -40,17 +40,17 @@ export default SkiaCharging;
 ---
 
 ```jsx
-import React from "react";
-import { SkiaCharging } from "react-native-skia-catalog";
+import React from 'react';
+import { SkiaCharging } from 'react-native-skia-catalog';
 
 const SkiaCharging = () => {
   <View style={styles.skiaChargingView}>
     <SkiaCharging
       size={370}
-      waveColor={"rgba(231, 121, 163, 0.5)"}
-      thunderColor={"rgb(108,172,162)"}
-      adapterColor={"rgb(245,196,226)"}
-      backgroundColor={"rgb(91, 51, 95)"}
+      waveColor={'rgba(231, 121, 163, 0.5)'}
+      thunderColor={'rgb(108,172,162)'}
+      adapterColor={'rgb(245,196,226)'}
+      backgroundColor={'rgb(91, 51, 95)'}
     />
   </View>;
 };
@@ -58,8 +58,8 @@ const SkiaCharging = () => {
 const styles = StyleSheet.create({
   skiaChargingView: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -74,13 +74,13 @@ export default SkiaCharging;
 
 #### Properties
 
-| Props           | Default     | Type   | Description                                                                                            |
-| :-------------- | :---------- | :----- | :----------------------------------------------------------------------------------------------------- |
-| size            | 300         | number | `Size` of whole circle charger component                                                               |
-| backgroundColor | `#4f13c6`   | string | `Color` of `circle`                                                                                    |
-| thunderColor    | `#5fc662`   | string | `Color` of the `thunder-sign`                                                                          |
+| Props           | Default     | Type   | Description                                                                                                    |
+| :-------------- | :---------- | :----- | :------------------------------------------------------------------------------------------------------------- |
+| size            | 300         | number | `Size` of whole circle charger component                                                                       |
+| backgroundColor | `#4f13c6`   | string | `Color` of `circle`                                                                                            |
+| thunderColor    | `#5fc662`   | string | `Color` of the `thunder-sign`                                                                                  |
 | waveColor       | `#5fc662e6` | string | `Wave` color(for better experience in wave you can `pass color` in `rgba` format or give `opacity` to `color`) |
-| adapterColor    | `#ffffff`   | string | `Color` of the `adapter`                                                                               |
+| adapterColor    | `#ffffff`   | string | `Color` of the `adapter`                                                                                       |
 
 #### 🎬 Preview Example
 

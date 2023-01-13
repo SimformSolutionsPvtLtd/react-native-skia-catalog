@@ -1,13 +1,13 @@
 import {
   interpolate,
-  type Transforms2d,
   useComputedValue,
   useTiming,
-} from "@shopify/react-native-skia";
+  type Transforms2d,
+} from '@shopify/react-native-skia';
 import type {
   UseScannerOutlinePropsType,
   UseScannerOutlineReturnType,
-} from "../ScannerOutlineTypes";
+} from '../ScannerOutlineTypes';
 
 const useScannerOutline = ({
   stopZooming = false,

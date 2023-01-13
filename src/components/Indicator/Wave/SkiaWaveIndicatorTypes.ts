@@ -1,22 +1,26 @@
-import { Easing, SkiaValue, Transforms2d } from "@shopify/react-native-skia";
-import { Colors } from "../../../theme";
+import {
+  Easing,
+  type SkiaValue,
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import { Colors } from '../../../theme';
 import type {
   BaseIndicatorPropsType,
   OmitChildComponentProps,
   RenderComponentArgType,
-} from "../Base";
+} from '../Base';
 
 export type SkiaWaveIndicatorPropsType = BaseIndicatorPropsType & {
   count?: number;
   waveFactor?: number;
-  waveMode?: "fill" | "outline";
+  waveMode?: 'fill' | 'outline';
 };
 
 export const defaultProps = {
   color: Colors.orange,
   count: 4,
   waveFactor: 0.54,
-  waveMode: "fill",
+  waveMode: 'fill',
   progressDuration: 1600,
   animationEasing: Easing.out(Easing.ease),
 };

@@ -3,14 +3,14 @@ import type {
   SkiaValue,
   SkImage,
   Transforms2d,
-} from "@shopify/react-native-skia";
-import type { ImageSourcePropType } from "react-native";
-import type { Range } from "../../types";
+} from '@shopify/react-native-skia';
+import type { ImageSourcePropType } from 'react-native';
+import type { Range } from '../../types';
 
 export enum CheckMarkEnum {
-  SIMPLE = "SIMPLE",
-  FADE = "FADE",
-  CIRCULAR = "CIRCULAR",
+  SIMPLE = 'SIMPLE',
+  FADE = 'FADE',
+  CIRCULAR = 'CIRCULAR',
 }
 
 export interface GetExploreTranslateType {
@@ -40,7 +40,7 @@ export interface AnimatedCheckMarkTypes {
   centerImageColor: string;
   circleParticleColor: string;
   starParticleColor: string;
-  checkMarkType: "SIMPLE" | "FADE" | "CIRCULAR";
+  checkMarkType: 'SIMPLE' | 'FADE' | 'CIRCULAR';
   showParticle: boolean;
   multiColor: boolean;
   borderColor: string;

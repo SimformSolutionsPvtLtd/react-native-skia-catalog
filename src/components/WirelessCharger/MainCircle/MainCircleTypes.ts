@@ -3,8 +3,8 @@ import type {
   SkiaValue,
   SkPath,
   Transforms2d,
-} from "@shopify/react-native-skia";
-import type { Range } from "../../../types";
+} from '@shopify/react-native-skia';
+import type { Range } from '../../../types';
 
 export interface MainCircleProps {
   size: Range<150, 351>;

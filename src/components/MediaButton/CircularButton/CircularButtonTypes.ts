@@ -1,4 +1,4 @@
-import type { SkiaValue } from "@shopify/react-native-skia";
+import type { SkiaValue } from '@shopify/react-native-skia';
 
 export interface CircularButtonPropsType {
   pulseDisable: boolean;

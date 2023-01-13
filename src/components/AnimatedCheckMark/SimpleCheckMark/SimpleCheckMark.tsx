@@ -9,13 +9,13 @@ import {
   rect,
   rrect,
   vec,
-} from "@shopify/react-native-skia";
-import React from "react";
-import { useSimpleCheckMark } from "./hooks";
+} from '@shopify/react-native-skia';
+import React from 'react';
+import { useSimpleCheckMark } from './hooks';
 import type {
   SimpleAnimatedCheckMark,
   UseSimpleCheckMarkReturnType,
-} from "./SimpleCheckMarkType";
+} from './SimpleCheckMarkType';
 
 const SimpleCheckMark = ({
   size,
@@ -35,21 +35,18 @@ const SimpleCheckMark = ({
       style={{
         height: size,
         width: size,
-      }}
-    >
+      }}>
       <Group
         clip={rrect(rect(0, 0, size, size), size / 2, size / 2)}
         transform={circleOneScale}
-        origin={vec(size / 2, size / 2)}
-      >
+        origin={vec(size / 2, size / 2)}>
         <Fill color={circleOneColor} />
         <Group
           layer={
             <Paint>
-              <BlendColor color={centerImageColor} mode={"srcIn"} />
+              <BlendColor color={centerImageColor} mode={'srcIn'} />
             </Paint>
-          }
-        >
+          }>
           {centerImage && (
             <Image
               image={centerImage}

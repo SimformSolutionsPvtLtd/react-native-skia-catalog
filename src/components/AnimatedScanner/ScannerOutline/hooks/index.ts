@@ -1,1 +1,1 @@
-export { default as useScannerOutline } from "./useScannerOutline";
+export { default as useScannerOutline } from './useScannerOutline';

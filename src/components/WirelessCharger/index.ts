@@ -1,2 +1,2 @@
-export { default as WirelessCharger } from "./WirelessCharger";
-export { type WireLessChargerProps } from "./WirelessChargerTypes";
+export { default as WirelessCharger } from './WirelessCharger';
+export { type WireLessChargerProps } from './WirelessChargerTypes';

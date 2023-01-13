@@ -1,10 +1,14 @@
-import { Easing, SkiaValue, Transforms2d } from "@shopify/react-native-skia";
-import { Colors } from "../../../theme";
+import {
+  Easing,
+  type SkiaValue,
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import { Colors } from '../../../theme';
 import type {
   BaseIndicatorPropsType,
   OmitChildComponentProps,
   RenderComponentArgType,
-} from "../Base";
+} from '../Base';
 
 export type SkiaDotIndicatorPropsType = BaseIndicatorPropsType & {
   count?: number;

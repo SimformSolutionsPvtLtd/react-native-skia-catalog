@@ -1,15 +1,14 @@
-import { Circle, Group } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaPulseIndicatorTypes";
-import type {
-  RenderIndicatorPropsType,
-  SkiaPulseIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaPulseIndicatorTypes";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderIndicator } from "./hooks";
+import { Circle, Group } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaPulseIndicatorPropsType,
+} from './SkiaPulseIndicatorTypes';
 
 const RenderIndicator = ({
   color,

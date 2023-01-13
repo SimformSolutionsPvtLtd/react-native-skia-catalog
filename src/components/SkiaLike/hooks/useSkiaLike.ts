@@ -1,10 +1,11 @@
 import {
   interpolate,
   interpolateColors,
-  Transforms2d,
   useComputedValue,
   useValue,
+  type Transforms2d,
 } from '@shopify/react-native-skia';
+import type { ViewStyle } from 'react-native';
 import { Colors, getRandomColorsArray } from '../../../theme';
 import { setColors } from '../../../utils';
 import type {
@@ -234,6 +235,11 @@ const getLikeVariantFourConfig = ({
 };
 
 const useSkiaLike = ({ size, value, isLike }: useSkiaLikeProps) => {
+  const canvasStyle: ViewStyle = {
+    height: size,
+    width: size,
+    justifyContent: 'center',
+  };
   const opacityHeart = useValue<number>(size * 0.01);
   const opacityOuterCircle = useValue<number>(0);
   const opacityInnerCircle = useValue<number>(0);
@@ -327,6 +333,7 @@ const useSkiaLike = ({ size, value, isLike }: useSkiaLikeProps) => {
     scaleHeart,
     exploreRadius,
     angle,
+    canvasStyle,
   };
 };
 

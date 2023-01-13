@@ -1,1 +1,1 @@
-export { default as FadeCheckMark } from "./FadeCheckMark";
+export { default as FadeCheckMark } from './FadeCheckMark';

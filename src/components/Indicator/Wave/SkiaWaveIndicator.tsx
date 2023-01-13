@@ -1,15 +1,14 @@
-import { Circle, Group, Paint } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaWaveIndicatorTypes";
-import type {
-  RenderIndicatorPropsType,
-  SkiaWaveIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaWaveIndicatorTypes";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderIndicator } from "./hooks";
+import { Circle, Group, Paint } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaWaveIndicatorPropsType,
+} from './SkiaWaveIndicatorTypes';
 
 const RenderIndicator = ({
   color,
@@ -29,12 +28,11 @@ const RenderIndicator = ({
     <Group
       transform={transform}
       origin={{ x: cx, y: cy }}
-      color={"transparent"}
-    >
+      color={'transparent'}>
       <Circle cx={cx} cy={cy} r={r}>
         <Paint
           color={color}
-          style={fill ? "fill" : "stroke"}
+          style={fill ? 'fill' : 'stroke'}
           strokeWidth={trackW}
           opacity={opacityLocal}
         />

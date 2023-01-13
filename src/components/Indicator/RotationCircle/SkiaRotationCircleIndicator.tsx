@@ -1,15 +1,14 @@
-import { Circle, Group } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaRotationCircleIndicatorType";
-import type {
-  RenderIndicatorPropsType,
-  SkiaRotationCircleIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaRotationCircleIndicatorType";
-import { useRenderIndicator } from "./hooks";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
+import { Circle, Group } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaRotationCircleIndicatorPropsType,
+} from './SkiaRotationCircleIndicatorType';
 
 const RenderIndicator = ({
   color,

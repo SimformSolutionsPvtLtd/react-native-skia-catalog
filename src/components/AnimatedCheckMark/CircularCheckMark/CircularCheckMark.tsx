@@ -6,13 +6,13 @@ import {
   Paint,
   Path,
   vec,
-} from "@shopify/react-native-skia";
-import React from "react";
+} from '@shopify/react-native-skia';
+import React from 'react';
 import type {
   CircularCheckMarkType,
   UseCircularCheckMarkReturnType,
-} from "./CircularCheckMarkType";
-import { useCircularCheckMark } from "./hooks";
+} from './CircularCheckMarkType';
+import { useCircularCheckMark } from './hooks';
 
 const CircularCheckMark = ({
   size,
@@ -41,11 +41,10 @@ const CircularCheckMark = ({
       style={{
         height: size,
         width: size,
-      }}
-    >
+      }}>
       <Path
         path={arcPath}
-        style={"stroke"}
+        style={'stroke'}
         strokeWidth={size / 25}
         start={0.25}
         end={0.52}
@@ -55,7 +54,7 @@ const CircularCheckMark = ({
       />
       <Path
         path={arcPath}
-        style={"stroke"}
+        style={'stroke'}
         strokeWidth={size / 25}
         start={0.25}
         end={0.52}
@@ -65,7 +64,7 @@ const CircularCheckMark = ({
       />
       <Path
         path={arcPath}
-        style={"stroke"}
+        style={'stroke'}
         strokeWidth={size / 25}
         start={0.25}
         end={0.52}
@@ -75,7 +74,7 @@ const CircularCheckMark = ({
       />
       <Path
         path={arcPath}
-        style={"stroke"}
+        style={'stroke'}
         strokeWidth={size / 25}
         start={0}
         end={0.27}
@@ -86,10 +85,9 @@ const CircularCheckMark = ({
       <Group
         layer={
           <Paint>
-            <BlendColor color={centerImageColor} mode={"srcIn"} />
+            <BlendColor color={centerImageColor} mode={'srcIn'} />
           </Paint>
-        }
-      >
+        }>
         {centerImage && (
           <Image
             transform={circularCenterImageScale}

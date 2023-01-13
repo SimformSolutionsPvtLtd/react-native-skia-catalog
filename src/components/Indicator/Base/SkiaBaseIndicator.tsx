@@ -1,11 +1,11 @@
-import { Group } from "@shopify/react-native-skia";
-import React from "react";
-import { defaultProps } from "./SkiaBaseIndicatorTypes";
+import { Group } from '@shopify/react-native-skia';
+import React from 'react';
+import { useSkiaBaseIndicator } from './hooks';
 import type {
-  SkiaBaseIndicatorPropsType,
   SkiaBaseIndicatorHookReturnType,
-} from "./SkiaBaseIndicatorTypes";
-import { useSkiaBaseIndicator } from "./hooks";
+  SkiaBaseIndicatorPropsType,
+} from './SkiaBaseIndicatorTypes';
+import { defaultProps } from './SkiaBaseIndicatorTypes';
 
 const SkiaBaseIndicator = ({
   count,

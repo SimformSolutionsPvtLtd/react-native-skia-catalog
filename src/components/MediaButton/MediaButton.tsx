@@ -1,18 +1,18 @@
-import { Canvas, Rect } from "@shopify/react-native-skia";
-import React, { FC } from "react";
-import { Images } from "../../assets";
-import { Colors } from "../../theme";
-import { AnimatedButton } from "./AnimatedButton";
-import { CircularButton } from "./CircularButton";
-import { useMediaButton } from "./hooks";
+import { Canvas, Rect } from '@shopify/react-native-skia';
+import React from 'react';
+import { Images } from '../../assets';
+import { Colors } from '../../theme';
+import { AnimatedButton } from './AnimatedButton';
+import { CircularButton } from './CircularButton';
+import { useMediaButton } from './hooks';
 import {
   ButtonEnum,
   type MediaButtonPropsType,
   type MediaButtonReturnType,
-} from "./MediaButtonTypes";
-import { SquareButton } from "./SquareButton";
+} from './MediaButtonTypes';
+import { SquareButton } from './SquareButton';
 
-const MediaButton: FC<Partial<MediaButtonPropsType>> = ({
+const MediaButton = ({
   size = 110,
   color = Colors.orange,
   speed = 800,
@@ -26,7 +26,7 @@ const MediaButton: FC<Partial<MediaButtonPropsType>> = ({
   pulseEnd = 1,
   playImageSource = Images.play,
   pauseImageSource = Images.pause,
-}): React.ReactElement => {
+}: Partial<MediaButtonPropsType>): React.ReactElement => {
   const {
     circularPulse,
     isPlayButton,

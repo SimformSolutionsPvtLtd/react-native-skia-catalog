@@ -1,15 +1,15 @@
-import React, { type FC } from "react";
-import { Images } from "../../assets";
-import { Colors } from "../../theme";
+import React, { type FC } from 'react';
+import { Images } from '../../assets';
+import { Colors } from '../../theme';
 import {
   CheckMarkEnum,
-  UseAnimatedCheckMarkReturnType,
+  type UseAnimatedCheckMarkReturnType,
   type AnimatedCheckMarkTypes,
-} from "./AnimatedCheckMarkTypes";
-import { CircularCheckMark } from "./CircularCheckMark";
-import { FadeCheckMark } from "./FadeCheckMark";
-import { useAnimatedCheckMark } from "./hooks";
-import { SimpleCheckMark } from "./SimpleCheckMark";
+} from './AnimatedCheckMarkTypes';
+import { CircularCheckMark } from './CircularCheckMark';
+import { FadeCheckMark } from './FadeCheckMark';
+import { useAnimatedCheckMark } from './hooks';
+import { SimpleCheckMark } from './SimpleCheckMark';
 
 const AnimatedCheckMark: FC<Partial<AnimatedCheckMarkTypes>> = ({
   size = 100,

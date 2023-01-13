@@ -1,6 +1,6 @@
-import { Rect, vec } from "@shopify/react-native-skia";
-import React from "react";
-import type { SquareButtonPropsType } from "./SquareButtonTypes";
+import { Rect, vec } from '@shopify/react-native-skia';
+import React from 'react';
+import type { SquareButtonPropsType } from './SquareButtonTypes';
 
 const SquareButton = ({
   size,

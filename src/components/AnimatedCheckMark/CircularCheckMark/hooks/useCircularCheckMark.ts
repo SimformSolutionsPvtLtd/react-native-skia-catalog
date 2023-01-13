@@ -2,12 +2,12 @@ import {
   interpolate,
   rect,
   Skia,
-  SkiaValue,
-  Transforms2d,
   useComputedValue,
   useValue,
-} from "@shopify/react-native-skia";
-import type { UseCircularCheckMarkReturnType } from "../CircularCheckMarkType";
+  type SkiaValue,
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import type { UseCircularCheckMarkReturnType } from '../CircularCheckMarkType';
 
 const useCircularCheckMark = (
   size: number,

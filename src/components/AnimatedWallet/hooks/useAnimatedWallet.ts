@@ -2,12 +2,12 @@ import {
   Color,
   Extrapolate,
   interpolate,
-  Transforms2d,
   useComputedValue,
   useTiming,
-} from "@shopify/react-native-skia";
-import chroma from "chroma-js";
-import { Colors } from "../../../theme";
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import chroma from 'chroma-js';
+import { Colors } from '../../../theme';
 
 interface animatedCardProps {
   size?: number;

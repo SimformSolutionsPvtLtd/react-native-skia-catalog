@@ -1,13 +1,13 @@
-import { Canvas } from "@shopify/react-native-skia";
-import React from "react";
-import { Colors } from "../../theme";
-import { useWirelessCharger } from "./hooks";
-import { MainCircle } from "./MainCircle";
-import { OuterCircles } from "./OuterCircles";
+import { Canvas } from '@shopify/react-native-skia';
+import React from 'react';
+import { Colors } from '../../theme';
+import { useWirelessCharger } from './hooks';
+import { MainCircle } from './MainCircle';
+import { OuterCircles } from './OuterCircles';
 import type {
   GetExploreCircleProps,
   WireLessChargerProps,
-} from "./WirelessChargerTypes";
+} from './WirelessChargerTypes';
 
 const angle: number = (2 * Math.PI) / 36;
 
@@ -51,8 +51,7 @@ const WirelessCharger = ({
       style={{
         height: size,
         width: size,
-      }}
-    >
+      }}>
       <MainCircle
         {...{
           size,
@@ -67,7 +66,7 @@ const WirelessCharger = ({
           thunderPath,
         }}
       />
-      {getExploreCircles({ isOuter: false }).map((item) => (
+      {getExploreCircles({ isOuter: false }).map(item => (
         <OuterCircles
           {...{
             halfSize,
@@ -77,7 +76,7 @@ const WirelessCharger = ({
           }}
         />
       ))}
-      {getExploreCircles({ isOuter: true }).map((item) => (
+      {getExploreCircles({ isOuter: true }).map(item => (
         <OuterCircles
           {...{
             halfSize,

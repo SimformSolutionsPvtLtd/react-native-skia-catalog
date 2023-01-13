@@ -1,1 +1,1 @@
-export { default as useSimpleCheckMark } from "./useSimpleCheckMark";
+export { default as useSimpleCheckMark } from './useSimpleCheckMark';

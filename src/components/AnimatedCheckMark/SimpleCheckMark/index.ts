@@ -1,1 +1,1 @@
-export { default as SimpleCheckMark } from "./SimpleCheckMark";
+export { default as SimpleCheckMark } from './SimpleCheckMark';

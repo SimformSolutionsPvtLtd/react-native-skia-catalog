@@ -1,1 +1,1 @@
-export { default as useAnimatedSwitch } from "./useSkiaCharging";
+export { default as useAnimatedSwitch } from './useSkiaCharging';

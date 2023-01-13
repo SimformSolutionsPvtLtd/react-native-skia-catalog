@@ -1,6 +1,6 @@
-import { BlendColor, Group, Paint, Path } from "@shopify/react-native-skia";
-import React from "react";
-import type { WifiSignalsProps } from "./InnerWifiSignalTypes";
+import { BlendColor, Group, Paint, Path } from '@shopify/react-native-skia';
+import React from 'react';
+import type { WifiSignalsProps } from './InnerWifiSignalTypes';
 
 const InnerWifiSignal = ({
   size,
@@ -14,23 +14,22 @@ const InnerWifiSignal = ({
         <Paint opacity={opacityOfWifiWave}>
           <BlendColor color={wifiWaveColor} mode="srcIn" />
         </Paint>
-      }
-    >
+      }>
       <Path
         path={curvePath}
-        style={"stroke"}
+        style={'stroke'}
         strokeWidth={size * 0.031428}
         start={0.5}
         end={0.61}
-        strokeCap={"round"}
+        strokeCap={'round'}
       />
       <Path
         path={curvePath}
-        style={"stroke"}
+        style={'stroke'}
         strokeWidth={size * 0.031428}
         start={0.013}
         end={0.15}
-        strokeCap={"round"}
+        strokeCap={'round'}
       />
     </Group>
   );

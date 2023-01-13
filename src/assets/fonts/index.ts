@@ -1,3 +1,3 @@
 export default {
-  font: require("./font.ttf"),
+  font: require('./font.ttf'),
 };

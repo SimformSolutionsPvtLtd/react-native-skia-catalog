@@ -2,14 +2,14 @@ import type {
   SkiaValue,
   SkImage,
   TouchHandler,
-} from "@shopify/react-native-skia";
-import type { ImageSourcePropType, StyleProp, ViewStyle } from "react-native";
-import type { Range } from "../../types";
+} from '@shopify/react-native-skia';
+import type { ImageSourcePropType, StyleProp, ViewStyle } from 'react-native';
+import type { Range } from '../../types';
 
 export enum ButtonEnum {
-  CIRCLE = "CIRCLE",
-  RECTANGLE = "RECTANGLE",
-  SQUARE = "SQUARE",
+  CIRCLE = 'CIRCLE',
+  RECTANGLE = 'RECTANGLE',
+  SQUARE = 'SQUARE',
 }
 
 interface RotateType {
@@ -25,7 +25,7 @@ interface MediaButtonPropsType {
   speed: number;
   pulseDisable: boolean;
   pulseSpeed: number;
-  buttonType: "CIRCLE" | "RECTANGLE" | "SQUARE";
+  buttonType: 'CIRCLE' | 'RECTANGLE' | 'SQUARE';
   style: StyleProp<ViewStyle>;
   onPlayPress: () => void;
   onPausePress: () => void;

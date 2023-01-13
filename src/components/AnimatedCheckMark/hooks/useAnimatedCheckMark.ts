@@ -1,15 +1,15 @@
 import {
-  DataSourceParam,
   interpolate,
-  SkiaValue,
-  SkImage,
-  Transforms2d,
   useComputedValue,
   useImage,
   useTiming,
   useValue,
-} from "@shopify/react-native-skia";
-import type { UseAnimatedCheckMarkReturnType } from "../AnimatedCheckMarkTypes";
+  type DataSourceParam,
+  type SkiaValue,
+  type SkImage,
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import type { UseAnimatedCheckMarkReturnType } from '../AnimatedCheckMarkTypes';
 
 const useAnimatedCheckMark = (
   speed: number,

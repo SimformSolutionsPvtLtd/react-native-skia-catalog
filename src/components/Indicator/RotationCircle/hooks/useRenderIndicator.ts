@@ -1,7 +1,10 @@
-import { interpolate, useComputedValue } from "@shopify/react-native-skia";
-import { useMemo } from "react";
-import type { CirclePropsType } from "../../Base";
-import type { RenderIndicatorHookReturnType, RenderIndicatorPropsType } from "../SkiaRotationCircleIndicatorType";
+import { interpolate, useComputedValue } from '@shopify/react-native-skia';
+import { useMemo } from 'react';
+import type { CirclePropsType } from '../../Base';
+import type {
+  RenderIndicatorHookReturnType,
+  RenderIndicatorPropsType,
+} from '../SkiaRotationCircleIndicatorType';
 
 const useRenderIndicator = ({
   index,
@@ -27,7 +30,7 @@ const useRenderIndicator = ({
   }, [borderRadius, height, width, isFilled]);
 
   const outputRange = useMemo(() => {
-    if (direction === "clockwise") {
+    if (direction === 'clockwise') {
       return [0, 2 * Math.PI];
     } else {
       return [2 * Math.PI, 0];

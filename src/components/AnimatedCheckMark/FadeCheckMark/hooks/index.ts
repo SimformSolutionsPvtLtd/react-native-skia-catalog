@@ -1,1 +1,1 @@
-export { default as useFadeCheckMark } from "./useFadeCheckMark";
+export { default as useFadeCheckMark } from './useFadeCheckMark';

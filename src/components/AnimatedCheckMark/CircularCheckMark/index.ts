@@ -1,1 +1,1 @@
-export { default as CircularCheckMark } from "./CircularCheckMark";
+export { default as CircularCheckMark } from './CircularCheckMark';

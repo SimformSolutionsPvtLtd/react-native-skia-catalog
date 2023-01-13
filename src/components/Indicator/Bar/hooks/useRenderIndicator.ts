@@ -2,16 +2,16 @@ import {
   interpolate,
   Skia,
   SkPaint,
-  Transforms2d,
   useComputedValue,
-} from "@shopify/react-native-skia";
-import { useMemo } from "react";
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import { useMemo } from 'react';
 import type {
   RectanglePropsType,
   RenderIndicatorHookReturnType,
   RenderIndicatorPropsType,
-} from "../SkiaBarIndicatorTypes";
-import { getOutputRange } from "../SkiaBarIndicatorUtils";
+} from '../SkiaBarIndicatorTypes';
+import { getOutputRange } from '../SkiaBarIndicatorUtils';
 
 const useRenderIndicator = ({
   index,

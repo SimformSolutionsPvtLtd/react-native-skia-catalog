@@ -17,15 +17,15 @@ Different types of variants are present in the `Indicator` component. The Indica
 ---
 
 ```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { IndicatorEnum, SkiaIndicator } from "react-native-skia-catalog";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { IndicatorEnum, SkiaIndicator } from 'react-native-skia-catalog';
 
 const IndicatorScreen = () => (
   <View style={styles.container}>
     <SkiaIndicator
       type={IndicatorEnum.BALL}
-      color={"#FF5252"}
+      color={'#FF5252'}
       width={60}
       height={60}
       borderRadius={30}
@@ -38,8 +38,8 @@ const IndicatorScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -62,8 +62,8 @@ export default IndicatorScreen;
 | onTouch          | -                   | TouchHandler                                                                                                                     | This `callback` function is triggered when you `press` the `Indicator`.                                                                                                                   |
 | opacity          | -                   | SkiaMutableValue`<number>`                                                                                                       | `Opacity` of `Indicator`.                                                                                                                                                                 |
 | style            | -                   | ViewStyle                                                                                                                        | This `style` is applied to the component `Indicator`.                                                                                                                                     |
-| minScale         | 0.2                 | number                                                                                                                           | It is `minimum` scale value of the dot in `SKYPE` indicator.                                                                                                                                |
-| maxScale         | 1                   | number                                                                                                                           | It is `maximum` scale value of the dot in `SKYPE` indicator.                                                                                                                                |
+| minScale         | 0.2                 | number                                                                                                                           | It is `minimum` scale value of the dot in `SKYPE` indicator.                                                                                                                              |
+| maxScale         | 1                   | number                                                                                                                           | It is `maximum` scale value of the dot in `SKYPE` indicator.                                                                                                                              |
 | trackWidth       | -                   | number                                                                                                                           | `Stroke width` in outline type circle `Indicator`. In `UI_ACTIVITY` indicator, it's responsible for line width.                                                                           |
 | waveFactor       | 0.54                | number                                                                                                                           | It use for `scaling WAVE` animation.                                                                                                                                                      |
 | waveMode         | "fill"              | "fill" / "outline"                                                                                                               | It determines how a wave `circle` looks, whether it fills or outlines in `WAVE` indicator.                                                                                                |

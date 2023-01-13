@@ -1,4 +1,4 @@
-import type { AnimatedProp, Transforms2d } from "@shopify/react-native-skia";
+import type { AnimatedProp, Transforms2d } from '@shopify/react-native-skia';
 
 interface itemObject {
   cx: number;

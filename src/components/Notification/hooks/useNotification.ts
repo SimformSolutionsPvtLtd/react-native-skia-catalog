@@ -1,22 +1,22 @@
 import {
   interpolate,
-  SkFont,
-  SkiaMutableValue,
-  SkiaValue,
-  SkImage,
-  SkPoint,
   useComputedValue,
   useFont,
   useImage,
   useTiming,
-} from "@shopify/react-native-skia";
-import { Fonts, Images } from "../../../assets";
+  type SkFont,
+  type SkiaMutableValue,
+  type SkiaValue,
+  type SkImage,
+  type SkPoint,
+} from '@shopify/react-native-skia';
+import { Fonts, Images } from '../../../assets';
 import {
   getCircleCoordinate,
   getInterPolateValue,
   getLineCoordinate,
-} from "../../../utils";
-import type { NotificationReturnType } from "../NotificationTypes";
+} from '../../../utils';
+import type { NotificationReturnType } from '../NotificationTypes';
 
 const useNotification = (
   size: number,
@@ -28,7 +28,7 @@ const useNotification = (
   const fontSize: number = size / 6;
   const font = useFont(Fonts.font, fontSize) as SkFont;
   const notificationNumber: string =
-    notificationCount > 9 ? "9+" : notificationCount.toString();
+    notificationCount > 9 ? '9+' : notificationCount.toString();
   const firstLineXCoordinate: number = size * 1.267;
   const firstLineYCoordinate: number = size * 1.233;
   const secondLineXCoordinate: number = size * 1.167;

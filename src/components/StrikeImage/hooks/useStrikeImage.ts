@@ -1,22 +1,22 @@
 import {
-  DataSourceParam,
   interpolate,
   runTiming,
-  SkiaMutableValue,
-  SkiaValue,
-  SkImage,
-  SkPoint,
-  TouchHandler,
   useComputedValue,
   useImage,
   useTouchHandler,
   useValue,
   vec,
-} from "@shopify/react-native-skia";
-import { useState } from "react";
-import type { ImageSourcePropType } from "react-native";
-import { getSizeWithinRange } from "../../../utils";
-import type { StrikeImageReturnType } from "../StrikeImageTypes";
+  type DataSourceParam,
+  type SkiaMutableValue,
+  type SkiaValue,
+  type SkImage,
+  type SkPoint,
+  type TouchHandler,
+} from '@shopify/react-native-skia';
+import { useState } from 'react';
+import type { ImageSourcePropType } from 'react-native';
+import { getSizeWithinRange } from '../../../utils';
+import type { StrikeImageReturnType } from '../StrikeImageTypes';
 
 const useStrikeImage = (
   source: string | ImageSourcePropType,
@@ -62,34 +62,47 @@ const useStrikeImage = (
       : interpolate(value.current, [0, 1], [0, 0.2]);
   }, [value, isStrikeVisible]);
 
-  const getEndingCoordinate = (isFilledLine: boolean): SkiaValue<SkPoint> => {
-    return useComputedValue(() => {
-      const translateCoordinate: number = isStrikeVisible
-        ? interpolate(value.current, [0, 1], [1, 0])
-        : interpolate(value.current, [0, 1], [0, 1]);
-      const x1y2Coordinate: number =
+  const getCoordinate = () => {
+    const translateCoordinate: number = isStrikeVisible
+      ? interpolate(value.current, [0, 1], [1, 0])
+      : interpolate(value.current, [0, 1], [0, 1]);
+
+    return {
+      translateCoordinate,
+      x1y2Coordinate:
         dimension * translateCoordinate +
         singleLineStrokeWidth / 2 -
-        strokeSpace;
-      const x2y1Coordinate: number =
+        strokeSpace,
+      x2y1Coordinate:
         dimension * translateCoordinate -
         singleLineStrokeWidth / 6 -
-        strokeSpace;
-
-      if (isFilledLine) {
-        return translateCoordinate <= 0.14
-          ? primaryLineStartingCoordinate
-          : vec(x2y1Coordinate, x1y2Coordinate);
-      } else {
-        return translateCoordinate <= 0.14
-          ? secondaryLineStartingCoordinate
-          : vec(x1y2Coordinate, x2y1Coordinate);
-      }
-    }, [value, isStrikeVisible]);
+        strokeSpace,
+    };
   };
 
+  const primaryLineEndingCoordinate: SkiaValue<SkPoint> =
+    useComputedValue(() => {
+      const { x1y2Coordinate, x2y1Coordinate, translateCoordinate } =
+        getCoordinate();
+
+      return translateCoordinate <= 0.14
+        ? primaryLineStartingCoordinate
+        : vec(x2y1Coordinate, x1y2Coordinate);
+    }, [value, isStrikeVisible]);
+
+  const secondaryLineEndingCoordinate: SkiaValue<SkPoint> =
+    useComputedValue(() => {
+      const { x1y2Coordinate, x2y1Coordinate, translateCoordinate } =
+        getCoordinate();
+
+      return translateCoordinate <= 0.14
+        ? secondaryLineStartingCoordinate
+        : vec(x1y2Coordinate, x2y1Coordinate);
+    }, [value, isStrikeVisible]);
+
   return {
-    getEndingCoordinate,
+    secondaryLineEndingCoordinate,
+    primaryLineEndingCoordinate,
     image,
     opacity,
     primaryLineStartingCoordinate,

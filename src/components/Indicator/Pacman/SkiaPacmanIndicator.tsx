@@ -1,16 +1,15 @@
-import { Circle, Group, Path } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaPacmanIndicatorTypes";
-import type {
-  RenderIndicatorPropsType,
-  SkiaPacmanIndicatorPropsType,
-  RenderBlockHookReturnType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaPacmanIndicatorTypes";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderBlock, useRenderIndicator } from "./hooks";
+import { Circle, Group, Path } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderBlock, useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderBlockHookReturnType,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaPacmanIndicatorPropsType,
+} from './SkiaPacmanIndicatorTypes';
 
 const RenderBlock = ({
   index,
@@ -24,8 +23,7 @@ const RenderBlock = ({
     <Group
       transform={transform}
       key={`Block-${index}`}
-      origin={{ x: cx, y: cy }}
-    >
+      origin={{ x: cx, y: cy }}>
       <Circle cx={cx} cy={cy} r={r} color={color} opacity={opacityLocal} />
     </Group>
   );
@@ -80,7 +78,7 @@ const RenderIndicator = ({
 
   return (
     <Group key={index} origin={{ x: r, y: r }}>
-      <Path style={"fill"} path={path} color={color} opacity={opacityLocal} />
+      <Path style={'fill'} path={path} color={color} opacity={opacityLocal} />
     </Group>
   );
 };

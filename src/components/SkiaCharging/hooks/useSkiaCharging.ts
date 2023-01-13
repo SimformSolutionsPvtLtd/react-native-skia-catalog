@@ -3,16 +3,16 @@ import {
   rect,
   rrect,
   Skia,
-  Transforms2d,
   useComputedValue,
   useTiming,
-} from "@shopify/react-native-skia";
+  type Transforms2d,
+} from '@shopify/react-native-skia';
 import {
   getCubicPath,
   getSkiaChargingThunderPath,
   getSkiaChargingThunderPoints,
   getWavePathPoints,
-} from "../../../utils";
+} from '../../../utils';
 
 const useSkiaCharging = ({ size = 300 }) => {
   const rectenglePath = rrect(

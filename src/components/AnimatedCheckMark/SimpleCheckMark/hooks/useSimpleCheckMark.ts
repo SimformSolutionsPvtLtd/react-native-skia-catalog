@@ -1,11 +1,11 @@
 import {
   interpolate,
-  SkiaValue,
-  Transforms2d,
   useComputedValue,
   useValue,
-} from "@shopify/react-native-skia";
-import type { UseSimpleCheckMarkReturnType } from "../SimpleCheckMarkType";
+  type SkiaValue,
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import type { UseSimpleCheckMarkReturnType } from '../SimpleCheckMarkType';
 
 const useSimpleCheckMark = (
   size: number,

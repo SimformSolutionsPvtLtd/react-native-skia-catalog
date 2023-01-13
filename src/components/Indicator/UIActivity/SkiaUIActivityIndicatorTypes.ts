@@ -1,10 +1,10 @@
-import type { SkiaValue } from "@shopify/react-native-skia";
-import { Colors } from "../../../theme";
+import type { SkiaValue } from '@shopify/react-native-skia';
+import { Colors } from '../../../theme';
 import type {
   BaseIndicatorPropsType,
   OmitChildComponentProps,
   RenderComponentArgType,
-} from "../Base";
+} from '../Base';
 
 export type SkiaUIActivityIndicatorPropsType = BaseIndicatorPropsType & {
   count?: number;

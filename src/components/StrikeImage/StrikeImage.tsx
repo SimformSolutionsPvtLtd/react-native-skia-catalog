@@ -5,13 +5,13 @@ import {
   Group,
   Image,
   Paint,
-} from "@shopify/react-native-skia";
-import React from "react";
-import { Colors } from "../../../src/theme";
-import { Images } from "../../assets";
-import { useStrikeImage } from "./hooks";
-import { Strike } from "./Strike";
-import type { StrikeImagePropsType } from "./StrikeImageTypes";
+} from '@shopify/react-native-skia';
+import React from 'react';
+import { Colors } from '../../../src/theme';
+import { Images } from '../../assets';
+import { useStrikeImage } from './hooks';
+import { Strike } from './Strike';
+import type { StrikeImagePropsType } from './StrikeImageTypes';
 
 const StrikeImage = ({
   size = 240,
@@ -21,7 +21,8 @@ const StrikeImage = ({
   onChangeStrike = () => {},
 }: StrikeImagePropsType): React.ReactElement => {
   const {
-    getEndingCoordinate,
+    primaryLineEndingCoordinate,
+    secondaryLineEndingCoordinate,
     image,
     opacity,
     primaryLineStartingCoordinate,
@@ -37,16 +38,14 @@ const StrikeImage = ({
         height: dimension,
         width: dimension,
       }}
-      onTouch={touchHandler}
-    >
+      onTouch={touchHandler}>
       {image && (
         <Group
           layer={
             <Paint>
               <BlendColor color={color} mode="srcIn" />
             </Paint>
-          }
-        >
+          }>
           <Image
             image={image}
             fit="contain"
@@ -58,7 +57,8 @@ const StrikeImage = ({
       <Strike
         primaryLineColor={color}
         {...{
-          getEndingCoordinate,
+          primaryLineEndingCoordinate,
+          secondaryLineEndingCoordinate,
           singleLineStrokeWidth,
           primaryLineStartingCoordinate,
           secondaryLineStartingCoordinate,

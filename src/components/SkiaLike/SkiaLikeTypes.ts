@@ -1,8 +1,8 @@
 import type {
   SkiaMutableValue,
   Transforms2d,
-} from "@shopify/react-native-skia";
-import type { Range } from "../../types";
+} from '@shopify/react-native-skia';
+import type { Range } from '../../types';
 
 export interface SkisLikeProps {
   size?: Range<40, 301>;
