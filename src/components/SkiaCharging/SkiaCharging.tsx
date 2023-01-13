@@ -3,8 +3,8 @@ import {
   Canvas,
   Fill,
   Group,
-  ImageSVG,
   Paint,
+  Path,
   RoundedRect,
   Skia,
 } from "@shopify/react-native-skia";
@@ -14,9 +14,10 @@ import { Colors } from "../../theme";
 import { useAnimatedSwitch } from "./hooks";
 import type { SkiaChargingProps } from "./SkiaChargingTypes";
 import { SquareCharging } from "./SquareCharging";
+import { Waves } from "./Waves";
+import { Wire } from "./Wire";
 
 const wavePath = Skia.SVG.MakeFromString(SVG.wavePath);
-const thunderSvg = Skia.SVG.MakeFromString(SVG.thunderForChargingWire);
 const curvePathSvg = Skia.SVG.MakeFromString(SVG.wirePath);
 
 const SkiaCharging = ({
@@ -37,6 +38,7 @@ const SkiaCharging = ({
     chargingIconMovement,
     wireTransform,
     opacityValue,
+    thunderPath,
   } = useAnimatedSwitch({ size });
 
   return (
@@ -44,42 +46,15 @@ const SkiaCharging = ({
       <Group clip={circlePath}>
         <Fill color={backgroundColor} />
         <Group transform={squareTransform}>
-          {wavePath && (
-            <Group
-              layer={
-                <Paint>
-                  <BlendColor color={waveColor} mode="srcIn" />
-                </Paint>
-              }
-              transform={waveTransformForRight}
-            >
-              <ImageSVG
-                svg={wavePath}
-                x={size / -4.34}
-                y={size / 1.11}
-                height={size * 1.028}
-                width={size / 1.3}
-              />
-            </Group>
-          )}
-          {wavePath && (
-            <Group
-              layer={
-                <Paint>
-                  <BlendColor color={waveColor} mode="srcIn" />
-                </Paint>
-              }
-              transform={waveTransformForLeft}
-            >
-              <ImageSVG
-                svg={wavePath}
-                x={size / -19.5}
-                y={size / 1.11}
-                height={size * 1.028}
-                width={size / 1.3}
-              />
-            </Group>
-          )}
+          <Waves
+            {...{
+              size,
+              waveColor,
+              wavePath,
+              waveTransformForRight,
+              waveTransformForLeft,
+            }}
+          />
           <RoundedRect color={adapterColor} rect={rectenglePath} />
           <SquareCharging
             {...{ size }}
@@ -117,42 +92,17 @@ const SkiaCharging = ({
         <Group transform={shadowTransform}>
           <RoundedRect color={adapterColor} rect={shadowPath} />
         </Group>
-        {curvePathSvg && (
-          <Group
-            transform={wireTransform}
-            layer={
-              <Paint>
-                <BlendColor color={adapterColor} mode="srcIn" />
-              </Paint>
-            }
-          >
-            <ImageSVG
-              svg={curvePathSvg}
-              x={size / 2.25}
-              y={size / 0.85}
-              height={size / 5.57}
-              width={size / 3.9}
-            />
-          </Group>
-        )}
-        {thunderSvg && (
-          <Group
-            transform={chargingIconMovement}
-            layer={
-              <Paint opacity={opacityValue}>
-                <BlendColor color={thunderColor} mode="srcIn" />
-              </Paint>
-            }
-          >
-            <ImageSVG
-              svg={thunderSvg}
-              x={size / 2.88}
-              y={size / 2.1}
-              height={size / 3.25}
-              width={size / 3.25}
-            />
-          </Group>
-        )}
+        <Wire {...{ curvePathSvg, wireTransform, adapterColor, size }} />
+      </Group>
+      <Group
+        transform={chargingIconMovement}
+        layer={
+          <Paint opacity={opacityValue}>
+            <BlendColor color={thunderColor} mode="srcIn" />
+          </Paint>
+        }
+      >
+        <Path path={thunderPath} />
       </Group>
     </Canvas>
   );
