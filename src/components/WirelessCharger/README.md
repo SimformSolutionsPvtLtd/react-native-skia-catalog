@@ -1,6 +1,6 @@
 # Wireless Charger
 
-`WirelessCharger` component can be used to provide a sensational animation when user charge their phone wirelessly.
+`WirelessCharger` component can be used to provide a sensational animation when user `charge` their phone `wirelessly`.
 
 #### 🎬 Preview
 

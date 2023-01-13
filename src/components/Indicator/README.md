@@ -1,8 +1,10 @@
 # Indicator
 
-`Indicator` component can be used while fetching data from API or also can be used when a user navigates between screens.
+`Indicator` component can be used while `fetching` data from API or also can be used when a user `navigates` between screens.
 
 #### 🎬 Preview
+
+---
 
 |             Indicator             |
 | :-------------------------------: |
@@ -60,8 +62,8 @@ export default IndicatorScreen;
 | onTouch          | -                   | TouchHandler                                                                                                                     | This `callback` function is triggered when you `press` the `Indicator`.                                                                                                                   |
 | opacity          | -                   | SkiaMutableValue`<number>`                                                                                                       | `Opacity` of `Indicator`.                                                                                                                                                                 |
 | style            | -                   | ViewStyle                                                                                                                        | This `style` is applied to the component `Indicator`.                                                                                                                                     |
-| minScale         | 0.2                 | number                                                                                                                           | It is minimum scale value of the dot in `SKYPE` indicator.                                                                                                                                |
-| maxScale         | 1                   | number                                                                                                                           | It is maximum scale value of the dot in `SKYPE` indicator.                                                                                                                                |
+| minScale         | 0.2                 | number                                                                                                                           | It is `minimum` scale value of the dot in `SKYPE` indicator.                                                                                                                                |
+| maxScale         | 1                   | number                                                                                                                           | It is `maximum` scale value of the dot in `SKYPE` indicator.                                                                                                                                |
 | trackWidth       | -                   | number                                                                                                                           | `Stroke width` in outline type circle `Indicator`. In `UI_ACTIVITY` indicator, it's responsible for line width.                                                                           |
 | waveFactor       | 0.54                | number                                                                                                                           | It use for `scaling WAVE` animation.                                                                                                                                                      |
 | waveMode         | "fill"              | "fill" / "outline"                                                                                                               | It determines how a wave `circle` looks, whether it fills or outlines in `WAVE` indicator.                                                                                                |

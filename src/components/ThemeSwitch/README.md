@@ -1,6 +1,6 @@
 # Theme Switch
 
-`ThemeSwitch` component can be used to provide a amazing animation when user changing the state of system functionalities and preferences using Toggle Switch.
+`ThemeSwitch` component can be used to provide a amazing animation when user `changing` the `state` of system functionalities and preferences using `Toggle Switch`.
 
 #### 🎬 Preview
 

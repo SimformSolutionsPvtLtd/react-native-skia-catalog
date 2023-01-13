@@ -1,6 +1,6 @@
 # Media Button
 
-`MediaButton` component comes with custom animation and a customized pulse effect around the button.
+`MediaButton` component comes with `custom animation` and a `customized pulse` effect around the button.
 
 #### 🎬 Preview
 
@@ -78,7 +78,6 @@ export default MediaButtonScreen;
 
 #### Properties
 
----
 
 | Props            | Default  | Type                              | Description                                                                                                 |
 | :--------------- | :------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------- |
@@ -86,7 +85,7 @@ export default MediaButtonScreen;
 | color            | #E65100  | string                            | `Color` of `Button`.                                                                                        |
 | speed            | 800      | number                            | `Speed` of icon `rotation`.                                                                                 |
 | buttonType       | "CIRCLE" | "CIRCLE" / "RECTANGLE" / "SQUARE" | `Type` of `Button`. Note: ButtonEnum can be used to specify the type. Ex. ButtonEnum.SQUARE.                |
-| style            | {}       | ViewStyle                         | Container style.                                                                                            |
+| style            | {}       | ViewStyle                         | Container `style`.                                                                                            |
 | playImageSource  | -        | ImageSourcePropType               | `Play` image `source` path.                                                                                 |
 | pauseImageSource | -        | ImageSourcePropType               | `Pause` image `source` path.                                                                                |
 | onPlayPress      | () => {} | function                          | `Play callback` function that invoke on pressing play button.                                               |

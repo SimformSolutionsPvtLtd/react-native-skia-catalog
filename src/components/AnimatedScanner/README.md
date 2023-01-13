@@ -1,6 +1,6 @@
 # Animated Scanner
 
-`AnimatedScanner` component gives animation to user when they scan any document, QR code etc.
+`AnimatedScanner` component gives animation to user when they `scan` any `document`, `QR code` etc.
 
 #### 🎬 Preview
 
@@ -87,7 +87,7 @@ export default AnimatedScannerScreen;
 | borderWidth      | 2       | number  | `borderWidth` set `outer line` borderWidth.                            |
 | strokeColor      | #FF0000 | string  | `Color` of the `vertical animated line`.                               |
 | strokeDelay      | 1400    | number  | `strokeDelay` delay in `vertical animation`.                           |
-| strokeWidth      | 240     | number  | `strokeWidth` increase and decrease width of `vertical animated line`. |
+| strokeWidth      | 240     | number  | `strokeWidth` `increase` and `decrease` width of `vertical animated line`. |
 
 > Note: initialZoomScale has a scale from 0 to 1. When the scale value is set to 1, zooming will stop and when it is set to 0, zooming will begin from the centre.
 

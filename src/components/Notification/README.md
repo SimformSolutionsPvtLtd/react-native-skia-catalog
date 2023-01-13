@@ -1,6 +1,6 @@
 # Notification
 
-`Notification` component can be used to enhance the user experience with charming animation when message arrive.
+`Notification` component can be used to enhance the user experience with charming animation when `message arrive`.
 
 #### 🎬 Preview
 
@@ -68,7 +68,6 @@ export default NotificationScreen;
 
 ![alt tag](/assets/CustomNotification.gif)
 
----
 
 #### Properties
 
