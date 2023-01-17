@@ -6,7 +6,7 @@ import type {
 import type { ImageSourcePropType } from "react-native";
 import type { Range } from "../../types";
 
-interface UseAnimatedScannerReturnType {
+export interface UseAnimatedScannerReturnType {
   verticalTransform: SkiaValue<Transforms2d>;
   strokeStartPoint: number;
   medianHeight: number;
@@ -16,7 +16,7 @@ interface UseAnimatedScannerReturnType {
   imageStartPosition: number;
 }
 
-interface AnimatedScannerPropTypes {
+export interface AnimatedScannerPropTypes {
   stopZooming: boolean;
   initialZoomScale: number;
   height: Range<100, 351>;
@@ -30,4 +30,9 @@ interface AnimatedScannerPropTypes {
   imageSource: ImageSourcePropType | string;
 }
 
-export type { AnimatedScannerPropTypes, UseAnimatedScannerReturnType };
+export interface UseAnimatedScannerProps {
+  strokeDelay: number;
+  strokeWidth: number;
+  height: number;
+  imageSource: string | ImageSourcePropType;
+}

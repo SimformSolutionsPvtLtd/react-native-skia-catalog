@@ -1,8 +1,14 @@
 import type { SkiaValue, Transforms2d } from "@shopify/react-native-skia";
-import type { AnimatedScannerPropTypes } from "../AnimatedScannerTypes";
 
-interface ScannerOutlinePropsType extends Partial<AnimatedScannerPropTypes> {
+interface ScannerOutlinePropsType {
+  stopZooming: boolean;
   medianHeight: number;
+  height: number;
+  borderRadius: number;
+  borderWidth: number;
+  initialZoomScale: number;
+  zoomingDelay: number;
+  borderColor: string;
 }
 interface UseScannerOutlinePropsType {
   stopZooming: boolean;
