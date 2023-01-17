@@ -1,3 +1,5 @@
+![alt tag](./assets/React-Native-Skia-Catalog.gif)
+
 # react-native-skia-catalog
 
 ---
@@ -20,11 +22,11 @@ This custom animated skia component library provides multiple custom animated sk
 
 | <div style = "width: 270px">SkiaLike</div> | <div style = "width: 270px">AnimatedWallet</div> | <div style = "width: 270px">AnimatedScanner</div> | <div style = "width: 270px">MediaButton</div> |
 | :----------------------------------------: | :----------------------------------------------: | :-----------------------------------------------: | :-------------------------------------------: |
-|  ![alt tag](./assets/DefaultSkiaLike.gif)  |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |  ![alt tag](./assets/DefaultAnimatedScanner.gif)  |     ![alt tag](./assets/MediaButton.gif)      |
+|  ![alt tag](./assets/SkiaLike.gif)  |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |  ![alt tag](./assets/DefaultAnimatedScanner.gif)  |     ![alt tag](./assets/DefaultMediaButton.gif)      |
 
 | <div style = "width: 270px">HeartRate</div> | <div style = "width: 270px">WirelessCharger</div> | <div style = "width: 270px">SkiaCharging</div> | <div style = "width: 270px">AnimatedCheckmark</div> |
 | :-----------------------------------------: | :-----------------------------------------------: | :--------------------------------------------: | :-------------------------------------------------: |
-|     ![alt tag](./assets/HeartRate.gif)      |  ![alt tag](./assets/DefaultWirelessCharger.gif)  |     ![alt tag](./assets/SkiaCharging.gif)      |     ![alt tag](./assets/AnimatedCheckmark.gif)      |
+|     ![alt tag](./assets/DefaultHeartRate.gif)      |  ![alt tag](./assets/DefaultWirelessCharger.gif)  |     ![alt tag](./assets/DefaultSkiaCharging.gif)      |     ![alt tag](./assets/AnimatedCheckmark.gif)      |
 
 ---
 

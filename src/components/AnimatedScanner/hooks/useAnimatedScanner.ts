@@ -7,18 +7,17 @@ import {
   type SkImage,
   type Transforms2d,
 } from '@shopify/react-native-skia';
-import { Images } from '../../../assets';
 import type {
-  AnimatedScannerPropTypes,
+  UseAnimatedScannerProps,
   UseAnimatedScannerReturnType,
 } from '../AnimatedScannerTypes';
 
 const useAnimatedScanner = ({
-  strokeDelay = 1000,
-  strokeWidth = 170,
-  height = 220,
-  imageSource = Images.pdf,
-}: Partial<AnimatedScannerPropTypes>): UseAnimatedScannerReturnType => {
+  strokeDelay,
+  strokeWidth,
+  height,
+  imageSource,
+}: UseAnimatedScannerProps): UseAnimatedScannerReturnType => {
   const medianHeight: number = height / 2;
   const strokeStartPoint: number =
     strokeWidth < height ? (height - strokeWidth) / 2 : 0;

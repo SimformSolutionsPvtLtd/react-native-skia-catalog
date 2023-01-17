@@ -8,7 +8,7 @@
 
 |             MediaButton             |
 | :---------------------------------: |
-| ![alt tag](/assets/MediaButton.gif) |
+| ![alt tag](/assets/DefaultMediaButton.gif) |
 
 #### Default Usage
 

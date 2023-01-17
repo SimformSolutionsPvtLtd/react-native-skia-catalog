@@ -10,11 +10,11 @@ import type {
 } from '../ScannerOutlineTypes';
 
 const useScannerOutline = ({
-  stopZooming = false,
-  initialZoomScale = 0.9,
-  zoomingDelay = 2000,
-  height = 220,
-  borderWidth = 5,
+  stopZooming,
+  initialZoomScale,
+  zoomingDelay,
+  height,
+  borderWidth,
 }: UseScannerOutlinePropsType): UseScannerOutlineReturnType => {
   const maskedSquareDimension: number = height - borderWidth * 2;
   const maskedLineWidth: number = height / 1.5;
