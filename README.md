@@ -18,15 +18,15 @@ This custom animated skia component library provides multiple custom animated sk
 
 | <div style="width:270px"></div>Indicator | <div style="width:270px"></div>StrikeImage  | <div style="width:270px"></div>Notification  | <div style="width:270px"></div>ThemeSwitch  |
 | :--------------------------------------: | :-----------------------------------------: | :------------------------------------------: | :-----------------------------------------: |
-|    ![alt tag](./assets/Indicator.gif)    | ![alt tag](./assets/DefaultStrikeImage.gif) | ![alt_tag](./assets/DefaultNotification.gif) | ![alt tag](./assets/DefaultThemeSwitch.gif) |
+|  ![alt tag](./assets/Indicator.gif)  |  ![alt tag](./assets/DefaultStrikeImage.gif)  |  ![alt_tag](./assets/DefaultNotification.gif)  |  ![alt tag](./assets/DefaultThemeSwitch.gif)  |
 
 | <div style = "width: 270px">SkiaLike</div> | <div style = "width: 270px">AnimatedWallet</div> | <div style = "width: 270px">AnimatedScanner</div> | <div style = "width: 270px">MediaButton</div> |
 | :----------------------------------------: | :----------------------------------------------: | :-----------------------------------------------: | :-------------------------------------------: |
-|  ![alt tag](./assets/SkiaLike.gif)  |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |  ![alt tag](./assets/DefaultAnimatedScanner.gif)  |     ![alt tag](./assets/DefaultMediaButton.gif)      |
+|  ![alt tag](./assets/SkiaLike.gif)  |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |  ![alt tag](./assets/DefaultAnimatedScanner.gif)  |  ![alt tag](./assets/DefaultMediaButton.gif)  |
 
 | <div style = "width: 270px">HeartRate</div> | <div style = "width: 270px">WirelessCharger</div> | <div style = "width: 270px">SkiaCharging</div> | <div style = "width: 270px">AnimatedCheckmark</div> |
 | :-----------------------------------------: | :-----------------------------------------------: | :--------------------------------------------: | :-------------------------------------------------: |
-|     ![alt tag](./assets/DefaultHeartRate.gif)      |  ![alt tag](./assets/DefaultWirelessCharger.gif)  |     ![alt tag](./assets/DefaultSkiaCharging.gif)      |     ![alt tag](./assets/AnimatedCheckmark.gif)      |
+|  ![alt tag](./assets/DefaultHeartRate.gif)  |  ![alt tag](./assets/DefaultWirelessCharger.gif)  |  ![alt tag](./assets/DefaultSkiaCharging.gif)  |  ![alt tag](./assets/AnimatedCheckmark.gif)  |
 
 ---
 
