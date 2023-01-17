@@ -8,7 +8,7 @@
 
 |             SkiaCharging             |
 | :----------------------------------: |
-| ![alt tag](/assets/SkiaCharging.gif) |
+| ![alt tag](/assets/DefaultSkiaCharging.gif) |
 
 #### Default Usage
 
@@ -70,7 +70,7 @@ export default SkiaCharging;
 
 ---
 
-![alt tag](/assets/CustomUsageOfSkiaCharging.gif)
+![alt tag](/assets/CustomSkiaCharging.gif)
 
 #### Properties
 

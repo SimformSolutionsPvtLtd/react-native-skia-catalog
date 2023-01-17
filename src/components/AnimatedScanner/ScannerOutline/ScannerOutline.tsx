@@ -11,13 +11,13 @@ import { useScannerOutline } from './hooks';
 import type { ScannerOutlinePropsType } from './ScannerOutlineTypes';
 
 const ScannerOutline = ({
-  stopZooming = false,
+  stopZooming,
   medianHeight,
-  height = 220,
+  height,
   borderRadius,
-  borderWidth = 5,
-  initialZoomScale = 0.9,
-  zoomingDelay = 2000,
+  borderWidth,
+  initialZoomScale,
+  zoomingDelay,
   borderColor,
 }: ScannerOutlinePropsType): React.ReactElement => {
   const { transform, maskedSquareDimension, maskedLineWidth } =

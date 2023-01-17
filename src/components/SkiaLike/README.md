@@ -8,7 +8,7 @@
 
 |                SkiaLike                 |
 | :-------------------------------------: |
-| ![alt tag](/assets/DefaultSkiaLike.gif) |
+| ![alt tag](/assets/SkiaLike.gif) |
 
 #### Usage
 

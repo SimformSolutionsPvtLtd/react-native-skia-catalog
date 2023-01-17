@@ -1,5 +1,6 @@
 import { Canvas, Group, Image, Line, vec } from '@shopify/react-native-skia';
 import React from 'react';
+import { Images } from '../../assets';
 import { Colors } from '../../theme';
 import type { AnimatedScannerPropTypes } from './AnimatedScannerTypes';
 import { useAnimatedScanner } from './hooks';
@@ -9,14 +10,14 @@ const AnimatedScanner = ({
   stopZooming = false,
   initialZoomScale = 0.9,
   height = 220,
-  zoomingDelay,
+  zoomingDelay = 2000,
   borderColor = Colors.navyBlue,
   strokeColor = Colors.red,
-  strokeDelay,
+  strokeDelay = 1000,
   strokeWidth = 170,
   borderRadius = 5,
   borderWidth = 5,
-  imageSource,
+  imageSource = Images.pdf,
 }: Partial<AnimatedScannerPropTypes>): React.ReactElement => {
   const {
     verticalTransform,
