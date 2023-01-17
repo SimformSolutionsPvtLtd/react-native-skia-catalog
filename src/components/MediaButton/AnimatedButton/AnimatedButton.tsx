@@ -4,10 +4,10 @@ import {
   Image,
   Paint,
   vec,
-} from "@shopify/react-native-skia";
-import React from "react";
-import { Colors } from "../../../theme";
-import type { AnimatedButtonPropsType } from "./AnimatedButtonTypes";
+} from '@shopify/react-native-skia';
+import React from 'react';
+import { Colors } from '../../../theme';
+import type { AnimatedButtonPropsType } from './AnimatedButtonTypes';
 
 const AnimatedButton = ({
   rotateButton,
@@ -28,8 +28,7 @@ const AnimatedButton = ({
         <Paint>
           <BlendColor color={Colors.white} mode="srcIn" />
         </Paint>
-      }
-    >
+      }>
       {playButton && (
         <Image
           height={size / 3}

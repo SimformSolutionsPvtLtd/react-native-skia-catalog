@@ -1,1 +1,1 @@
-export { default as useMediaButton } from "./useMediaButton";
+export { default as useMediaButton } from './useMediaButton';

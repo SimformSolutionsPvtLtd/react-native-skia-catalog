@@ -1,1 +1,1 @@
-export { default as SquareCharging } from "./SquareCharging";
+export { default as SquareCharging } from './SquareCharging';

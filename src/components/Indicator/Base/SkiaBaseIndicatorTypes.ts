@@ -1,12 +1,12 @@
-import { Color, Easing, SkiaMutableValue } from "@shopify/react-native-skia";
+import { Color, Easing, SkiaMutableValue } from '@shopify/react-native-skia';
 
 type OmitParentComponentProps =
-  | "width"
-  | "height"
-  | "borderRadius"
-  | "opacity"
-  | "color";
-export type OmitChildComponentProps = "animationEasing";
+  | 'width'
+  | 'height'
+  | 'borderRadius'
+  | 'opacity'
+  | 'color';
+export type OmitChildComponentProps = 'animationEasing';
 
 export type CirclePropsType = {
   cx: number;

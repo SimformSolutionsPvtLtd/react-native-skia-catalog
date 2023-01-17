@@ -1,6 +1,6 @@
-import { BlendColor, Group, ImageSVG, Paint } from "@shopify/react-native-skia";
-import React from "react";
-import type { WireProps } from "./WireTypes";
+import { BlendColor, Group, ImageSVG, Paint } from '@shopify/react-native-skia';
+import React from 'react';
+import type { WireProps } from './WireTypes';
 
 const Wire = ({
   curvePathSvg,
@@ -17,8 +17,7 @@ const Wire = ({
             <Paint>
               <BlendColor color={adapterColor} mode="srcIn" />
             </Paint>
-          }
-        >
+          }>
           <ImageSVG
             svg={curvePathSvg}
             x={size / 2.25}

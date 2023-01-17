@@ -1,15 +1,14 @@
-import { Circle, Group } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaDotIndicatorTypes";
-import type {
-  RenderIndicatorPropsType,
-  SkiaDotIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaDotIndicatorTypes";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderIndicator } from "./hooks";
+import { Circle, Group } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaDotIndicatorPropsType,
+} from './SkiaDotIndicatorTypes';
 
 const RenderIndicator = ({
   index,
@@ -25,8 +24,7 @@ const RenderIndicator = ({
       origin={{
         x: cx + index * (2 * r) + (index !== 0 ? index * r : 0),
         y: cy,
-      }}
-    >
+      }}>
       <Circle
         cx={cx + index * (2 * r) + (index !== 0 ? index * r : 0)}
         cy={cy}
@@ -55,8 +53,7 @@ const SkiaDotIndicator = ({
       origin={{
         x: width / 2,
         y: height / 2,
-      }}
-    >
+      }}>
       <SkiaBaseIndicator
         renderComponent={(args: RenderComponentArgType) => (
           <RenderIndicator

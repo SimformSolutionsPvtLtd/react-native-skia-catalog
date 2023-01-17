@@ -1,10 +1,10 @@
-import { interpolate, useComputedValue } from "@shopify/react-native-skia";
-import { useMemo } from "react";
+import { interpolate, useComputedValue } from '@shopify/react-native-skia';
+import { useMemo } from 'react';
 import type {
   RectanglePropsType,
   RenderIndicatorHookReturnType,
   RenderIndicatorPropsType,
-} from "../SkiaUIActivityIndicatorTypes";
+} from '../SkiaUIActivityIndicatorTypes';
 
 const useRenderIndicator = ({
   index,

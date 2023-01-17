@@ -1,1 +1,1 @@
-export { default as useAnimatedCheckMark } from "./useAnimatedCheckMark";
+export { default as useAnimatedCheckMark } from './useAnimatedCheckMark';

@@ -1,4 +1,4 @@
-import type { Range } from "../../types";
+import type { Range } from '../../types';
 
 export interface WireLessChargerProps {
   size: Range<150, 351>;

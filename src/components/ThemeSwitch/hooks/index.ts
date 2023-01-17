@@ -1,1 +1,1 @@
-export { default as useThemeSwitch } from "./useThemeSwitch";
+export { default as useThemeSwitch } from './useThemeSwitch';

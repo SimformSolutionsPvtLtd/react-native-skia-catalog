@@ -15,9 +15,9 @@ The `StrikeImage` component animates a strike over any image to indicate `on/off
 ---
 
 ```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { StrikeImage } from "react-native-skia-catalog";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { StrikeImage } from 'react-native-skia-catalog';
 
 const StrikeImageScreen = () => (
   <View style={styles.container}>
@@ -28,8 +28,8 @@ const StrikeImageScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -41,17 +41,17 @@ export default StrikeImageScreen;
 ---
 
 ```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { StrikeImage } from "react-native-skia-catalog";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { StrikeImage } from 'react-native-skia-catalog';
 
 const StrikeImageScreen = () => (
   <View style={styles.container}>
     <StrikeImage
       size={300}
       strikeWidth={55}
-      color={"#E65100"}
-      source={"https://cdn-icons-png.flaticon.com/512/2111/2111425.png"}
+      color={'#E65100'}
+      source={'https://cdn-icons-png.flaticon.com/512/2111/2111425.png'}
     />
   </View>
 );
@@ -59,8 +59,8 @@ const StrikeImageScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

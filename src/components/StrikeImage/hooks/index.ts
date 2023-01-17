@@ -1,1 +1,1 @@
-export { default as useStrikeImage } from "./useStrikeImage";
+export { default as useStrikeImage } from './useStrikeImage';

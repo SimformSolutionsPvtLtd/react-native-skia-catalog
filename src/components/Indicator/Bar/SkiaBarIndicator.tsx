@@ -1,15 +1,14 @@
-import { Group, Paint, RoundedRect } from "@shopify/react-native-skia";
-import React from "react";
-import type { RenderComponentArgType } from "../Base";
-import { SkiaBaseIndicator } from "../Base";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderIndicator } from "./hooks";
+import { Group, Paint, RoundedRect } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
 import type {
   RenderIndicatorHookReturnType,
   RenderIndicatorPropsType,
   SkiaBarIndicatorPropsType,
-} from "./SkiaBarIndicatorTypes";
-import { defaultProps } from "./SkiaBarIndicatorTypes";
+} from './SkiaBarIndicatorTypes';
+import { defaultProps } from './SkiaBarIndicatorTypes';
 
 const RenderIndicator = ({
   index,

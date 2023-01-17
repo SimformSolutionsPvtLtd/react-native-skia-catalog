@@ -1,1 +1,1 @@
-export { default as MainCircle } from "./MainCircle";
+export { default as MainCircle } from './MainCircle';

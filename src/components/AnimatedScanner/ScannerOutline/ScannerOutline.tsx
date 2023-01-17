@@ -5,10 +5,10 @@ import {
   Rect,
   RoundedRect,
   vec,
-} from "@shopify/react-native-skia";
-import React from "react";
-import { useScannerOutline } from "./hooks";
-import type { ScannerOutlinePropsType } from "./ScannerOutlineTypes";
+} from '@shopify/react-native-skia';
+import React from 'react';
+import { useScannerOutline } from './hooks';
+import type { ScannerOutlinePropsType } from './ScannerOutlineTypes';
 
 const ScannerOutline = ({
   stopZooming = false,
@@ -65,8 +65,7 @@ const ScannerOutline = ({
             strokeWidth={maskedLineWidth}
           />
         </Group>
-      }
-    >
+      }>
       <Rect x={0} y={0} width={height} height={height} color={borderColor} />
     </Mask>
   );

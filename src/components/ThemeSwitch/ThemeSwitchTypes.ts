@@ -1,4 +1,4 @@
-import type { Range } from "../../types";
+import type { Range } from '../../types';
 
 export interface UseThemeSwitchProps {
   rotate: any;

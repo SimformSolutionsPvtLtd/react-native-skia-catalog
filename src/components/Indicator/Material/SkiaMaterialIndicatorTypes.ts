@@ -1,22 +1,19 @@
-import type {
-  SkiaValue,
-  Transforms2d,
-} from "@shopify/react-native-skia";
-import { Colors } from "../../../theme";
+import type { SkiaValue, Transforms2d } from '@shopify/react-native-skia';
+import { Colors } from '../../../theme';
 import type {
   BaseIndicatorPropsType,
   OmitChildComponentProps,
   RenderComponentArgType,
-} from "../Base";
+} from '../Base';
 
 export type SkiaMaterialIndicatorPropsType = BaseIndicatorPropsType & {
   trackWidth?: number;
-  direction?: "clockwise" | "counter-clockwise";
+  direction?: 'clockwise' | 'counter-clockwise';
 };
 
 export const defaultProps = {
   color: Colors.orange,
-  direction: "counter-clockwise",
+  direction: 'counter-clockwise',
   progressDuration: 40000,
 };
 

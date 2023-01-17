@@ -15,9 +15,9 @@
 ---
 
 ```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { MediaButton } from "react-native-skia-catalog";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { MediaButton } from 'react-native-skia-catalog';
 
 const MediaButtonScreen = () => (
   <View style={styles.container}>
@@ -28,8 +28,8 @@ const MediaButtonScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -41,9 +41,9 @@ export default MediaButtonScreen;
 ---
 
 ```jsx
-import React from "react";
-import { View, StyleSheet } from "react-native";
-import { ButtonEnum, MediaButton } from "react-native-skia-catalog";
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { ButtonEnum, MediaButton } from 'react-native-skia-catalog';
 
 const MediaButtonScreen = () => (
   <View style={styles.container}>
@@ -54,7 +54,7 @@ const MediaButtonScreen = () => (
       speed={1000}
       pulseStart={0.2}
       pulseEnd={0.7}
-      color={"#FF5252"}
+      color={'#FF5252'}
     />
   </View>
 );
@@ -62,8 +62,8 @@ const MediaButtonScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -78,14 +78,13 @@ export default MediaButtonScreen;
 
 #### Properties
 
-
 | Props            | Default  | Type                              | Description                                                                                                 |
 | :--------------- | :------- | :-------------------------------- | :---------------------------------------------------------------------------------------------------------- |
 | size             | 110      | number                            | `Size` of `Button`.                                                                                         |
 | color            | #E65100  | string                            | `Color` of `Button`.                                                                                        |
 | speed            | 800      | number                            | `Speed` of icon `rotation`.                                                                                 |
 | buttonType       | "CIRCLE" | "CIRCLE" / "RECTANGLE" / "SQUARE" | `Type` of `Button`. Note: ButtonEnum can be used to specify the type. Ex. ButtonEnum.SQUARE.                |
-| style            | {}       | ViewStyle                         | Container `style`.                                                                                            |
+| style            | {}       | ViewStyle                         | Container `style`.                                                                                          |
 | playImageSource  | -        | ImageSourcePropType               | `Play` image `source` path.                                                                                 |
 | pauseImageSource | -        | ImageSourcePropType               | `Pause` image `source` path.                                                                                |
 | onPlayPress      | () => {} | function                          | `Play callback` function that invoke on pressing play button.                                               |

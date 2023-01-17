@@ -3,8 +3,8 @@ import type {
   SkiaValue,
   SkImage,
   SkPoint,
-} from "@shopify/react-native-skia";
-import type { Range } from "../../types";
+} from '@shopify/react-native-skia';
+import type { Range } from '../../types';
 
 interface NotificationPropsType {
   size?: Range<50, 251>;

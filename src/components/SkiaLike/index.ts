@@ -1,2 +1,2 @@
-export { default as SkiaLike } from "./SkiaLike";
-export { type SkisLikeProps } from "./SkiaLikeTypes";
+export { default as SkiaLike } from './SkiaLike';
+export { type SkisLikeProps } from './SkiaLikeTypes';

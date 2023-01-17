@@ -1,45 +1,45 @@
-import type { TouchHandler } from "@shopify/react-native-skia";
-import type { StyleProp, ViewStyle } from "react-native";
-import { Colors } from "../../theme";
-import type { SkiaBallIndicatorPropsType } from "./Ball";
-import type { SkiaBarIndicatorPropsType } from "./Bar";
-import type { BaseIndicatorPropsType } from "./Base";
-import type { SkiaBreathingIndicatorPropsType } from "./Breathing";
-import type { SkiaCircleIndicatorPropsType } from "./Circle";
-import type { SkiaDotIndicatorPropsType } from "./Dot";
-import type { SkiaMaterialIndicatorPropsType } from "./Material";
-import type { SkiaPacmanIndicatorPropsType } from "./Pacman";
-import type { SkiaPulseIndicatorPropsType } from "./Pulse";
-import type { SkiaRotationCircleIndicatorPropsType } from "./RotationCircle";
-import type { SkiaRotationHoleIndicatorPropsType } from "./RotationHole";
-import type { SkiaSkypeIndicatorPropsType } from "./Skype";
-import type { SkiaUIActivityIndicatorPropsType } from "./UIActivity";
-import type { SkiaWaveIndicatorPropsType } from "./Wave";
+import type { TouchHandler } from '@shopify/react-native-skia';
+import type { StyleProp, ViewStyle } from 'react-native';
+import { Colors } from '../../theme';
+import type { SkiaBallIndicatorPropsType } from './Ball';
+import type { SkiaBarIndicatorPropsType } from './Bar';
+import type { BaseIndicatorPropsType } from './Base';
+import type { SkiaBreathingIndicatorPropsType } from './Breathing';
+import type { SkiaCircleIndicatorPropsType } from './Circle';
+import type { SkiaDotIndicatorPropsType } from './Dot';
+import type { SkiaMaterialIndicatorPropsType } from './Material';
+import type { SkiaPacmanIndicatorPropsType } from './Pacman';
+import type { SkiaPulseIndicatorPropsType } from './Pulse';
+import type { SkiaRotationCircleIndicatorPropsType } from './RotationCircle';
+import type { SkiaRotationHoleIndicatorPropsType } from './RotationHole';
+import type { SkiaSkypeIndicatorPropsType } from './Skype';
+import type { SkiaUIActivityIndicatorPropsType } from './UIActivity';
+import type { SkiaWaveIndicatorPropsType } from './Wave';
 
 type OmitBaseProps =
-  | "animationEasing"
-  | "animating"
-  | "width"
-  | "height"
-  | "borderRadius"
-  | "opacity"
-  | "color"
-  | "progressDuration";
+  | 'animationEasing'
+  | 'animating'
+  | 'width'
+  | 'height'
+  | 'borderRadius'
+  | 'opacity'
+  | 'color'
+  | 'progressDuration';
 
 export enum IndicatorEnum {
-  BALL = "Ball",
-  BAR = "Bar",
-  CIRCLE = "Circle",
-  DOT = "Dot",
-  MATERIAL = "Material",
-  PAC_MAN = "Pacman",
-  PULSE = "Pulse",
-  SKYPE = "Skype",
-  UI_ACTIVITY = "UIActivity",
-  WAVE = "Wave",
-  BREATHING = "Breathing",
-  ROTATION_CIRCLE = "RotationCircle",
-  ROTATION_HOLE = "RotationHole",
+  BALL = 'Ball',
+  BAR = 'Bar',
+  CIRCLE = 'Circle',
+  DOT = 'Dot',
+  MATERIAL = 'Material',
+  PAC_MAN = 'Pacman',
+  PULSE = 'Pulse',
+  SKYPE = 'Skype',
+  UI_ACTIVITY = 'UIActivity',
+  WAVE = 'Wave',
+  BREATHING = 'Breathing',
+  ROTATION_CIRCLE = 'RotationCircle',
+  ROTATION_HOLE = 'RotationHole',
 }
 
 type BallIndicatorType = {

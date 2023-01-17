@@ -15,9 +15,9 @@
 ---
 
 ```jsx
-import React from "react";
-import { View, StyleSheet } from "react-native";
-import { Notification } from "react-native-skia-catalog";
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { Notification } from 'react-native-skia-catalog';
 
 const NotificationScreen = () => (
   <View style={styles.container}>
@@ -28,8 +28,8 @@ const NotificationScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -41,21 +41,21 @@ export default NotificationScreen;
 ---
 
 ```jsx
-import React from "react";
-import { View, StyleSheet } from "react-native";
-import { Notification } from "react-native-skia-catalog";
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
+import { Notification } from 'react-native-skia-catalog';
 
 const NotificationScreen = () => (
   <View style={styles.container}>
-    <Notification notificationCount={15} color={"#F84F31"} size={220} />
+    <Notification notificationCount={15} color={'#F84F31'} size={220} />
   </View>
 );
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
@@ -67,7 +67,6 @@ export default NotificationScreen;
 ---
 
 ![alt tag](/assets/CustomNotification.gif)
-
 
 #### Properties
 

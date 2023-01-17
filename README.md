@@ -28,8 +28,6 @@ This custom animated skia component library provides multiple custom animated sk
 
 ---
 
-
-
 ## Components
 
 ---
@@ -100,7 +98,7 @@ This custom animated skia component library provides multiple custom animated sk
 
 ---
 
-### XII. [SkiaCharging](./src/components/SkiaCharging/)
+### XII. [SkiaCharging](./src/components/SkiaCharging)
 
 [More about SkiaCharging component](./src/components/SkiaCharging/README.md)
 

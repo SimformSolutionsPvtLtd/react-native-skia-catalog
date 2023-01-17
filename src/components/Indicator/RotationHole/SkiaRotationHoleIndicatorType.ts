@@ -1,22 +1,22 @@
-import type { Color, SkiaValue } from "@shopify/react-native-skia";
-import { Colors } from "../../../theme";
+import type { Color, SkiaValue } from '@shopify/react-native-skia';
+import { Colors } from '../../../theme';
 import type {
   BaseIndicatorPropsType,
   OmitChildComponentProps,
   RenderComponentArgType,
-} from "../Base";
+} from '../Base';
 
 export type SkiaRotationHoleIndicatorPropsType = BaseIndicatorPropsType & {
   trackWidth?: number;
   circleColor?: Color;
-  direction?: "clockwise" | "counter-clockwise";
+  direction?: 'clockwise' | 'counter-clockwise';
 };
 
 export const defaultProps = {
   trackWidth: 8,
   color: Colors.orange,
   circleColor: Colors.orange,
-  direction: "counter-clockwise",
+  direction: 'counter-clockwise',
   progressDuration: 8000,
 };
 

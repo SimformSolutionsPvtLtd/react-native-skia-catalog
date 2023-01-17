@@ -1,1 +1,1 @@
-export { default as FollowUpHeartRate } from "./FollowUpHeartRate";
+export { default as FollowUpHeartRate } from './FollowUpHeartRate';

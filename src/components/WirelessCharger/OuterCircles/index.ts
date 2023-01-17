@@ -1,1 +1,1 @@
-export { default as OuterCircles } from "./OuterCircles";
+export { default as OuterCircles } from './OuterCircles';

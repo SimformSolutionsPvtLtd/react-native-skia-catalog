@@ -1,1 +1,1 @@
-export { default as InnerWifiSignal } from "./InnerWifiSignal";
+export { default as InnerWifiSignal } from './InnerWifiSignal';

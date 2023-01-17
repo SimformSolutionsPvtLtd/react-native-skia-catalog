@@ -1,1 +1,1 @@
-export { default as useAnimatedScanner } from "./useAnimatedScanner";
+export { default as useAnimatedScanner } from './useAnimatedScanner';

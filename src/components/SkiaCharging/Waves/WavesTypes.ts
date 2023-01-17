@@ -2,7 +2,7 @@ import type {
   SkiaValue,
   SkPath,
   Transforms2d,
-} from "@shopify/react-native-skia";
+} from '@shopify/react-native-skia';
 
 export interface WavesProps {
   size: number;

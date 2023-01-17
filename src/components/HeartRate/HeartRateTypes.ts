@@ -1,9 +1,9 @@
-import type { SkPath } from "@shopify/react-native-skia";
-import type { Range } from "../../types";
+import type { SkPath } from '@shopify/react-native-skia';
+import type { Range } from '../../types';
 
 export enum HeartRateEnum {
-  DEFAULT = "Default",
-  FOLLOWUP = "FollowUp",
+  DEFAULT = 'Default',
+  FOLLOWUP = 'FollowUp',
 }
 interface HeartRatePropsType {
   size: Range<50, 241>;
@@ -12,7 +12,7 @@ interface HeartRatePropsType {
   gridColor: string;
   pulseWidth: number;
   isGridVisible: boolean;
-  heartRateType: "Default" | "FollowUp";
+  heartRateType: 'Default' | 'FollowUp';
 }
 
 interface ChildComponentProps {
@@ -21,10 +21,10 @@ interface ChildComponentProps {
 }
 
 type OmitParentComponentProps =
-  | "color"
-  | "gridColor"
-  | "isGridVisible"
-  | "heartRateType";
+  | 'color'
+  | 'gridColor'
+  | 'isGridVisible'
+  | 'heartRateType';
 
 interface PulsePointsParams {
   size: Range<50, 241>;

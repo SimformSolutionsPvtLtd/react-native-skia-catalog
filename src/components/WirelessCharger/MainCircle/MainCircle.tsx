@@ -1,8 +1,8 @@
-import { Circle, Group, Path, vec } from "@shopify/react-native-skia";
-import React from "react";
-import { InnerWifiSignal } from "../InnerWifiSignal";
-import { OuterWifiSignal } from "../OuterWifiSignal";
-import type { MainCircleProps } from "./MainCircleTypes";
+import { Circle, Group, Path, vec } from '@shopify/react-native-skia';
+import React from 'react';
+import { InnerWifiSignal } from '../InnerWifiSignal';
+import { OuterWifiSignal } from '../OuterWifiSignal';
+import type { MainCircleProps } from './MainCircleTypes';
 
 const MainCircle = ({
   size,

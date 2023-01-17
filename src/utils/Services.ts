@@ -1,19 +1,19 @@
 import {
   interpolate,
   interpolateColors,
-  SkPath,
-  SkPoint,
   vec,
-} from "@shopify/react-native-skia";
+  type SkPath,
+  type SkPoint,
+} from '@shopify/react-native-skia';
 import type {
   PulsePathParams,
   PulsePointsParams,
-} from "../components/HeartRate/HeartRateTypes";
+} from '../components/HeartRate/HeartRateTypes';
 import type {
   Coordinates,
   CoordinatesOfCubic,
   CoordinatesOfThunder,
-} from "../types";
+} from '../types';
 
 const setColors = (value: number, colors: string[], input?: number[]) =>
   interpolateColors(value, input ?? [0, 1], colors);

@@ -7,15 +7,15 @@ import {
   Path,
   RoundedRect,
   Skia,
-} from "@shopify/react-native-skia";
-import React from "react";
-import { SVG } from "../../assets";
-import { Colors } from "../../theme";
-import { useAnimatedSwitch } from "./hooks";
-import type { SkiaChargingProps } from "./SkiaChargingTypes";
-import { SquareCharging } from "./SquareCharging";
-import { Waves } from "./Waves";
-import { Wire } from "./Wire";
+} from '@shopify/react-native-skia';
+import React from 'react';
+import { SVG } from '../../assets';
+import { Colors } from '../../theme';
+import { useAnimatedSwitch } from './hooks';
+import type { SkiaChargingProps } from './SkiaChargingTypes';
+import { SquareCharging } from './SquareCharging';
+import { Waves } from './Waves';
+import { Wire } from './Wire';
 
 const curvePathSvg = Skia.SVG.MakeFromString(SVG.wirePath);
 
@@ -100,8 +100,7 @@ const SkiaCharging = ({
           <Paint opacity={opacityValue}>
             <BlendColor color={thunderColor} mode="srcIn" />
           </Paint>
-        }
-      >
+        }>
         <Path path={thunderPath} />
       </Group>
     </Canvas>

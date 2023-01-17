@@ -1,6 +1,6 @@
-import { BlendColor, Group, Paint, Path } from "@shopify/react-native-skia";
-import React from "react";
-import type { WavesProps } from "./WavesTypes";
+import { BlendColor, Group, Paint, Path } from '@shopify/react-native-skia';
+import React from 'react';
+import type { WavesProps } from './WavesTypes';
 
 const Waves = ({
   waveColor,
@@ -14,8 +14,7 @@ const Waves = ({
         <Paint>
           <BlendColor color={waveColor} mode="srcIn" />
         </Paint>
-      }
-    >
+      }>
       <Group transform={waveTransformForRight}>
         <Path path={wavePath} opacity={0.9} />
       </Group>

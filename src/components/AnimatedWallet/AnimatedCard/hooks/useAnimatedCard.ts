@@ -1,8 +1,8 @@
 import {
   interpolate,
-  Transforms2d,
   useComputedValue,
   useTiming,
+  type Transforms2d,
 } from '@shopify/react-native-skia';
 import type { UseAnimatedCardProps } from '../AnimatedCardTypes';
 

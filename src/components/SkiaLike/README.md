@@ -15,9 +15,9 @@
 ---
 
 ```jsx
-import React from "react";
-import { StyleSheet, View } from "react-native";
-import { SkiaLike } from "react-native-skia-catalog";
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
+import { SkiaLike } from 'react-native-skia-catalog';
 
 const SkiaLikeScreen = () => (
   <View style={styles.container}>
@@ -28,8 +28,8 @@ const SkiaLikeScreen = () => (
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 

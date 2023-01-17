@@ -4,11 +4,11 @@ import {
   Fill,
   Group,
   useValue,
-} from "@shopify/react-native-skia";
-import React from "react";
-import { Colors } from "../../theme";
-import { useThemeSwitch } from "./hooks";
-import type { ThemeSwitchProps } from "./ThemeSwitchTypes";
+} from '@shopify/react-native-skia';
+import React from 'react';
+import { Colors } from '../../theme';
+import { useThemeSwitch } from './hooks';
+import type { ThemeSwitchProps } from './ThemeSwitchTypes';
 
 const ThemeSwitch = ({
   lightThemeColor = Colors.kournikova,
@@ -44,8 +44,7 @@ const ThemeSwitch = ({
         height: size / 2.3,
         width: size,
       }}
-      onTouch={touchHandler}
-    >
+      onTouch={touchHandler}>
       <Group clip={rectanglePath}>
         <Fill color={interpolateButtonColor} />
         <Circle

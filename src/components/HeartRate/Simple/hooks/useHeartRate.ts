@@ -1,16 +1,16 @@
 import {
   interpolate,
   Skia,
-  SkiaValue,
-  SkPath,
   useComputedValue,
   useTiming,
-} from "@shopify/react-native-skia";
-import { getDefaultPulsePoints, getPulsePath } from "../../../../utils";
+  type SkiaValue,
+  type SkPath,
+} from '@shopify/react-native-skia';
+import { getDefaultPulsePoints, getPulsePath } from '../../../../utils';
 import type {
   HeartRateHookParams,
   HeartRateReturnType,
-} from "../SimpleHeartRateTypes";
+} from '../SimpleHeartRateTypes';
 
 const useHeartRate = ({
   size,

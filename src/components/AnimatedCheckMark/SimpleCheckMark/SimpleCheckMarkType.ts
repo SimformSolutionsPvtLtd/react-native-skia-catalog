@@ -3,7 +3,7 @@ import type {
   SkiaValue,
   SkImage,
   Transforms2d,
-} from "@shopify/react-native-skia";
+} from '@shopify/react-native-skia';
 
 export interface SimpleAnimatedCheckMark {
   size: number;

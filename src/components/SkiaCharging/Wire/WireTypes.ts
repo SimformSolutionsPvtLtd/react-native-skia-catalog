@@ -2,7 +2,7 @@ import type {
   SkiaValue,
   SkSVG,
   Transforms2d,
-} from "@shopify/react-native-skia";
+} from '@shopify/react-native-skia';
 
 export interface WireProps {
   size: number;

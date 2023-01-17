@@ -1,15 +1,14 @@
-import { Group, Paint, Path } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaCircleIndicatorTypes";
-import type {
-  RenderIndicatorPropsType,
-  SkiaCircleIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaCircleIndicatorTypes";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderIndicator } from "./hooks";
+import { Group, Paint, Path } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaCircleIndicatorPropsType,
+} from './SkiaCircleIndicatorTypes';
 
 const RenderIndicator = ({
   width,
@@ -32,11 +31,11 @@ const RenderIndicator = ({
   });
   return (
     <Group transform={transform} origin={{ x: width / 2, y: height / 2 }}>
-      <Path path={path} color={"transparent"} start={0} end={0.8}>
+      <Path path={path} color={'transparent'} start={0} end={0.8}>
         <Paint
-          style={"stroke"}
+          style={'stroke'}
           strokeWidth={trackWidth ?? circleHeight / 8}
-          strokeCap={"round"}
+          strokeCap={'round'}
           color={color}
           opacity={opacityLocal}
         />

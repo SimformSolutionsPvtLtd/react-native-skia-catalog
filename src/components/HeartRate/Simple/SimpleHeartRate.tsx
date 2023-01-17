@@ -1,10 +1,10 @@
-import { Path } from "@shopify/react-native-skia";
-import React from "react";
-import { useHeartRate } from "./hooks";
+import { Path } from '@shopify/react-native-skia';
+import React from 'react';
+import { useHeartRate } from './hooks';
 import type {
   HeartRateReturnType,
   SimpleHeartRatePropsType,
-} from "./SimpleHeartRateTypes";
+} from './SimpleHeartRateTypes';
 
 const SimpleHeartRate = ({
   size,
@@ -24,9 +24,9 @@ const SimpleHeartRate = ({
     <Path
       start={pulseRate}
       path={pulsePath}
-      style={"stroke"}
+      style={'stroke'}
       strokeWidth={pulseWidth}
-      strokeJoin={"round"}
+      strokeJoin={'round'}
     />
   );
 };

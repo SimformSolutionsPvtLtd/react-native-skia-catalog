@@ -6,12 +6,12 @@ import {
   type DataSourceParam,
   type SkImage,
   type Transforms2d,
-} from "@shopify/react-native-skia";
-import { Images } from "../../../assets";
+} from '@shopify/react-native-skia';
+import { Images } from '../../../assets';
 import type {
   AnimatedScannerPropTypes,
   UseAnimatedScannerReturnType,
-} from "../AnimatedScannerTypes";
+} from '../AnimatedScannerTypes';
 
 const useAnimatedScanner = ({
   strokeDelay = 1000,

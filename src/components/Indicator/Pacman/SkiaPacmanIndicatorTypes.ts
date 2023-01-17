@@ -2,13 +2,13 @@ import type {
   SkiaValue,
   SkPath,
   Transforms2d,
-} from "@shopify/react-native-skia";
-import { Colors } from "../../../theme";
+} from '@shopify/react-native-skia';
+import { Colors } from '../../../theme';
 import type {
   BaseIndicatorPropsType,
   OmitChildComponentProps,
   RenderComponentArgType,
-} from "../Base";
+} from '../Base';
 
 export type SkiaPacmanIndicatorPropsType = BaseIndicatorPropsType;
 

@@ -1,1 +1,1 @@
-export { default as useWirelessCharger } from "./useWirelessCharger";
+export { default as useWirelessCharger } from './useWirelessCharger';

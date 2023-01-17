@@ -2,15 +2,15 @@ import {
   interpolate,
   rect,
   Skia,
-  SkPath,
-  Transforms2d,
   useComputedValue,
-} from "@shopify/react-native-skia";
-import { useMemo } from "react";
+  type SkPath,
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import { useMemo } from 'react';
 import type {
   RenderIndicatorHookReturnType,
   RenderIndicatorPropsType,
-} from "../SkiaCircleIndicatorTypes";
+} from '../SkiaCircleIndicatorTypes';
 
 const useRenderIndicator = ({
   progress,

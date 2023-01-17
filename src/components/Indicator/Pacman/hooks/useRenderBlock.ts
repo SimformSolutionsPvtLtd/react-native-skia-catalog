@@ -1,13 +1,16 @@
 import {
   Extrapolate,
   interpolate,
-  Transforms2d,
   useComputedValue,
-} from "@shopify/react-native-skia";
-import { useMemo } from "react";
-import { I18nManager } from "react-native";
-import type { CirclePropsType } from "../../Base";
-import type { RenderBlockHookReturnType, RenderIndicatorPropsType } from "../SkiaPacmanIndicatorTypes";
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import { useMemo } from 'react';
+import { I18nManager } from 'react-native';
+import type { CirclePropsType } from '../../Base';
+import type {
+  RenderBlockHookReturnType,
+  RenderIndicatorPropsType,
+} from '../SkiaPacmanIndicatorTypes';
 
 const useRenderBlock = ({
   index,

@@ -1,10 +1,10 @@
-import type { SkiaValue, Transforms2d } from "@shopify/react-native-skia";
-import { Colors } from "../../../theme";
+import type { SkiaValue, Transforms2d } from '@shopify/react-native-skia';
+import { Colors } from '../../../theme';
 import type {
   BaseIndicatorPropsType,
   OmitChildComponentProps,
   RenderComponentArgType,
-} from "../Base";
+} from '../Base';
 
 export type SkiaBreathingIndicatorPropsType = BaseIndicatorPropsType & {
   trackWidth?: number;

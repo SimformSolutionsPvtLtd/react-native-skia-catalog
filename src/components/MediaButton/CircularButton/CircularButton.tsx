@@ -1,6 +1,6 @@
-import { Circle, vec } from "@shopify/react-native-skia";
-import React from "react";
-import type { CircularButtonPropsType } from "./CircularButtonTypes";
+import { Circle, vec } from '@shopify/react-native-skia';
+import React from 'react';
+import type { CircularButtonPropsType } from './CircularButtonTypes';
 
 const CircularButton = ({
   pulseDisable,

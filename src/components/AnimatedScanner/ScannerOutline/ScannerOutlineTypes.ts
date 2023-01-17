@@ -1,5 +1,5 @@
-import type { SkiaValue, Transforms2d } from "@shopify/react-native-skia";
-import type { AnimatedScannerPropTypes } from "../AnimatedScannerTypes";
+import type { SkiaValue, Transforms2d } from '@shopify/react-native-skia';
+import type { AnimatedScannerPropTypes } from '../AnimatedScannerTypes';
 
 interface ScannerOutlinePropsType extends Partial<AnimatedScannerPropTypes> {
   medianHeight: number;

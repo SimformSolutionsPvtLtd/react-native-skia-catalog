@@ -1,4 +1,4 @@
-import type { Range } from "../../types";
+import type { Range } from '../../types';
 export interface SkiaChargingProps {
   waveColor?: string;
   adapterColor?: string;

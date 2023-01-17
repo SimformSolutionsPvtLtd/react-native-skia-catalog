@@ -1,9 +1,9 @@
-import { Canvas, Group, Image, Line, vec } from "@shopify/react-native-skia";
-import React from "react";
-import { Colors } from "../../theme";
-import type { AnimatedScannerPropTypes } from "./AnimatedScannerTypes";
-import { useAnimatedScanner } from "./hooks";
-import ScannerOutline from "./ScannerOutline/ScannerOutline";
+import { Canvas, Group, Image, Line, vec } from '@shopify/react-native-skia';
+import React from 'react';
+import { Colors } from '../../theme';
+import type { AnimatedScannerPropTypes } from './AnimatedScannerTypes';
+import { useAnimatedScanner } from './hooks';
+import { ScannerOutline } from './ScannerOutline';
 
 const AnimatedScanner = ({
   stopZooming = false,
@@ -38,8 +38,7 @@ const AnimatedScanner = ({
       style={{
         height: height,
         width: height,
-      }}
-    >
+      }}>
       {image && (
         <Image
           image={image}
@@ -64,8 +63,7 @@ const AnimatedScanner = ({
       />
       <Group
         transform={verticalTransform}
-        origin={vec(medianHeight, medianHeight)}
-      >
+        origin={vec(medianHeight, medianHeight)}>
         <Line
           p1={vec(strokeStartPoint, padding)}
           p2={vec(strokeWidth + strokeStartPoint, padding)}

@@ -1,1 +1,1 @@
-export { default as SimpleHeartRate } from "./SimpleHeartRate";
+export { default as SimpleHeartRate } from './SimpleHeartRate';

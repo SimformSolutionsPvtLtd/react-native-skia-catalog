@@ -1,16 +1,16 @@
 import {
   Easing,
   interpolate,
-  SkPoint,
-  Transforms2d,
   useComputedValue,
-} from "@shopify/react-native-skia";
-import { useMemo } from "react";
-import type { CirclePropsType } from "../../Base";
+  type SkPoint,
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import { useMemo } from 'react';
+import type { CirclePropsType } from '../../Base';
 import type {
   RenderIndicatorHookReturnType,
   RenderIndicatorPropsType,
-} from "../SkiaSkypeIndicatorTypes";
+} from '../SkiaSkypeIndicatorTypes';
 
 const useRenderIndicator = ({
   index,

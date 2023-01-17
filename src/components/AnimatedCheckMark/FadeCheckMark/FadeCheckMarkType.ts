@@ -4,7 +4,7 @@ import type {
   SkImage,
   SkPath,
   Transforms2d,
-} from "@shopify/react-native-skia";
+} from '@shopify/react-native-skia';
 
 export interface UseFadeCheckMarkReturnType {
   circleParticle: SkiaMutableValue<Transforms2d>;

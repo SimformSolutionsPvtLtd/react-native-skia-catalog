@@ -1,1 +1,1 @@
-export { default as SkiaCharging } from "./SkiaCharging";
+export { default as SkiaCharging } from './SkiaCharging';

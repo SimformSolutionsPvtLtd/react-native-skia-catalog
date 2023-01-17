@@ -4,9 +4,9 @@ import {
   Skia,
   useComputedValue,
   useTiming,
-} from "@shopify/react-native-skia";
-import { getLineToPath, getThunderPoints } from "../../../utils";
-import type { UseWirelessChargerProps } from "../WirelessChargerTypes";
+} from '@shopify/react-native-skia';
+import { getLineToPath, getThunderPoints } from '../../../utils';
+import type { UseWirelessChargerProps } from '../WirelessChargerTypes';
 
 const useWirelessCharger = ({ size }: UseWirelessChargerProps) => {
   const exploreRadiusOfInnerCircle = -size * 0.386;

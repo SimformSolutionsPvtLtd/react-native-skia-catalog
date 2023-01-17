@@ -1,19 +1,19 @@
 import {
   interpolate,
   Skia,
-  SkiaValue,
-  SkPath,
-  Transforms2d,
   useComputedValue,
   useValue,
-} from "@shopify/react-native-skia";
-import type { Coordinates } from "../../../../types";
-import { getLineToPath, getStarPoints } from "../../../../utils";
+  type SkiaValue,
+  type SkPath,
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import type { Coordinates } from '../../../../types';
+import { getLineToPath, getStarPoints } from '../../../../utils';
 import type {
   GetExplorePositionType,
   GetExploreTranslateType,
-} from "../../AnimatedCheckMarkTypes";
-import type { UseFadeCheckMarkReturnType } from "../FadeCheckMarkType";
+} from '../../AnimatedCheckMarkTypes';
+import type { UseFadeCheckMarkReturnType } from '../FadeCheckMarkType';
 
 const getExploreCircle = (
   angle: number,

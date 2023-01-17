@@ -1,15 +1,14 @@
-import { Circle, Group } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaSkypeIndicatorTypes";
-import type {
-  RenderIndicatorPropsType,
-  SkiaSkypeIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaSkypeIndicatorTypes";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderIndicator } from "./hooks";
+import { Circle, Group } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaSkypeIndicatorPropsType,
+} from './SkiaSkypeIndicatorTypes';
 
 const RenderIndicator = ({
   color,
@@ -55,8 +54,7 @@ const SkiaSkypeIndicator = ({
       origin={{
         x: width / 2,
         y: height / 2,
-      }}
-    >
+      }}>
       <SkiaBaseIndicator
         renderComponent={(args: RenderComponentArgType) => (
           <RenderIndicator

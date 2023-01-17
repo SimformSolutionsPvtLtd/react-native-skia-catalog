@@ -15,9 +15,9 @@
 ---
 
 ```jsx
-import { StyleSheet, View } from "react-native";
-import React from "react";
-import { AnimatedWallet } from "react-native-skia-catalog";
+import { StyleSheet, View } from 'react-native';
+import React from 'react';
+import { AnimatedWallet } from 'react-native-skia-catalog';
 
 const WalletScreen = () => (
   <View style={style.container}>
@@ -28,8 +28,8 @@ const WalletScreen = () => (
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 
@@ -41,16 +41,16 @@ export default WalletScreen;
 ---
 
 ```jsx
-import { StyleSheet, View } from "react-native";
-import React from "react";
-import { AnimatedWallet } from "react-native-skia-catalog";
+import { StyleSheet, View } from 'react-native';
+import React from 'react';
+import { AnimatedWallet } from 'react-native-skia-catalog';
 
 const WalletScreen = () => (
   <View style={style.container}>
     <AnimatedWallet
       size={260}
-      primaryColor={"#3F0071"}
-      secondaryColor={"#FB2576"}
+      primaryColor={'#3F0071'}
+      secondaryColor={'#FB2576'}
       numberOfCards={3}
     />
   </View>
@@ -59,8 +59,8 @@ const WalletScreen = () => (
 const style = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
   },
 });
 
