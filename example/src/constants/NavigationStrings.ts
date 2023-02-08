@@ -12,4 +12,5 @@ export default {
   WIRELESS_CHARGER: 'Wireless Charger',
   SKIA_CHARGING: 'Skia Charging',
   ANIMATEDCHECKMARK: 'Animated Checkmark',
+  SKIA_SIGNAL_WIFI: 'Skia Signal Wifi',
 };

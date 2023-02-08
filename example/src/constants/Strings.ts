@@ -22,4 +22,5 @@ export default {
     'Animated Checkmark with simple circular effect',
   SIMPLE_ANIMATED_CHECKMARK: 'Animated Checkmark with simple effect',
   ANIMATED_CHECKMARK: 'Animated Checkmark',
+  SKIA_SIGNAL_WIFI: 'Skia Signal Wifi',
 };

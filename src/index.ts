@@ -7,6 +7,7 @@ export * from './components/MediaButton';
 export * from './components/Notification';
 export * from './components/SkiaCharging';
 export * from './components/SkiaLike';
+export * from './components/SkiaSignalWifi';
 export * from './components/StrikeImage';
 export * from './components/ThemeSwitch';
 export * from './components/WirelessCharger';
