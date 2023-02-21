@@ -22,7 +22,7 @@ This custom animated skia component library provides multiple custom animated sk
 
 | <div style = "width: 270px">ThemeSwitch</div> | <div style = "width: 270px">SkiaLike</div> | <div style = "width: 270px">AnimatedWallet</div> |
 | :-------------------------------------------: | :----------------------------------------: | :----------------------------------------------: |
-|  ![alt tag](./assets/DefaultThemeSwitch.gif)  |     ![alt tag](./assets/SkiaLike.gif)      |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |
+|  ![alt tag](./assets/DefaultThemeSwitch.gif)  |     ![alt tag](./assets/DefaultSkiaLike.gif)      |  ![alt tag](./assets/DefaultAnimatedWallet.gif)  |
 
 | <div style = "width: 270px">AnimatedScanner</div> | <div style = "width: 270px">MediaButton</div> | <div style = "width: 270px">HeartRate</div> |
 | :-----------------------------------------------: | :-------------------------------------------: | :-----------------------------------------: |
@@ -30,7 +30,7 @@ This custom animated skia component library provides multiple custom animated sk
 
 | <div style = "width: 270px">WirelessCharger</div> | <div style = "width: 270px">SkiaCharging</div> | <div style = "width: 270px">AnimatedCheckmark</div> |
 | :-----------------------------------------------: | :--------------------------------------------: | :-------------------------------------------------: |
-|  ![alt tag](./assets/DefaultWirelessCharger.gif)  |  ![alt tag](./assets/DefaultSkiaCharging.gif)  |     ![alt tag](./assets/AnimatedCheckmark.gif)      |
+|  ![alt tag](./assets/DefaultWirelessCharger.gif)  |  ![alt tag](./assets/DefaultSkiaCharging.gif)  |     ![alt tag](./assets/DefaultAnimatedCheckMark.gif)      |
 
 ---
 
@@ -140,3 +140,4 @@ For bugs, feature requests, and discussion please use [GitHub Issues](https://gi
 ### License
 
 - [MIT License](./LICENSE)
+ 
