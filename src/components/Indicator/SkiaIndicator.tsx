@@ -1,28 +1,31 @@
-import { Canvas } from "@shopify/react-native-skia";
-import React from "react";
-import { StyleSheet } from "react-native";
-import { SkiaBallIndicator } from "./Ball";
-import { SkiaBarIndicator } from "./Bar";
-import { SkiaBreathingIndicator } from "./Breathing";
-import { SkiaCircleIndicator } from "./Circle";
-import { SkiaDotIndicator } from "./Dot";
-import { SkiaMaterialIndicator } from "./Material";
-import { SkiaPacmanIndicator } from "./Pacman";
-import { SkiaPulseIndicator } from "./Pulse";
-import { SkiaRotationCircleIndicator } from "./RotationCircle";
-import { SkiaRotationHoleIndicator } from "./RotationHole";
-import type { SkiaIndicatorPropsType } from "./SkiaIndicatorTypes";
-import { IndicatorEnum, defaultProps } from "./SkiaIndicatorTypes";
-import { SkiaSkypeIndicator } from "./Skype";
-import { SkiaUIActivityIndicator } from "./UIActivity";
-import { SkiaWaveIndicator } from "./Wave";
+import { Canvas } from '@shopify/react-native-skia';
+import React from 'react';
+import { StyleSheet } from 'react-native';
+import { SkiaBallIndicator } from './Ball';
+import { SkiaBarIndicator } from './Bar';
+import { SkiaBreathingIndicator } from './Breathing';
+import { SkiaCircleIndicator } from './Circle';
+import { SkiaDotIndicator } from './Dot';
+import { SkiaMaterialIndicator } from './Material';
+import { SkiaPacmanIndicator } from './Pacman';
+import { SkiaPulseIndicator } from './Pulse';
+import { SkiaRotationCircleIndicator } from './RotationCircle';
+import { SkiaRotationHoleIndicator } from './RotationHole';
+import {
+  defaultProps,
+  IndicatorEnum,
+  type SkiaIndicatorPropsType,
+} from './SkiaIndicatorTypes';
+import { SkiaSkypeIndicator } from './Skype';
+import { SkiaUIActivityIndicator } from './UIActivity';
+import { SkiaWaveIndicator } from './Wave';
 
 const SkiaIndicator = ({
   type,
   style,
   onTouch,
   ...rest
-}: SkiaIndicatorPropsType): JSX.Element => {
+}: SkiaIndicatorPropsType): React.ReactElement => {
   return (
     <Canvas
       style={StyleSheet.flatten([
@@ -32,8 +35,7 @@ const SkiaIndicator = ({
         },
         style,
       ])}
-      onTouch={onTouch}
-    >
+      onTouch={onTouch}>
       {type === IndicatorEnum.BALL && <SkiaBallIndicator {...rest} />}
       {type === IndicatorEnum.BAR && <SkiaBarIndicator {...rest} />}
       {type === IndicatorEnum.CIRCLE && <SkiaCircleIndicator {...rest} />}

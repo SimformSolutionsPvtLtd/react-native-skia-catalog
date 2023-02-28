@@ -1,12 +1,16 @@
 import {
   interpolate,
+  rect,
   Skia,
-  SkPath,
-  Transforms2d,
   useComputedValue,
-} from "@shopify/react-native-skia";
-import { useMemo } from "react";
-import type { RenderIndicatorHookReturnType, RenderIndicatorPropsType } from "../SkiaCircleIndicatorTypes";
+  type SkPath,
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import { useMemo } from 'react';
+import type {
+  RenderIndicatorHookReturnType,
+  RenderIndicatorPropsType,
+} from '../SkiaCircleIndicatorTypes';
 
 const useRenderIndicator = ({
   progress,
@@ -21,12 +25,12 @@ const useRenderIndicator = ({
 
   const path: SkPath = Skia.Path.Make();
   path.addArc(
-    {
-      x: width / 2 - circleHeight / 2,
-      y: height / 2 - circleHeight / 2,
-      width: circleHeight,
-      height: circleHeight,
-    },
+    rect(
+      width / 2 - circleHeight / 2,
+      height / 2 - circleHeight / 2,
+      circleHeight,
+      circleHeight
+    ),
     0,
     360
   );

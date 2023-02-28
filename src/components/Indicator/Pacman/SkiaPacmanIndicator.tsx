@@ -1,22 +1,21 @@
-import { Circle, Group, Path } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaPacmanIndicatorTypes";
-import type {
-  RenderIndicatorPropsType,
-  SkiaPacmanIndicatorPropsType,
-  RenderBlockHookReturnType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaPacmanIndicatorTypes";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderBlock, useRenderIndicator } from "./hooks";
+import { Circle, Group, Path } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderBlock, useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderBlockHookReturnType,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaPacmanIndicatorPropsType,
+} from './SkiaPacmanIndicatorTypes';
 
 const RenderBlock = ({
   index,
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const { cx, cy, r, transform, opacityLocal }: RenderBlockHookReturnType =
     useRenderBlock({ index, color, ...rest });
 
@@ -24,8 +23,7 @@ const RenderBlock = ({
     <Group
       transform={transform}
       key={`Block-${index}`}
-      origin={{ x: cx, y: cy }}
-    >
+      origin={{ x: cx, y: cy }}>
       <Circle cx={cx} cy={cy} r={r} color={color} opacity={opacityLocal} />
     </Group>
   );
@@ -43,7 +41,7 @@ const RenderIndicator = ({
   progressDuration,
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const { r, path, opacityLocal }: RenderIndicatorHookReturnType =
     useRenderIndicator({
       index,
@@ -80,7 +78,7 @@ const RenderIndicator = ({
 
   return (
     <Group key={index} origin={{ x: r, y: r }}>
-      <Path style={"fill"} path={path} color={color} opacity={opacityLocal} />
+      <Path style={'fill'} path={path} color={color} opacity={opacityLocal} />
     </Group>
   );
 };
@@ -94,7 +92,7 @@ const SkiaPacmanIndicator = ({
   progressDuration,
   color,
   ...rest
-}: SkiaPacmanIndicatorPropsType): JSX.Element => {
+}: SkiaPacmanIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

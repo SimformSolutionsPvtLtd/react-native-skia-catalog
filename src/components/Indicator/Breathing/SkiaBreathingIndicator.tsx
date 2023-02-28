@@ -1,20 +1,19 @@
-import { Circle, Group } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaBreathingIndicatorType";
-import type {
-  RenderIndicatorPropsType,
-  SkiaBreathingIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaBreathingIndicatorType";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderIndicator } from "./hooks";
+import { Circle, Group } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaBreathingIndicatorPropsType,
+} from './SkiaBreathingIndicatorType';
 
 const RenderIndicator = ({
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const {
     cx,
     cy,
@@ -30,7 +29,7 @@ const RenderIndicator = ({
         cx={cx}
         cy={cy}
         r={r}
-        style={"stroke"}
+        style={'stroke'}
         strokeWidth={trackW}
         color={color}
         opacity={opacityLocal}
@@ -49,7 +48,7 @@ const SkiaBreathingIndicator = ({
   color,
   trackWidth,
   ...rest
-}: SkiaBreathingIndicatorPropsType): JSX.Element => {
+}: SkiaBreathingIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

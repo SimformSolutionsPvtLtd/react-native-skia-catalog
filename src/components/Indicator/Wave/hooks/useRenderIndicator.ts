@@ -1,15 +1,15 @@
 import {
   Extrapolate,
   interpolate,
-  Transforms2d,
   useComputedValue,
-} from "@shopify/react-native-skia";
-import { useMemo } from "react";
-import type { CirclePropsType } from "../../Base";
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import { useMemo } from 'react';
+import type { CirclePropsType } from '../../Base';
 import type {
   RenderIndicatorHookReturnType,
   RenderIndicatorPropsType,
-} from "../SkiaWaveIndicatorTypes";
+} from '../SkiaWaveIndicatorTypes';
 
 const floatEpsilon = Math.pow(2, -23);
 
@@ -23,7 +23,7 @@ const useRenderIndicator = ({
   waveFactor,
   waveMode,
 }: RenderIndicatorPropsType): RenderIndicatorHookReturnType => {
-  const fill: boolean = waveMode === "fill";
+  const fill: boolean = waveMode === 'fill';
   const factor: number = useMemo<number>(
     () => Math.max(1 - Math.pow(waveFactor ?? 0.54, index), floatEpsilon),
     [index, waveFactor]

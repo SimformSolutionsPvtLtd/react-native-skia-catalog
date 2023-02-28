@@ -1,16 +1,17 @@
 import {
   interpolate,
-  Transforms2d,
+  Skia,
+  SkPaint,
   useComputedValue,
-  usePaintRef,
-} from "@shopify/react-native-skia";
-import { useMemo } from "react";
+  type Transforms2d,
+} from '@shopify/react-native-skia';
+import { useMemo } from 'react';
 import type {
   RectanglePropsType,
   RenderIndicatorHookReturnType,
   RenderIndicatorPropsType,
-} from "../SkiaBarIndicatorTypes";
-import { getOutputRange } from "../SkiaBarIndicatorUtils";
+} from '../SkiaBarIndicatorTypes';
+import { getOutputRange } from '../SkiaBarIndicatorUtils';
 
 const useRenderIndicator = ({
   index,
@@ -22,7 +23,7 @@ const useRenderIndicator = ({
   opacity,
   progressDuration,
 }: RenderIndicatorPropsType): RenderIndicatorHookReturnType => {
-  const paint = usePaintRef();
+  const paint: SkPaint = Skia.Paint();
   const samples = useMemo<number>(() => {
     const frames = (60 * (progressDuration ?? 1200)) / 1000;
     let c = 0;

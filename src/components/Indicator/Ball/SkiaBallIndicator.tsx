@@ -1,22 +1,21 @@
-import { Circle, Group } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaBallIndicatorTypes";
+import { Circle, Group } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
 import type {
+  RenderIndicatorHookReturnType,
   RenderIndicatorPropsType,
   SkiaBallIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaBallIndicatorTypes";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderIndicator } from "./hooks";
+} from './SkiaBallIndicatorTypes';
+import { defaultProps } from './SkiaBallIndicatorTypes';
 
 const RenderIndicator = ({
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const { cx, cy, r, transform, opacityLocal }: RenderIndicatorHookReturnType =
-  useRenderIndicator({ color, ...rest });
+    useRenderIndicator({ color, ...rest });
 
   return (
     <Group transform={transform} origin={{ x: cx, y: cy }}>
@@ -34,7 +33,7 @@ const SkiaBallIndicator = ({
   progressDuration,
   color,
   ...rest
-}: SkiaBallIndicatorPropsType): JSX.Element => {
+}: SkiaBallIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

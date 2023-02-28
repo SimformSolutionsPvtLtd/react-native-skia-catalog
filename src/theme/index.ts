@@ -1,3 +1,3 @@
-import Colors from './Colors';
+import Colors, { getRandomColorsArray } from './Colors';
 
-export { Colors };
+export { Colors, getRandomColorsArray };

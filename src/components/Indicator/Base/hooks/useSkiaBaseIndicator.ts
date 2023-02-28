@@ -1,10 +1,14 @@
-import { runTiming, SkiaAnimation, useValue } from "@shopify/react-native-skia";
-import { useCallback, useEffect, useRef } from "react";
+import {
+  runTiming,
+  useValue,
+  type SkiaAnimation,
+} from '@shopify/react-native-skia';
+import { useCallback, useEffect, useRef } from 'react';
 import type {
   SkiaBaseIndicatorHookReturnType,
   SkiaBaseIndicatorPropsType,
-} from "../SkiaBaseIndicatorTypes";
-import usePrevious from "./usePrevious";
+} from '../SkiaBaseIndicatorTypes';
+import usePrevious from './usePrevious';
 
 const useSkiaBaseIndicator = ({
   animationEasing,
@@ -77,7 +81,7 @@ const useSkiaBaseIndicator = ({
     if (animStateRef.current !== 1) {
       return;
     }
-    let listener = progress.addListener((value) => {
+    const listener = progress.addListener(value => {
       listener?.();
       subscribeStart?.current?.cancel();
       handleSaveAnimation(value);
@@ -87,7 +91,7 @@ const useSkiaBaseIndicator = ({
   }, [progress]);
 
   const renderChildComponent = useCallback(
-    (_item: any, index: number): JSX.Element => {
+    (_item: any, index: number): React.ReactElement => {
       return renderComponent({
         index,
         count,

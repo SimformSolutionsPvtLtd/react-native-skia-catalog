@@ -8,7 +8,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   animatedListStyle: {
-    flex: 1,
     marginTop: verticalScale(10),
     marginHorizontal: horizontalScale(20),
   },
@@ -16,8 +15,7 @@ const styles = StyleSheet.create({
     height: verticalScale(10),
   },
   contentContainerStyle: {
-    flex: 1,
-    paddingBottom: verticalScale(50),
+    paddingBottom: verticalScale(10),
   },
   cardStyle: {
     justifyContent: 'center',

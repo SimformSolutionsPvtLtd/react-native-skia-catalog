@@ -1,20 +1,19 @@
-import { Circle, Group } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaSkypeIndicatorTypes";
-import type {
-  RenderIndicatorPropsType,
-  SkiaSkypeIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaSkypeIndicatorTypes";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderIndicator } from "./hooks";
+import { Circle, Group } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaSkypeIndicatorPropsType,
+} from './SkiaSkypeIndicatorTypes';
 
 const RenderIndicator = ({
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const {
     newCX,
     newCY,
@@ -48,15 +47,14 @@ const SkiaSkypeIndicator = ({
   minScale,
   maxScale,
   ...rest
-}: SkiaSkypeIndicatorPropsType): JSX.Element => {
+}: SkiaSkypeIndicatorPropsType): React.ReactElement => {
   return (
     <Group
       transform={[{ rotate: -1 }]}
       origin={{
         x: width / 2,
         y: height / 2,
-      }}
-    >
+      }}>
       <SkiaBaseIndicator
         renderComponent={(args: RenderComponentArgType) => (
           <RenderIndicator

@@ -1,20 +1,19 @@
-import { Group, Path } from "@shopify/react-native-skia";
-import React from "react";
-import { SkiaBaseIndicator } from "../Base";
-import type { RenderComponentArgType } from "../Base";
-import { defaultProps } from "./SkiaMaterialIndicatorTypes";
-import type {
-  RenderIndicatorPropsType,
-  SkiaMaterialIndicatorPropsType,
-  RenderIndicatorHookReturnType,
-} from "./SkiaMaterialIndicatorTypes";
-import { IndicatorEnum } from "../SkiaIndicatorTypes";
-import { useRenderIndicator } from "./hooks";
+import { Group, Path } from '@shopify/react-native-skia';
+import React from 'react';
+import { SkiaBaseIndicator, type RenderComponentArgType } from '../Base';
+import { IndicatorEnum } from '../SkiaIndicatorTypes';
+import { useRenderIndicator } from './hooks';
+import {
+  defaultProps,
+  type RenderIndicatorHookReturnType,
+  type RenderIndicatorPropsType,
+  type SkiaMaterialIndicatorPropsType,
+} from './SkiaMaterialIndicatorTypes';
 
 const RenderIndicator = ({
   color,
   ...rest
-}: RenderIndicatorPropsType): JSX.Element => {
+}: RenderIndicatorPropsType): React.ReactElement => {
   const {
     cx,
     cy,
@@ -32,8 +31,8 @@ const RenderIndicator = ({
     <Group transform={transform} origin={{ x: cx + r, y: cy + r }}>
       <Path
         path={path}
-        style={"stroke"}
-        strokeCap={"round"}
+        style={'stroke'}
+        strokeCap={'round'}
         strokeWidth={trackW}
         color={color}
         opacity={opacityLocal}
@@ -53,7 +52,7 @@ const SkiaMaterialIndicator = ({
   trackWidth,
   direction,
   ...rest
-}: SkiaMaterialIndicatorPropsType): JSX.Element => {
+}: SkiaMaterialIndicatorPropsType): React.ReactElement => {
   return (
     <SkiaBaseIndicator
       renderComponent={(args: RenderComponentArgType) => (

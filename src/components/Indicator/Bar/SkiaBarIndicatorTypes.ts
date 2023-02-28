@@ -2,14 +2,13 @@ import type {
   SkiaValue,
   SkPaint,
   Transforms2d,
-} from "@shopify/react-native-skia";
-import type React from "react";
-import { Colors } from "../../../theme";
+} from '@shopify/react-native-skia';
+import { Colors } from '../../../theme';
 import type {
   BaseIndicatorPropsType,
   OmitChildComponentProps,
   RenderComponentArgType,
-} from "../Base";
+} from '../Base';
 
 export type SkiaBarIndicatorPropsType = BaseIndicatorPropsType & {
   count?: number;
@@ -40,7 +39,7 @@ export type RenderIndicatorHookReturnType = {
   h: number;
   r: number;
   gap: number;
-  paint: React.RefObject<SkPaint>;
+  paint: SkPaint;
   opacityLocal: SkiaValue<number>;
   transformTop: SkiaValue<Transforms2d>;
   transformBottom: SkiaValue<Transforms2d>;
