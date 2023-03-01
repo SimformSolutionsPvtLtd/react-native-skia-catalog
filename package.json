@@ -1,6 +1,6 @@
 {
   "name": "react-native-skia-catalog",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A Collection of animated React Native Skia components",
   "homepage": "https://github.com/SimformSolutionsPvtLtd/react-native-skia-catalog#readme",
   "main": "lib/index.js",
