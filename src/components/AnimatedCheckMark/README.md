@@ -10,7 +10,7 @@ The `AnimatedCheckMark` component can be used to provide a delightful experience
 
 |             AnimatedCheckMark             |
 | :---------------------------------------: |
-| ![alt tag](/assets/DefaultAnimatedCheckmark.gif) |
+| ![alt tag](/assets/DefaultAnimatedCheckMark.gif) |
 
 #### Default Usage
 
