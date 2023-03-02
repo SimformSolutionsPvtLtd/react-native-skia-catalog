@@ -63,6 +63,7 @@ const Colors = {
   blue700: '#0288D1',
   mayaBlue: '#69c7ff',
   pink400: '#EC407A',
+  mediumAquamarine: '#76CCB0',
 };
 
 export const getRandomColorsArray = () => [

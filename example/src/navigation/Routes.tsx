@@ -11,6 +11,7 @@ import {
   MediaButtonScreen,
   NotificationScreen,
   SkiaLikeScreen,
+  SkiaSignalWifiScreen,
   StrikeImageScreen,
   ThemeSwitchScreen,
   WalletScreen,
@@ -87,6 +88,11 @@ const Routes = (): React.ReactElement => {
         <Stack.Screen
           name={NavigationStrings.ANIMATEDCHECKMARK}
           component={AnimatedCheckMarkScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name={NavigationStrings.SKIA_SIGNAL_WIFI}
+          component={SkiaSignalWifiScreen}
           options={{headerShown: false}}
         />
       </Stack.Navigator>

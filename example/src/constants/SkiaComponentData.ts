@@ -62,4 +62,9 @@ export const SkiaComponentData = (navigation: NavProps) => [
     name: 'Animated Checkmark',
     screen: () => navigation.navigate(NavigationStrings.ANIMATEDCHECKMARK),
   },
+  {
+    id: 13,
+    name: 'Skia Signal Wifi',
+    screen: () => navigation.navigate(NavigationStrings.SKIA_SIGNAL_WIFI),
+  },
 ];

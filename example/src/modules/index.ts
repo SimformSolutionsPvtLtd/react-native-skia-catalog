@@ -7,6 +7,7 @@ import MediaButtonScreen from './MediaButton/MediaButtonScreen';
 import NotificationScreen from './Notification/NotificationScreen';
 import SkiaChargingScreen from './SkiaCharging/SkiaChargingScreen';
 import SkiaLikeScreen from './SkiaLike/SkiaLikeScreen';
+import SkiaSignalWifiScreen from './SkiaSignalWifi/SkiaSignalWifiScreen';
 import StrikeImageScreen from './StrikeImage/StrikeImageScreen';
 import ThemeSwitchScreen from './ThemeSwitch/ThemeSwitchScreen';
 import WalletScreen from './Wallet/WalletScreen';
@@ -21,6 +22,7 @@ export {
   ThemeSwitchScreen,
   StrikeImageScreen,
   SkiaLikeScreen,
+  SkiaSignalWifiScreen,
   WalletScreen,
   MediaButtonScreen,
   WirelessChargerScreen,
