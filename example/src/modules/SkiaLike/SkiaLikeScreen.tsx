@@ -1,5 +1,5 @@
 import {useNavigation} from '@react-navigation/native';
-import React from 'react';
+import React, {useState} from 'react';
 import {View} from 'react-native';
 import {SkiaLike} from 'react-native-skia-catalog';
 import {CustomHeader} from '../../components';
@@ -9,6 +9,7 @@ import styles from './styles/styles';
 
 const SkiaLikeScreen = (): React.ReactElement => {
   const navigation = useNavigation<NavProps>();
+  const [isActive, setIsActive] = useState(true);
 
   return (
     <View style={styles.screen}>
@@ -18,7 +19,12 @@ const SkiaLikeScreen = (): React.ReactElement => {
         onBackPress={() => navigation.goBack()}
       />
       <View style={styles.container}>
-        <SkiaLike />
+        <SkiaLike
+          isActive={isActive}
+          onChangeValue={value => {
+            setIsActive(value);
+          }}
+        />
       </View>
     </View>
   );

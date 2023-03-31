@@ -42,6 +42,7 @@ export default SkiaLikeScreen;
 | :------------ | :------- | :------------------------- | :--------------------------------------------------------------------------------------------------- |
 | size          | 180      | number                     | `Size` of `SkiaLike`.                                                                                |
 | onChangeValue | () => {} | (isLiked: boolean) => void | It returns the `boolean` value, when the `event` is `liked` it will return `true` otherwise `false`. |
+| isActive      | false    | boolean                    | It manage `default state` means heart `liked or not`.                                                |
 
 #### 🎬 Preview Example
 
