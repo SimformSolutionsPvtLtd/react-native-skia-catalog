@@ -7,6 +7,7 @@ import type { Range } from '../../types';
 export interface SkisLikeProps {
   size?: Range<40, 301>;
   onChangeValue?: (value: boolean) => void;
+  isActive: boolean;
 }
 
 export interface getExploreCircleTranslateTypes {

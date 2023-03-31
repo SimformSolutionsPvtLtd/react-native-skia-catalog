@@ -11,4 +11,5 @@ export interface SkiaHeartProps {
   scaleHeart: SkiaMutableValue<Transforms2d>;
   halfSize: number;
   svgHeart: AnimatedProp<SkSVG, any>;
+  isLike: boolean;
 }

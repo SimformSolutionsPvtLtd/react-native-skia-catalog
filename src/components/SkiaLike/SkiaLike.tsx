@@ -20,9 +20,10 @@ const svgHeart = Skia.SVG.MakeFromString(SVG.heart);
 const SkiaLike = ({
   size = 180,
   onChangeValue = () => {},
+  isActive = false,
 }: Partial<SkisLikeProps>): React.ReactElement => {
   const value = useValue<number>(0);
-  const [isLike, setIsLike] = useState(false);
+  const [isLike, setIsLike] = useState<boolean>(isActive);
   const halfSize = size / 2;
 
   const {
@@ -106,7 +107,14 @@ const SkiaLike = ({
       ))}
       {svgHeart && (
         <SkiaHeart
-          {...{ opacityHeart, heartColor, scaleHeart, halfSize, svgHeart }}
+          {...{
+            opacityHeart,
+            heartColor,
+            isLike,
+            scaleHeart,
+            halfSize,
+            svgHeart,
+          }}
         />
       )}
     </Canvas>
